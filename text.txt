@@ -1,0 +1,55 @@
+our 1 : Le Chargement Initial (One-Shot)
+C'est ce que tu fais quand ton DWH est vide.
+
+Étape 0 (Découverte) : Ton scraper visite la page "Populaires" de Vanden Borre. Il ne prend pas que 20 produits ; il clique sur "Page suivante" et scrappe toutes les pages (ex: les 174 produits) pour obtenir la liste complète des URL/SKU.
+
+Étape 1 & 2 (Scraping) : Ton script visite ces 174 URL, extrait le JSON ld+json de chacune, et charge les 174 enregistrements dans Staging_VDB_Product_Page.
+
+Étape 3 (Transformation & Chargement) :
+
+Tu lances un script Python/SQL qui lit Staging_VDB_Product_Page.
+
+Il parcourt les JSON, nettoie les données (prix, notes, nom, marque...).
+
+Il fait un simple INSERT de ces 174 produits dans ta Dim_Product.
+
+Pour chaque ligne, il définit :
+
+SCD_StartDate = NOW() (la date d'aujourd'hui)
+
+SCD_EndDate = NULL
+
+Is_Active = 1
+
+Ton Dim_Product est maintenant pleine.
+
+Jour 2+ : Les Chargements Incrémentaux (SCD)
+C'est ce que ton pipeline Airflow fera tous les jours/toutes les heures.
+
+Étape 0, 1, 2 (Scraping) : Les mêmes scripts tournent. Ils scannent à nouveau les produits et ajoutent les nouvelles données dans Staging_VDB_Product_Page.
+
+Étape 3 (Transformation & Chargement SCD) :
+
+Tu lances un script différent (le script "SCD").
+
+Ce script compare Staging_VDB_Product_Page (les données d'aujourd'hui) avec Dim_Product (où Is_Active = 1).
+
+Cas 1 : Nouveau Produit (un ProductID_SKU est dans Staging mais pas dans Dim)
+
+INSERT (comme au Jour 1).
+
+Cas 2 : Produit sans changement (ex: le nom et la marque n'ont pas changé)
+
+Ne rien faire à Dim_Product.
+
+Cas 3 : Produit Modifié (SCD Type 2) (ex: le ProductName du SKU "7819145" a changé)
+
+UPDATE l'ancienne ligne dans Dim_Product : SET Is_Active = 0, SCD_EndDate = NOW() WHERE ProductKey = ....
+
+INSERT une nouvelle ligne pour "7819145" avec le nouveau nom, Is_Active = 1 et SCD_StartDate = NOW().
+
+Cas 4 : Produit Disparu (un produit est dans Dim_Product mais n'a pas été scrapé aujourd'hui)
+
+UPDATE la ligne dans Dim_Product : SET Is_Active = 0, SCD_EndDate = NOW().
+
+C'est une approche professionnelle qui sépare la logique de chargement initial de la logique de maintenance (SCD).
