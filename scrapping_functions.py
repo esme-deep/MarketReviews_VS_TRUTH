@@ -181,3 +181,285 @@ def save_categories_to_staging(categories_to_save, univers_name):
         if conn:
             conn.close()
             print("Connexion SQL Server fermée.")
+
+
+def discover_all_subcategories_Withredundance(parent_category_name, hub_url):
+    """
+    Scrappe une page "hub" de catégorie (ex: /mp3-casque-ecouteurs)
+    pour trouver toutes les sous-catégories (ex: "Casques audio (174)").
+    
+    Args:
+        parent_category_name (str): Le nom de la catégorie parente (ex: "Casque et Écouteurs").
+        hub_url (str): L'URL de la page "hub" à scraper.
+        
+    Retourne:
+        Une liste de dictionnaires (ta "variable" de sous-catégories).
+    """
+    BASE_URL = "https://www.vandenborre.be"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+    }
+
+    print(f"--- Lancement Découverte Sous-Catégories (Étape 0b) ---")
+    print(f"Scraping de : {hub_url} (pour parent: {parent_category_name})")
+    
+    subcategories_found = []
+    
+    try:
+        session = requests.Session()
+        session.headers.update(headers)
+        response = session.get(hub_url, timeout=15)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # Cible les sections "families" et "accessoires"
+        category_sections = soup.find_all('div', {'class': 'rubric-families'})
+        category_sections.extend(soup.find_all('div', {'class': 'rubric-accessoires'}))
+
+        if not category_sections:
+            print(f"   -> ⚠️ Aucun conteneur 'rubric-families' ou 'rubric-accessoires' trouvé sur {hub_url}.")
+            return []
+
+        # Regex pour extraire "Nom (123)"
+        name_count_regex = re.compile(r"(.*)\((\d+)\)")
+        
+        for section in category_sections:
+            category_blocks = section.find_all('div', {'class': 'accordion-image-grid'})
+            
+            for block in category_blocks:
+                link_tag = block.find('a', {'class': 'rubric-link'})
+                if not link_tag:
+                    continue
+
+                relative_url = link_tag.get('href')
+                title_tag = link_tag.find(['h2', 'h3']) # Cible h2 ou h3
+                if not title_tag or not relative_url:
+                    continue
+
+                full_text = title_tag.text.strip().replace('\xa0', ' ')
+                
+                # Reconstruire l'URL complète
+                url = ""
+                if relative_url.startswith('//'):
+                    url = f"https:{relative_url}"
+                elif relative_url.startswith('/'):
+                    url = f"{BASE_URL}{relative_url}"
+                else:
+                    url = relative_url
+                    
+                # Extraire le nom et le nombre d'articles
+                category_name = "N/A"
+                item_count = 0
+                
+                match = name_count_regex.search(full_text)
+                if match:
+                    category_name = match.group(1).strip()
+                    item_count = int(match.group(2))
+                else:
+                    category_name = full_text # Fallback si pas de nombre
+                
+                if category_name != "N/A":
+                    subcategories_found.append({
+                        "parent_category": parent_category_name, # Le nom du "thème"
+                        "category_name": category_name,      # Le nom de la sous-catégorie
+                        "item_count": item_count,
+                        "url": url
+                    })
+
+        print(f"   -> {len(subcategories_found)} sous-catégories trouvées.")
+        return subcategories_found
+
+    except requests.exceptions.HTTPError as err:
+        print(f"\n--- ❌ ERREUR HTTP : {err} ---")
+        return []
+    except Exception as e:
+        print(f"\n--- ❌ ERREUR INATTENDUE : {e} ---")
+        return []
+    
+
+# --- Cellule 2 (CORRIGÉE) ---
+
+def discover_all_subcategories(parent_category_name, hub_url):
+    """
+    Scrappe une page "hub" de catégorie (ex: /mp3-casque-ecouteurs)
+    pour trouver UNIQUEMENT les sous-catégories "families"
+    et ignorer les "accessoires" partagés.
+    
+    Args:
+        parent_category_name (str): Le nom de la catégorie parente (ex: "Télévision").
+        hub_url (str): L'URL de la page "hub" à scraper.
+        
+    Retourne:
+        Une liste de dictionnaires (ta "variable" de sous-catégories).
+    """
+    BASE_URL = "https://www.vandenborre.be"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+    }
+
+    print(f"--- Lancement Découverte Sous-Catégories (Étape 0b) ---")
+    print(f"Scraping de : {hub_url} (pour parent: {parent_category_name})")
+    
+    subcategories_found = []
+    
+    try:
+        session = requests.Session()
+        session.headers.update(headers)
+        response = session.get(hub_url, timeout=15)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # --- CORRECTION DU BUG ICI ---
+        # Cible UNIQUEMENT la section "families"
+        main_container = soup.find('div', {'class': 'rubric-families'})
+
+        if not main_container:
+            print(f"   -> ⚠️ Aucun conteneur 'rubric-families' trouvé sur {hub_url}.")
+            return []
+
+        # Regex pour extraire "Nom (123)"
+        name_count_regex = re.compile(r"(.*)\((\d+)\)")
+        
+        category_blocks = main_container.find_all('div', {'class': 'accordion-image-grid'})
+        
+        for block in category_blocks:
+            link_tag = block.find('a', {'class': 'rubric-link'})
+            if not link_tag: continue
+
+            relative_url = link_tag.get('href')
+            title_tag = link_tag.find(['h2', 'h3'])
+            if not title_tag or not relative_url: continue
+
+            full_text = title_tag.text.strip().replace('\xa0', ' ')
+            
+            url = ""
+            if relative_url.startswith('//'): url = f"https:{relative_url}"
+            elif relative_url.startswith('/'): url = f"{BASE_URL}{relative_url}"
+            else: url = relative_url
+                
+            category_name = "N/A"
+            item_count = 0
+            
+            match = name_count_regex.search(full_text)
+            if match:
+                category_name = match.group(1).strip()
+                item_count = int(match.group(2))
+            else:
+                category_name = full_text
+            
+            if category_name != "N/A":
+                subcategories_found.append({
+                    "parent_category": parent_category_name,
+                    "category_name": category_name,
+                    "item_count": item_count,
+                    "url": url
+                })
+
+        print(f"   -> {len(subcategories_found)} sous-catégories trouvées.")
+        return subcategories_found
+
+    except requests.exceptions.HTTPError as err:
+        print(f"\n--- ❌ ERREUR HTTP : {err} ---")
+        return []
+    except Exception as e:
+        print(f"\n--- ❌ ERREUR INATTENDUE : {e} ---")
+        return []
+    
+# --- Cellule 2 (CORRIGÉE) ---
+
+def discover_all_subcategories(parent_category_name, hub_url):
+    """
+    Scrappe une page "hub" de catégorie (ex: /mp3-casque-ecouteurs)
+    pour trouver UNIQUEMENT les sous-catégories "families"
+    et ignorer les "accessoires" partagés.
+    
+    Args:
+        parent_category_name (str): Le nom de la catégorie parente (ex: "Télévision").
+        hub_url (str): L'URL de la page "hub" à scraper.
+        
+    Retourne:
+        Une liste de dictionnaires (ta "variable" de sous-catégories).
+    """
+    BASE_URL = "https://www.vandenborre.be"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+    }
+
+    print(f"--- Lancement Découverte Sous-Catégories (Étape 0b) ---")
+    print(f"Scraping de : {hub_url} (pour parent: {parent_category_name})")
+    
+    subcategories_found = []
+    
+    try:
+        session = requests.Session()
+        session.headers.update(headers)
+        response = session.get(hub_url, timeout=15)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # --- CORRECTION DU BUG ICI ---
+        # Cible UNIQUEMENT la section "families"
+        main_container = soup.find('div', {'class': 'rubric-families'})
+
+        if not main_container:
+            print(f"   -> ⚠️ Aucun conteneur 'rubric-families' trouvé sur {hub_url}.")
+            return []
+
+        # Regex pour extraire "Nom (123)"
+        name_count_regex = re.compile(r"(.*)\((\d+)\)")
+        
+        category_blocks = main_container.find_all('div', {'class': 'accordion-image-grid'})
+        
+        for block in category_blocks:
+            link_tag = block.find('a', {'class': 'rubric-link'})
+            if not link_tag: continue
+
+            relative_url = link_tag.get('href')
+            title_tag = link_tag.find(['h2', 'h3'])
+            if not title_tag or not relative_url: continue
+
+            full_text = title_tag.text.strip().replace('\xa0', ' ')
+            
+            url = ""
+            if relative_url.startswith('//'): url = f"https:{relative_url}"
+            elif relative_url.startswith('/'): url = f"{BASE_URL}{relative_url}"
+            else: url = relative_url
+                
+            category_name = "N/A"
+            item_count = 0
+            
+            match = name_count_regex.search(full_text)
+            if match:
+                category_name = match.group(1).strip()
+                item_count = int(match.group(2))
+            else:
+                category_name = full_text
+            
+            if category_name != "N/A":
+                subcategories_found.append({
+                    "parent_category": parent_category_name,
+                    "category_name": category_name,
+                    "item_count": item_count,
+                    "url": url
+                })
+
+        print(f"   -> {len(subcategories_found)} sous-catégories trouvées.")
+        return subcategories_found
+
+    except requests.exceptions.HTTPError as err:
+        print(f"\n--- ❌ ERREUR HTTP : {err} ---")
+        return []
+    except Exception as e:
+        print(f"\n--- ❌ ERREUR INATTENDUE : {e} ---")
+        return []
+    
+    

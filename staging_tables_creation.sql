@@ -63,3 +63,42 @@ CREATE TABLE Staging_Category_Queue (
 );
 GO
 
+USE Projet_Market_Staging;
+GO
+
+/* =======================================================================
+ Table 4 : La File d'Attente des SOUS-Catégories
+ Objectif : Stocker la liste des sous-catégories (celles qui ont 
+            un nombre d'articles) à scraper pour trouver les produits.
+======================================================================= */
+
+IF OBJECT_ID('dbo.Staging_SubCategory_Queue', 'U') IS NOT NULL
+    DROP TABLE dbo.Staging_SubCategory_Queue;
+GO
+
+CREATE TABLE Staging_SubCategory_Queue (
+    SubCategoryQueueID INT IDENTITY(1,1) PRIMARY KEY,
+    
+    -- Clé étrangère vers la table des "thèmes" (Staging_Category_Queue)
+    ParentCategoryQueueID INT NOT NULL, 
+    
+    SubCategoryName NVARCHAR(255) NOT NULL, -- ex: "Casques audio"
+    SubCategoryURL NVARCHAR(1024) NOT NULL,  -- ex: ".../mp3-casque-ecouteurs/casque"
+    ItemCount INT NULL,                      -- ex: 174
+    
+    -- Statut pour le pipeline de PRODUITS
+    -- 'pending' -> On doit scraper cette URL pour trouver les produits
+    -- 'processed' -> Tâche terminée
+    Status NVARCHAR(50) NOT NULL DEFAULT 'pending',
+    
+    DiscoveredAt DATETIME2 DEFAULT GETDATE(),
+    LastAttempt DATETIME2 NULL,
+    
+    -- Crée la liaison formelle entre les deux tables
+    CONSTRAINT FK_SubCategory_ParentCategory 
+        FOREIGN KEY (ParentCategoryQueueID) 
+        REFERENCES Staging_Category_Queue(CategoryQueueID)
+);
+GO
+
+
