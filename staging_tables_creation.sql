@@ -39,3 +39,27 @@ CREATE TABLE Staging_VDB_Product_Page (
 );
 GO
 
+USE Projet_Market_Staging;
+GO
+
+IF OBJECT_ID('dbo.Staging_Category_Queue', 'U') IS NOT NULL
+    DROP TABLE dbo.Staging_Category_Queue;
+GO
+
+CREATE TABLE Staging_Category_Queue (
+    CategoryQueueID INT IDENTITY(1,1) PRIMARY KEY,
+    
+    CategoryName NVARCHAR(255) NOT NULL, -- ex: "Télévision"
+    CategoryURL NVARCHAR(1024) NOT NULL,   -- ex: "https://.../tv-audio/television"
+    
+    -- "Univers" ou "Parent" pour garder la hiérarchie. 
+    -- Pour ce premier niveau, il peut être NULL ou "TV et Audio"
+    ParentCategoryName NVARCHAR(255) NULL, 
+    
+    -- Colonnes de gestion du pipeline
+    Status NVARCHAR(50) NOT NULL DEFAULT 'pending', -- 'pending' (à scraper), 'processed' (scrapé)
+    DiscoveredAt DATETIME2 DEFAULT GETDATE(),
+    LastAttempt DATETIME2 NULL
+);
+GO
+
