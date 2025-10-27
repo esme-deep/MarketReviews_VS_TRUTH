@@ -173,3 +173,18 @@ BEGIN
     PRINT 'Colonne Status ajoutée à Staging_VDB_Product_Page.';
 END
 GO
+
+
+USE Projet_Market_Staging;
+GO
+
+-- Ajoute une colonne pour suivre le chargement vers le DWH
+IF NOT EXISTS (SELECT 1 FROM sys.columns 
+               WHERE Name = N'Status' 
+               AND Object_ID = Object_ID(N'dbo.Staging_Product_Cleansed'))
+BEGIN
+    ALTER TABLE Staging_Product_Cleansed
+    ADD Status NVARCHAR(50) NOT NULL DEFAULT 'pending';
+    PRINT 'Colonne Status ajoutée à Staging_Product_Cleansed.';
+END
+GO
