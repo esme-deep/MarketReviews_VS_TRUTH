@@ -1,4 +1,4 @@
-UPDATE Staging_Category_Queue SET Status = 'pending', LastAttempt = NULL;
+UPDATE Staging_Category_Queue SET Status = 'processed', LastAttempt = NULL;
 
 
 SELECT * FROM Staging_Category_Queue
