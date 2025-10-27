@@ -12,8 +12,11 @@ select sum(ItemCount) from Staging_SubCategory_Queue
 UPDATE Staging_Product_Queue SET Status = 'pending', LastAttempt = NULL WHERE Status = 'failed';
 
 SELECT * FROM dbo.staging_product_cleansed
-WHERE Average_rating is NOT NULL
+WHERE Status = 'pending'
 
 SELECT COUNT(Average_rating) FROM dbo.staging_product_cleansed
+
+
+select count(distinct SKU) from dbo.staging_product_cleansed
 
 

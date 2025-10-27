@@ -174,17 +174,46 @@ BEGIN
 END
 GO
 
-
 USE Projet_Market_Staging;
 GO
 
--- Ajoute une colonne pour suivre le chargement vers le DWH
+PRINT 'Mise à jour de Staging_Product_Cleansed...';
+
+-- 1. Ajoute la colonne Status si elle n'existe pas
 IF NOT EXISTS (SELECT 1 FROM sys.columns 
                WHERE Name = N'Status' 
                AND Object_ID = Object_ID(N'dbo.Staging_Product_Cleansed'))
 BEGIN
     ALTER TABLE Staging_Product_Cleansed
     ADD Status NVARCHAR(50) NOT NULL DEFAULT 'pending';
-    PRINT 'Colonne Status ajoutée à Staging_Product_Cleansed.';
+    PRINT ' -> Colonne "Status" ajoutée.';
 END
 GO
+
+-- 2. Ajoute la colonne ScrapeTimestamp si elle n'existe pas
+IF NOT EXISTS (SELECT 1 FROM sys.columns 
+               WHERE Name = N'ScrapeTimestamp' 
+               AND Object_ID = Object_ID(N'dbo.Staging_Product_Cleansed'))
+BEGIN
+    ALTER TABLE Staging_Product_Cleansed
+    ADD ScrapeTimestamp DATETIME2 NULL;
+    PRINT ' -> Colonne "ScrapeTimestamp" ajoutée.';
+END
+GO
+
+-- 3. Script de Remplissage (Backfill)
+-- Copie les timestamps de la table brute vers la table nettoyée
+PRINT 'Synchronisation des ScrapeTimestamp (cela peut prendre un moment)...';
+UPDATE cleansed
+SET cleansed.ScrapeTimestamp = raw.ScrapeTimestamp
+FROM 
+    Staging_Product_Cleansed AS cleansed
+JOIN 
+    Staging_VDB_Product_Page AS raw ON cleansed.StagingVDBKey_Ref = raw.StagingVDBKey
+WHERE 
+    cleansed.ScrapeTimestamp IS NULL;
+
+PRINT ' ->Table Staging_Product_Cleansed prête pour le DWH.';
+GO
+
+SELECT * FROM Staging_Product_Cleansed
