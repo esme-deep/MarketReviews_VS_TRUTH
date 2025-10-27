@@ -13,3 +13,7 @@ UPDATE Staging_Product_Queue SET Status = 'pending', LastAttempt = NULL WHERE St
 
 SELECT * FROM dbo.staging_product_cleansed
 WHERE Average_rating is NOT NULL
+
+SELECT COUNT(Average_rating) FROM dbo.staging_product_cleansed
+
+
