@@ -21,14 +21,6 @@ def import_all_libraries():
         print("❌ [ÉCHEC] Impossible d'importer pyodbc")
         raise e
 
-    # Test 2: polars
-    try:
-        import polars
-        print(f"✅ [SUCCÈS] polars importé. Version : {polars.__version__}")
-    except ImportError as e:
-        print("❌ [ÉCHEC] Impossible d'importer polars")
-        raise e
-
     # Test 3: python-dotenv (on importe 'dotenv')
     try:
         from dotenv import load_dotenv

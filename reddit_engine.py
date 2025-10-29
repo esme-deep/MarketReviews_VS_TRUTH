@@ -7,12 +7,12 @@ from datetime import datetime
 # --- 1. Configuration & Connexion ---
 # (Tes fonctions de connexion restent inchangées)
 DWH_CONFIG = {
-    'server': r'LAPTOP-VT8FTHG2\DATAENGINEER', 
+    'server': r'ICT-210-02', 
     'database': 'Projet_Market_DWH',
     'driver': '{ODBC Driver 17 for SQL Server}' 
 }
 STAGING_CONFIG = {
-    'server': r'LAPTOP-VT8FTHG2\DATAENGINEER', 
+    'server': r'ICT-210-02', 
     'database': 'Projet_Market_Staging',
     'driver': '{ODBC Driver 17 for SQL Server}' 
 }
@@ -32,7 +32,23 @@ def get_staging_connection():
 def get_products_to_search(dwh_cursor):
     """Récupère la liste des produits (Clé, Nom, Marque) depuis le DWH."""
     print("   -> (E) Extraction des produits depuis Dim_Product...")
-    dwh_cursor.execute("SELECT ProductKey, ProductName, Brand FROM Dim_Product WHERE ProductKey > 476 ")
+    query = """
+        SELECT 
+            p.ProductKey, 
+            p.ProductName, 
+            p.Brand,
+            p.Category
+        FROM 
+            Projet_Market_DWH.dbo.Dim_Product AS p
+        WHERE NOT EXISTS (
+            SELECT 1 
+            FROM Projet_Market_Staging.dbo.Staging_Reddit_Posts AS r
+            WHERE r.ProductKey_Ref = p.ProductKey
+        )
+        ORDER BY
+            p.ProductKey;
+    """
+    dwh_cursor.execute(query)
     products = dwh_cursor.fetchall()
     print(f"   -> {len(products)} produits trouvés à rechercher sur Reddit.")
     return products
@@ -54,12 +70,86 @@ def generate_search_keyword(product_name, brand):
     except Exception as e:
         print(f"    -> ⚠️ Erreur (generate_search_keyword): {e}")
         return f"{brand} {product_name}"
+    
+def get_subreddit_for_category(category_name):
+    """
+    Traduit un nom de catégorie VDB en un nom de subreddit pertinent.
+    """
+    if not category_name:
+        return "all" # Sécurité
+        
+    # Nettoyer le nom de la catégorie (ex: "TV (243)" -> "TV")
+    clean_category = re.sub(r"\(.*\)", "", category_name).strip()
+    
+    # Dictionnaire de Mapping (basé sur ta liste)
+    SUBREDDIT_MAPPING = {
+        'Casque audio': 'headphones',
+        'Écouteurs': 'headphones',
+        'Tous les casques': 'headphones',
+        'Casques TV': 'headphones',
+        'Casques microphone': 'headphones',
+        'Enceinte PC': 'PCSound',
+        'Casques gaming': 'gaming_headsets',
+        
+        'TV OLED': 'OLED_Gaming', # r/OLED_Gaming est très actif
+        'TV': 'Televisions',
+        'TV Petite Taille (-32 pouces)': 'Televisions',
+        
+        'Projecteur': 'projectors',
+        'Projecteurs portables': 'projectors',
+        'Projecteurs Xgimi': 'projectors',
+        'Écran de projection': 'projectors',
 
-def search_reddit_api(search_keyword, subreddit="headphones", limit=25):
+        'Home cinéma': 'hometheater',
+        'Barres de son': 'soundbars',
+        'Ampli home cinéma': 'hometheater',
+        'Ampli hifi': 'hometheater',
+
+        'Radio et Hi-Fi': 'audiophile',
+        'Chaîne Hi-Fi': 'audiophile',
+        'Radios': 'radio',
+        'Radios internet': 'radio',
+        'Radio FM / DAB': 'radio',
+        'Radio-réveil': 'radio',
+        'Autoradio': 'CarAV', # r/CarAV
+        'Radio CD': 'radio',
+
+        'Tourne-disque': 'vinyl',
+        'Accessoires platines disques': 'vinyl',
+        'Lecteur CD': 'audiophile',
+
+        'Enceinte sans fil': 'bluetooth_speakers',
+        'Enceinte Wi-Fi': 'bluetooth_speakers',
+        'Enceinte Bluetooth': 'bluetooth_speakers',
+        'Enceinte de soirée': 'bluetooth_speakers',
+        'Haut-parleur': 'audiophile',
+        
+        'Lecteur multimédia / Streaming': 'streaming',
+        'Lecteurs DVD': 'dvdcollection',
+        'Lecteur DVD portable': 'dvdcollection',
+        'Disques CD / DVD / Blu-ray': 'dvdcollection',
+
+        'Micro pour appareil photo': 'videography',
+        'Télécommande': 'hometheater',
+        'Support TV': 'hometheater',
+        'Meuble TV': 'hometheater',
+        
+        # ...etc.
+    }
+    
+    # Cherche le subreddit, s'il n'est pas trouvé, utilise 'all'
+    target_subreddit = SUBREDDIT_MAPPING.get(clean_category, "all")
+    return target_subreddit
+
+def search_reddit_api(search_keyword, subreddit, limit=25):
     """Appelle l'API de recherche Reddit pour un mot-clé de recherche propre."""
     print(f"   -> (E) Appel API Reddit pour : '{search_keyword}' dans r/{subreddit}")
     url = f"https://www.reddit.com/r/{subreddit}/search.json"
     params = {'q': search_keyword, 'sort': 'new', 'restrict_sr': 'true', 't': 'year', 'limit': limit}
+    # Si le subreddit est 'all' (parce qu'on n'a pas trouvé de mapping),
+    # on ne restreint PAS la recherche au subreddit "all".
+    if subreddit == "all":
+        params['restrict_sr'] = 'false'
     headers = {'User-Agent': 'ProjetDataEngineering-Asmae-v1.0'}
     posts_found = []
     try:
@@ -80,6 +170,11 @@ def search_reddit_api(search_keyword, subreddit="headphones", limit=25):
     except Exception as e:
         print(f"   -> ❌ ERREUR (search_reddit_api) : {e}")
         return []
+    finally:
+        # --- PAUSE DE SÉCURITÉ INTÉGRÉE ---
+        # Garantit que nous respectons la limite de 10 req/min (6s/req)
+        print("   -> Pause de 7 secondes (respect des limites API)...")
+        time.sleep(7)
 
 # --- 3. Fonction de Chargement (MODIFIÉE) ---
 
@@ -134,3 +229,5 @@ def save_raw_posts_to_staging(staging_cursor, posts_to_save, product_key, produc
             
     print(f"   -> {insert_count} nouveaux posts insérés.")
     print(f"   -> {skipped_count} posts ignorés (doublons).")
+
+

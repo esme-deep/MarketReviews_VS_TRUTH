@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y curl gnupg2 apt-transport-https unixodb
 USER airflow
 RUN pip install --no-cache-dir \
     pyodbc \
-    polars \
     python-dotenv \
     requests \
     beautifulsoup4

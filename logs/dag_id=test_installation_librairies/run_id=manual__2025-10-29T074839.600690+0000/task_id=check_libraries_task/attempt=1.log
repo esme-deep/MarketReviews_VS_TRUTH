@@ -1,0 +1,20 @@
+{"timestamp":"2025-10-29T07:48:40.696062","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-29T07:48:40.696800","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T07:48:40.756344Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.756914Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.757556Z","level":"info","event":"Current task name:check_libraries_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.758043Z","level":"info","event":"Dag name:test_installation_librairies","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.758555Z","level":"info","event":"--- Démarrage du test d'importation des librairies ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.758930Z","level":"info","event":"Version de Python utilisée : 3.12.11 (main, Aug 12 2025, 22:47:31) [GCC 12.2.0]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.759382Z","level":"info","event":"Chemin de l'interpréteur : /home/airflow/.local/bin/python","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.760583Z","level":"info","event":"✅ [SUCCÈS] pyodbc importé. Version : 5.2.0","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.780026Z","level":"info","event":"✅ [SUCCÈS] dotenv (python-dotenv) importé.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:40.780553Z","level":"info","event":"✅ [SUCCÈS] requests importé. Version : 2.32.5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.098901Z","level":"info","event":"✅ [SUCCÈS] bs4 (beautifulsoup4) importé.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.099790Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.100686Z","level":"info","event":"--- TEST TERMINÉ ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.101409Z","level":"info","event":"Toutes les librairies ont été importées avec succès !","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.099842","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-29T07:48:41.139043Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.143607Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T07:48:41.144534Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): check_libraries_task>","chan":"stdout","logger":"task"}
