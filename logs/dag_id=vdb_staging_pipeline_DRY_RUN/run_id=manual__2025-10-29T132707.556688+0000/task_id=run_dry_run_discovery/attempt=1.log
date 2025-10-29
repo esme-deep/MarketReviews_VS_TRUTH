@@ -1,0 +1,20 @@
+{"timestamp":"2025-10-29T13:27:08.828738","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-29T13:27:08.829522","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_vdb_staging_DRY_RUN.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T13:27:09.114924Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.115594Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.117243Z","level":"info","event":"Current task name:run_dry_run_discovery","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.117578Z","level":"info","event":"Dag name:vdb_staging_pipeline_DRY_RUN","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.127774Z","level":"info","event":"========================================","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.128242Z","level":"info","event":"--- DÉBUT DU DRY RUN (SIMULATION) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.128629Z","level":"info","event":"--- Cible : Gros Électroménager (https://www.vandenborre.be/fr/gros-electroménager) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.128998Z","level":"info","event":"--- AUCUNE DONNÉE NE SERA ÉCRITE EN BDD ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.129303Z","level":"info","event":"========================================","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.129598Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.129889Z","level":"info","event":"--- Test Étape 0a (discover_all_categories)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.130194Z","level":"info","event":"--- (0a) Scraping de la page Hub : https://www.vandenborre.be/fr/gros-electroménager...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.442668Z","level":"info","event":"   -> ERREUR (discover_all_categories) : 404 Client Error: Not Found for url: https://www.vandenborre.be/fr/gros-electrom%C3%A9nager","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.443708Z","level":"info","event":"   -> 0a : ÉCHEC. Aucun thème trouvé. Arrêt.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.443815","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-29T13:27:09.463103Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.463543Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:27:09.466014Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): run_dry_run_discovery>","chan":"stdout","logger":"task"}

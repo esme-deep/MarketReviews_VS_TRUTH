@@ -1,0 +1,318 @@
+{"timestamp":"2025-10-29T13:29:08.601612","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-29T13:29:08.602385","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_vdb_staging_DRY_RUN.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T13:29:08.817328Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.818199Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.819684Z","level":"info","event":"Current task name:run_dry_run_discovery","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.820197Z","level":"info","event":"Dag name:vdb_staging_pipeline_DRY_RUN","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.831827Z","level":"info","event":"========================================","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.832442Z","level":"info","event":"--- DÉBUT DU DRY RUN (SIMULATION) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.832946Z","level":"info","event":"--- Cible : gros-electro (https://www.vandenborre.be/fr/gros-electro) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.833304Z","level":"info","event":"--- AUCUNE DONNÉE NE SERA ÉCRITE EN BDD ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.833716Z","level":"info","event":"========================================","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.834190Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.834659Z","level":"info","event":"--- Test Étape 0a (discover_all_categories)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:08.835050Z","level":"info","event":"--- (0a) Scraping de la page Hub : https://www.vandenborre.be/fr/gros-electro...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.618307Z","level":"info","event":"   -> 15 thèmes trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.619337Z","level":"info","event":"   -> 0a : SUCCÈS. 15 thèmes trouvés :","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.619851Z","level":"info","event":"[","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.620073Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.620289Z","level":"info","event":"    \"category_name\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.620510Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/menage-habitat/airco-air-pur-chauffage\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.620722Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.620930Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.621140Z","level":"info","event":"    \"category_name\": \"Lave-linge - Sèche-linge\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.621358Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/lave-linge-seche-linge\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.621569Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.621778Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.622067Z","level":"info","event":"    \"category_name\": \"Lave-vaisselle\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.622340Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/lave-vaisselle\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.622633Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.622942Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.623214Z","level":"info","event":"    \"category_name\": \"Frigo - Congélateur\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.623499Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/frigo-congelateur\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.623737Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.623953Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.624164Z","level":"info","event":"    \"category_name\": \"Cave à vin\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.624376Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/cave-a-vin\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.624585Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.624796Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.625007Z","level":"info","event":"    \"category_name\": \"Taque de cuisson\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.625216Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/taque-de-cuisson\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.625434Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.625644Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.625863Z","level":"info","event":"    \"category_name\": \"Cuisinière\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.626110Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/cuisiniere\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.626353Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.626616Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.626867Z","level":"info","event":"    \"category_name\": \"Hotte\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.627104Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/hotte\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.627457Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.627721Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.627940Z","level":"info","event":"    \"category_name\": \"Four encastrable - à vapeur\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.628152Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/four-encastrable-a-vapeur\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.628364Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.628574Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.628782Z","level":"info","event":"    \"category_name\": \"Appareils de cuisson\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.628997Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/cuisine/micro-ondes-rotissoire\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.629208Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.629420Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.629638Z","level":"info","event":"    \"category_name\": \"Encastrable\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.629865Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/encastrable\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.630125Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.630343Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.630554Z","level":"info","event":"    \"category_name\": \"Autres appareils encastrables\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.630763Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/autres-appareils-encastrables\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.630974Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.631181Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.631392Z","level":"info","event":"    \"category_name\": \"Services encastrable\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.631601Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/services-encastrable\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.631808Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.632015Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.632223Z","level":"info","event":"    \"category_name\": \"Vanden Borre Life\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.632431Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/vanden-borre-life\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.632639Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.632847Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.633056Z","level":"info","event":"    \"category_name\": \"Réfrigérateur/Congélateur encastrable\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.633266Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/gros-electro/refrigerateur-congelateur-encastrable\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.633479Z","level":"info","event":"  }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:09.633689Z","level":"info","event":"]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:11.620114Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:11.620635Z","level":"info","event":"--- Test Étape 0b (discover_all_subcategories)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:11.621059Z","level":"info","event":"   -> Test sur le premier thème : 'Climatisation et traitement de l'air'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:11.621397Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/menage-habitat/airco-air-pur-chauffage (Recherche : 'Climatisation et traitement de l'air')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.271109Z","level":"info","event":"   -> 10 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.273358Z","level":"info","event":"   -> 0b : SUCCÈS. 10 sous-catégories trouvées :","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.274551Z","level":"info","event":"[","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.275114Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.275620Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.276068Z","level":"info","event":"    \"category_name\": \"Climatiseurs mobiles\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.276512Z","level":"info","event":"    \"item_count\": 26,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.276995Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/climatiseur-airco\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.277520Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.278099Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.278627Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.279206Z","level":"info","event":"    \"category_name\": \"Rafraîchisseurs d'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.279628Z","level":"info","event":"    \"item_count\": 7,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.280015Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/rafraichisseur-d-air\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.280425Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.280933Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.281269Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.281745Z","level":"info","event":"    \"category_name\": \"Ventilateurs\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.282164Z","level":"info","event":"    \"item_count\": 48,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.282511Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/ventilateur\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.282872Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.283317Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.283847Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.284270Z","level":"info","event":"    \"category_name\": \"Purificateurs d'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.284632Z","level":"info","event":"    \"item_count\": 40,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.284975Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/purificateur-d-air\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.285371Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.285912Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.286314Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.286671Z","level":"info","event":"    \"category_name\": \"Humidificateurs d'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.287123Z","level":"info","event":"    \"item_count\": 38,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.287503Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/humidificateur-d-air\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.287817Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.288138Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.288537Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.289065Z","level":"info","event":"    \"category_name\": \"Déshumidificateurs\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.289506Z","level":"info","event":"    \"item_count\": 24,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.289934Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/deshumidificateur\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.290274Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.290631Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.291050Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.291455Z","level":"info","event":"    \"category_name\": \"Thermostats connectés\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.291986Z","level":"info","event":"    \"item_count\": 5,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.292321Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/maison-connectee/thermostat-connecte-ou-vanne-thermostatique\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.292702Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.293074Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.293533Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.293958Z","level":"info","event":"    \"category_name\": \"Chauffages électrique\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.294397Z","level":"info","event":"    \"item_count\": 60,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.294838Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/chauffage-d-appoint\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.295291Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.295809Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.296200Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.296526Z","level":"info","event":"    \"category_name\": \"Diffuseurs d'huiles essentielles\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.296931Z","level":"info","event":"    \"item_count\": 12,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.297540Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/aromatherapie\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.298046Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.298379Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.298756Z","level":"info","event":"    \"parent_category\": \"Climatisation et traitement de l'air\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.299087Z","level":"info","event":"    \"category_name\": \"Couvertures chauffantes\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.299421Z","level":"info","event":"    \"item_count\": 19,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.299821Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/airco-air-pur-chauffage/couverture-chauffante\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.300153Z","level":"info","event":"  }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:12.300490Z","level":"info","event":"]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:14.274753Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:14.275364Z","level":"info","event":"--- Test Étape 1 (discover_all_products)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:14.276032Z","level":"info","event":"   -> Test sur la première sous-catégorie : 'Climatiseurs mobiles'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:14.301731Z","level":"info","event":"--- (1) Scraping de 'Climatiseurs mobiles' (Objectif: 10 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.364003Z","level":"info","event":"   -> 10 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.364940Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.380698Z","level":"info","event":"      -> 10 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.381316Z","level":"info","event":"   -> Scraping terminé. 10 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.382923Z","level":"info","event":"   -> 1 : SUCCÈS. 10 produits trouvés (limite 10) :","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.384098Z","level":"info","event":"[","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.384691Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.385131Z","level":"info","event":"    \"sku\": \"7684428\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.385540Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/domo-do10161\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.386083Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.386530Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.386973Z","level":"info","event":"    \"sku\": \"8355339\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.387433Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/delonghi-pinguino-pac-n77-eco\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.387914Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.388416Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.388948Z","level":"info","event":"    \"sku\": \"8117713\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.389440Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/aerian-aac2300\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.389903Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.390329Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.390815Z","level":"info","event":"    \"sku\": \"7961626\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.391343Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/rowenta-rwac9000c\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.391740Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.392091Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.392476Z","level":"info","event":"    \"sku\": \"8286329\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.392936Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/rowenta-rwac1900c\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.393389Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.393895Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.394277Z","level":"info","event":"    \"sku\": \"7665806\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.394624Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/domo-do1034a\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.394958Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.395279Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.395592Z","level":"info","event":"    \"sku\": \"7666411\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.395954Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/whirlpool-pacf212hp-b\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.396561Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.397043Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.397491Z","level":"info","event":"    \"sku\": \"7833385\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.397860Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/duux-north-smart-18000-btu-dxma12\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.398264Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.398717Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.399180Z","level":"info","event":"    \"sku\": \"7772688\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.399551Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/delonghi-pinguino-pac-ex93-extreme\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.399921Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.400378Z","level":"info","event":"  {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.400861Z","level":"info","event":"    \"sku\": \"7664346\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.401223Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/whirlpool-pacf212hp\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.401550Z","level":"info","event":"  }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:15.401932Z","level":"info","event":"]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:17.384276Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:17.389418Z","level":"info","event":"--- Test Étape 2 (scrape_product_page)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:17.390859Z","level":"info","event":"   -> Test sur le premier produit : SKU 7684428","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:17.391690Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/climatiseur-airco/domo-do10161...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.211822Z","level":"info","event":"   -> 2 : SUCCÈS. JSON-LD brut trouvé :","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.212469Z","level":"info","event":"{","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.212893Z","level":"info","event":"  \"@context\": \"https://schema.org/\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.213421Z","level":"info","event":"  \"@type\": \"Product\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.213777Z","level":"info","event":"  \"category\": \"Climatiseur mobile\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.214161Z","level":"info","event":"  \"manufacturer\": \"DOMO\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.214494Z","level":"info","event":"  \"name\": \"DOMO DO10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.214828Z","level":"info","event":"  \"mainEntityOfPage\": \"https://www.vandenborre.be/fr/climatiseur-airco/domo-do10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.215187Z","level":"info","event":"  \"brand\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.215676Z","level":"info","event":"    \"@type\": \"Brand\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.215973Z","level":"info","event":"    \"name\": \"DOMO\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.216326Z","level":"info","event":"  },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.216677Z","level":"info","event":"  \"sku\": \"7684428\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.216999Z","level":"info","event":"  \"gtin13\": \"5411397164780\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.217301Z","level":"info","event":"  \"description\": \"Climatiseur / Airco - DOMO - DO10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.217598Z","level":"info","event":"  \"model\": \"DO10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.217908Z","level":"info","event":"  \"image\": [","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.218200Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_1.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.218485Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_2.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.218767Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_3.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.219060Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_4.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.219342Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_5.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.219632Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_6.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.219920Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_7.jpg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.220230Z","level":"info","event":"    \"https://image.vandenborre.be/WEB/images/products/superzoom/domo_do10161_7684428_8.jpg\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.220536Z","level":"info","event":"  ],","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.220831Z","level":"info","event":"  \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/domo-do10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.221119Z","level":"info","event":"  \"height\": \"71 cm\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.221413Z","level":"info","event":"  \"width\": \"34.5 cm\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.221708Z","level":"info","event":"  \"depth\": \"35.5 cm\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.222004Z","level":"info","event":"  \"weight\": \" kg\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.222290Z","level":"info","event":"  \"offers\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.222577Z","level":"info","event":"    \"@type\": \"Offer\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.222858Z","level":"info","event":"    \"price\": \"349\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.223141Z","level":"info","event":"    \"priceCurrency\": \"EUR\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.223433Z","level":"info","event":"    \"priceValidUntil\": \"2025-10-29\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.223720Z","level":"info","event":"    \"url\": \"https://www.vandenborre.be/fr/climatiseur-airco/domo-do10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.224008Z","level":"info","event":"    \"availability\": \"https://schema.org/InStock\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.224289Z","level":"info","event":"    \"availableDeliveryMethod\": [","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.224571Z","level":"info","event":"      {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.224858Z","level":"info","event":"        \"@type\": \"deliveryMethod\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.225140Z","level":"info","event":"        \"name\": \"https://purl.org/goodrelations/v1#DeliveryModeOwnFleet\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.225431Z","level":"info","event":"      },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.225717Z","level":"info","event":"      {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.226021Z","level":"info","event":"        \"@type\": \"deliveryMethod\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.226342Z","level":"info","event":"        \"name\": \"https://purl.org/goodrelations/v1#DeliveryModePickUp\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.226670Z","level":"info","event":"      }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.226973Z","level":"info","event":"    ],","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.227261Z","level":"info","event":"    \"warranty\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.227533Z","level":"info","event":"      \"@type\": \"warrantyPromise\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.227825Z","level":"info","event":"      \"durationOfWarranty\": \"2 ANN\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.228113Z","level":"info","event":"    },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.228397Z","level":"info","event":"    \"seller\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.228681Z","level":"info","event":"      \"@type\": \"Organization\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.229072Z","level":"info","event":"      \"name\": \"Vanden Borre\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.229562Z","level":"info","event":"    },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.229974Z","level":"info","event":"    \"hasMerchantReturnPolicy\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.230299Z","level":"info","event":"      \"@type\": \"MerchantReturnPolicy\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.230627Z","level":"info","event":"      \"applicableCountry\": \"BE\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.231061Z","level":"info","event":"      \"returnPolicyCountry\": \"BE\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.231536Z","level":"info","event":"      \"returnPolicyCategory\": \"https://schema.org/MerchantReturnFiniteReturnWindow\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.232136Z","level":"info","event":"      \"merchantReturnDays\": \"14\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.232544Z","level":"info","event":"      \"returnMethod\": \"ReturnInStore\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.232882Z","level":"info","event":"      \"returnFees\": \"FreeReturn\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.233206Z","level":"info","event":"      \"refundType\": \"https://schema.org/FullRefund\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.233514Z","level":"info","event":"      \"url\": \"https://www.vandenborre.be/fr/info/retourner-un-produit\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.233865Z","level":"info","event":"    },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.234170Z","level":"info","event":"    \"shippingDetails\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.234488Z","level":"info","event":"      \"@type\": \"OfferShippingDetails\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.234792Z","level":"info","event":"      \"deliveryTime\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.235081Z","level":"info","event":"        \"@type\": \"ShippingDeliveryTime\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.235370Z","level":"info","event":"        \"handlingTime\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.235653Z","level":"info","event":"          \"@type\": \"QuantitativeValue\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.235935Z","level":"info","event":"          \"minValue\": \"1\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.236223Z","level":"info","event":"          \"maxValue\": \"2\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.236512Z","level":"info","event":"          \"unitCode\": \"DAY\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.236795Z","level":"info","event":"        },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.237082Z","level":"info","event":"        \"transitTime\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.237378Z","level":"info","event":"          \"@type\": \"QuantitativeValue\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.237690Z","level":"info","event":"          \"minValue\": \"1\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.238004Z","level":"info","event":"          \"maxValue\": \"2\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.238302Z","level":"info","event":"          \"unitCode\": \"DAY\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.238592Z","level":"info","event":"        }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.238883Z","level":"info","event":"      },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.239186Z","level":"info","event":"      \"shippingDestination\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.239474Z","level":"info","event":"        \"@type\": \"DefinedRegion\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.239762Z","level":"info","event":"        \"addressCountry\": \"BE\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.240059Z","level":"info","event":"      },","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.240348Z","level":"info","event":"      \"shippingRate\": {","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.240630Z","level":"info","event":"        \"@type\": \"MonetaryAmount\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.240909Z","level":"info","event":"        \"currency\": \"EUR\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.241192Z","level":"info","event":"        \"value\": \"0\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.241473Z","level":"info","event":"      }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.241757Z","level":"info","event":"    }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.242092Z","level":"info","event":"  }","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.242401Z","level":"info","event":"}","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.242690Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.243052Z","level":"info","event":"--- Test Étape 3 (parse_and_clean_json)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.243394Z","level":"info","event":"   -> 3 : SUCCÈS. Données nettoyées :","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.243779Z","level":"info","event":"{","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.244074Z","level":"info","event":"  \"sku\": \"7684428\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.244365Z","level":"info","event":"  \"name\": \"DOMO DO10161\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.244651Z","level":"info","event":"  \"brand\": \"DOMO\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.244940Z","level":"info","event":"  \"category\": \"Climatiseur mobile\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.245235Z","level":"info","event":"  \"price\": 349.0,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.245516Z","level":"info","event":"  \"availability\": \"https://schema.org/InStock\",","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.245846Z","level":"info","event":"  \"rating\": null,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.246167Z","level":"info","event":"  \"review_count\": null","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.246495Z","level":"info","event":"}","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.246867Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.247196Z","level":"info","event":"========================================","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.247507Z","level":"info","event":"--- DRY RUN TERMINÉ AVEC SUCCÈS ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.247844Z","level":"info","event":"========================================","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.212625","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-29T13:29:18.265953Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.266370Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:29:18.268170Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): run_dry_run_discovery>","chan":"stdout","logger":"task"}

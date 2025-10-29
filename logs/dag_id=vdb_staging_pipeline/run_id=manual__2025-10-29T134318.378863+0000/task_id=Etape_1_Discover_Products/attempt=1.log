@@ -1,0 +1,1186 @@
+{"timestamp":"2025-10-29T13:44:24.368739","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-29T13:44:24.369370","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_vdb_staging.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T13:44:24.556410Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.557116Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.558814Z","level":"info","event":"Current task name:Etape_1_Discover_Products","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.559150Z","level":"info","event":"Dag name:vdb_staging_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.568712Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.569045Z","level":"info","event":"--- DÉBUT : Étape 1 (Découverte Produits) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.604994Z","level":"info","event":"   -> 79 sous-catégories à traiter. Lancement boucle...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.605536Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.605907Z","level":"info","event":"--- Traitement Sous-Catégorie 75 : 'Climatiseurs mobiles' (26 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:24.606311Z","level":"info","event":"--- (1) Scraping de 'Climatiseurs mobiles' (Objectif: 26 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:25.839353Z","level":"info","event":"   -> 26 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:25.839903Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:25.854433Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:27.854585Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:28.460198Z","level":"info","event":"      -> 2 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:28.460775Z","level":"info","event":"   -> Scraping terminé. 26 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:28.485055Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:28.592213Z","level":"info","event":"   -> 26 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:28.592696Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:28.597865Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:31.598047Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:31.598542Z","level":"info","event":"--- Traitement Sous-Catégorie 76 : 'Rafraîchisseurs d'air' (7 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:31.611259Z","level":"info","event":"--- (1) Scraping de 'Rafraîchisseurs d'air' (Objectif: 7 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.229613Z","level":"info","event":"   -> 7 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.230000Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.237703Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.238208Z","level":"info","event":"   -> Scraping terminé. 7 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.262110Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.289406Z","level":"info","event":"   -> 7 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.289828Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:32.293910Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:35.294142Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:35.294662Z","level":"info","event":"--- Traitement Sous-Catégorie 77 : 'Ventilateurs' (48 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:35.295170Z","level":"info","event":"--- (1) Scraping de 'Ventilateurs' (Objectif: 48 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:36.438315Z","level":"info","event":"   -> 48 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:36.438951Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:36.451219Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:41.785599Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:42.812596Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:42.813358Z","level":"info","event":"   -> Scraping terminé. 48 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:42.841907Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:43.049304Z","level":"info","event":"   -> 41 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:43.049885Z","level":"info","event":"   -> 7 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:43.054251Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:46.054431Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:46.055015Z","level":"info","event":"--- Traitement Sous-Catégorie 78 : 'Purificateurs d'air' (40 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:46.055520Z","level":"info","event":"--- (1) Scraping de 'Purificateurs d'air' (Objectif: 40 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:47.311846Z","level":"info","event":"   -> 40 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:47.312371Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:47.328366Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:49.325448Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:50.185886Z","level":"info","event":"      -> 16 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:50.186415Z","level":"info","event":"   -> Scraping terminé. 40 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:50.213172Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:50.349981Z","level":"info","event":"   -> 39 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:50.350427Z","level":"info","event":"   -> 1 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:50.353528Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:53.353810Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:53.354348Z","level":"info","event":"--- Traitement Sous-Catégorie 79 : 'Humidificateurs d'air' (38 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:53.369332Z","level":"info","event":"--- (1) Scraping de 'Humidificateurs d'air' (Objectif: 38 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:54.779111Z","level":"info","event":"   -> 38 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:54.779619Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:54.792202Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:56.792382Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:57.589311Z","level":"info","event":"      -> 14 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:57.589859Z","level":"info","event":"   -> Scraping terminé. 38 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:57.611904Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:57.746515Z","level":"info","event":"   -> 27 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:57.746999Z","level":"info","event":"   -> 11 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:44:57.750903Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:00.751091Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:00.751628Z","level":"info","event":"--- Traitement Sous-Catégorie 80 : 'Déshumidificateurs' (24 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:00.765149Z","level":"info","event":"--- (1) Scraping de 'Déshumidificateurs' (Objectif: 24 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.868333Z","level":"info","event":"   -> 24 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.868831Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.881378Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.881872Z","level":"info","event":"   -> Scraping terminé. 24 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.906760Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.972627Z","level":"info","event":"   -> 24 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.973148Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:01.976467Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:04.976641Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:04.977853Z","level":"info","event":"--- Traitement Sous-Catégorie 81 : 'Thermostats connectés' (5 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:04.978383Z","level":"info","event":"--- (1) Scraping de 'Thermostats connectés' (Objectif: 5 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.541870Z","level":"info","event":"   -> 5 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.542365Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.548837Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.549334Z","level":"info","event":"   -> Scraping terminé. 5 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.570323Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.590349Z","level":"info","event":"   -> 5 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.590839Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:05.593733Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:08.593950Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:08.594421Z","level":"info","event":"--- Traitement Sous-Catégorie 82 : 'Chauffages électrique' (60 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:08.607121Z","level":"info","event":"--- (1) Scraping de 'Chauffages électrique' (Objectif: 60 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:09.500897Z","level":"info","event":"   -> 60 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:09.501434Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:09.514076Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:11.514239Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:16.325181Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:18.325350Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:19.231591Z","level":"info","event":"      -> 12 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:19.232212Z","level":"info","event":"   -> Scraping terminé. 60 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:19.262143Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:19.506602Z","level":"info","event":"   -> 59 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:19.507406Z","level":"info","event":"   -> 1 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:19.512156Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:22.512299Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:22.512802Z","level":"info","event":"--- Traitement Sous-Catégorie 83 : 'Diffuseurs d'huiles essentielles' (12 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:22.513154Z","level":"info","event":"--- (1) Scraping de 'Diffuseurs d'huiles essentielles' (Objectif: 12 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.266396Z","level":"info","event":"   -> 12 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.266894Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.275522Z","level":"info","event":"      -> 12 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.276016Z","level":"info","event":"   -> Scraping terminé. 12 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.299108Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.339737Z","level":"info","event":"   -> 10 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.340436Z","level":"info","event":"   -> 2 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:23.357048Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:26.344905Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:26.345449Z","level":"info","event":"--- Traitement Sous-Catégorie 84 : 'Couvertures chauffantes' (19 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:26.345831Z","level":"info","event":"--- (1) Scraping de 'Couvertures chauffantes' (Objectif: 19 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.492450Z","level":"info","event":"   -> 19 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.492997Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.503157Z","level":"info","event":"      -> 19 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.503678Z","level":"info","event":"   -> Scraping terminé. 19 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.524950Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.578346Z","level":"info","event":"   -> 19 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.578837Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:27.582205Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:30.582443Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:30.583645Z","level":"info","event":"--- Traitement Sous-Catégorie 85 : 'Machines à laver' (152 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:30.597307Z","level":"info","event":"--- (1) Scraping de 'Machines à laver' (Objectif: 152 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:31.694603Z","level":"info","event":"   -> 152 produits sur 7 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:31.695118Z","level":"info","event":"   -> Scraping de la Page 1/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:31.708995Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:33.709284Z","level":"info","event":"   -> Scraping de la Page 2/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:35.008116Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:37.008258Z","level":"info","event":"   -> Scraping de la Page 3/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:38.186929Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:40.187075Z","level":"info","event":"   -> Scraping de la Page 4/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:41.678094Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:43.678475Z","level":"info","event":"   -> Scraping de la Page 5/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:48.306117Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:50.306230Z","level":"info","event":"   -> Scraping de la Page 6/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:51.367409Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:53.367658Z","level":"info","event":"   -> Scraping de la Page 7/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:54.215767Z","level":"info","event":"      -> 8 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:54.216268Z","level":"info","event":"   -> Scraping terminé. 152 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:54.241730Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:54.797764Z","level":"info","event":"   -> 152 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:54.798276Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:54.802892Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:57.803115Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:57.803778Z","level":"info","event":"--- Traitement Sous-Catégorie 86 : 'Machines à laver hublot' (115 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:57.804212Z","level":"info","event":"--- (1) Scraping de 'Machines à laver hublot' (Objectif: 115 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:59.241241Z","level":"info","event":"   -> 115 produits sur 5 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:59.241830Z","level":"info","event":"   -> Scraping de la Page 1/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:45:59.257317Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:01.257549Z","level":"info","event":"   -> Scraping de la Page 2/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:02.297528Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:04.297590Z","level":"info","event":"   -> Scraping de la Page 3/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:05.490095Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:07.490229Z","level":"info","event":"   -> Scraping de la Page 4/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:08.507994Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:10.508315Z","level":"info","event":"   -> Scraping de la Page 5/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:11.707854Z","level":"info","event":"      -> 19 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:11.708376Z","level":"info","event":"   -> Scraping terminé. 115 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:11.732620Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:12.060079Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:12.060609Z","level":"info","event":"   -> 115 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:12.064268Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.064484Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.064927Z","level":"info","event":"--- Traitement Sous-Catégorie 87 : 'Lave-linge top' (8 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.065360Z","level":"info","event":"--- (1) Scraping de 'Lave-linge top' (Objectif: 8 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.765339Z","level":"info","event":"   -> 8 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.769588Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.782942Z","level":"info","event":"      -> 8 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.783390Z","level":"info","event":"   -> Scraping terminé. 8 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.797508Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.831847Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.832494Z","level":"info","event":"   -> 8 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:15.839393Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:22.173328Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:22.174396Z","level":"info","event":"--- Traitement Sous-Catégorie 88 : 'Lave-linge séchants' (29 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:22.174923Z","level":"info","event":"--- (1) Scraping de 'Lave-linge séchants' (Objectif: 29 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:23.157283Z","level":"info","event":"   -> 29 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:23.157823Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:23.171268Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:25.171498Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:26.025209Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:26.025993Z","level":"info","event":"   -> Scraping terminé. 29 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:26.056635Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:26.200332Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:26.200909Z","level":"info","event":"   -> 29 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:26.205029Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:29.205209Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:29.205820Z","level":"info","event":"--- Traitement Sous-Catégorie 89 : 'Lave-linge et lave-linge séchants encastrables' (5 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:29.206454Z","level":"info","event":"--- (1) Scraping de 'Lave-linge et lave-linge séchants encastrables' (Objectif: 5 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.186586Z","level":"info","event":"   -> 5 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.187060Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.199935Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.200534Z","level":"info","event":"   -> Scraping terminé. 5 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.223027Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.242928Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.243502Z","level":"info","event":"   -> 5 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:30.246987Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.247149Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.247827Z","level":"info","event":"--- Traitement Sous-Catégorie 90 : 'Lave-linge encastrables' (4 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.248272Z","level":"info","event":"--- (1) Scraping de 'Lave-linge encastrables' (Objectif: 4 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.853225Z","level":"info","event":"   -> 4 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.853640Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.861481Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.861945Z","level":"info","event":"   -> Scraping terminé. 4 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.885551Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.898133Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.898649Z","level":"info","event":"   -> 4 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:33.903353Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:36.903520Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:36.904038Z","level":"info","event":"--- Traitement Sous-Catégorie 91 : 'Lave-linge professionnels' (2 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:36.918129Z","level":"info","event":"--- (1) Scraping de 'Lave-linge professionnels' (Objectif: 2 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.446293Z","level":"info","event":"   -> 2 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.446760Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.452583Z","level":"info","event":"      -> 2 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.452947Z","level":"info","event":"   -> Scraping terminé. 2 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.474435Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.479763Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.480187Z","level":"info","event":"   -> 2 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:37.483142Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:40.483381Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:40.483920Z","level":"info","event":"--- Traitement Sous-Catégorie 92 : 'Sèche-linge' (71 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:40.484320Z","level":"info","event":"--- (1) Scraping de 'Sèche-linge' (Objectif: 71 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:41.664516Z","level":"info","event":"   -> 71 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:41.665033Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:41.678705Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:43.678893Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:44.695127Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:46.695214Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:47.836781Z","level":"info","event":"      -> 23 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:47.837281Z","level":"info","event":"   -> Scraping terminé. 71 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:47.859280Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:48.035131Z","level":"info","event":"   -> 71 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:48.035696Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:48.038818Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:51.039129Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:51.039661Z","level":"info","event":"--- Traitement Sous-Catégorie 93 : 'Lave-linge séchants encastrables' (2 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:51.053729Z","level":"info","event":"--- (1) Scraping de 'Lave-linge séchants encastrables' (Objectif: 2 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:52.263816Z","level":"info","event":"   -> 2 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:52.264263Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:52.271034Z","level":"info","event":"      -> 2 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:52.271417Z","level":"info","event":"   -> Scraping terminé. 2 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:54.982444Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:54.988033Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:54.988605Z","level":"info","event":"   -> 2 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:54.992395Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:57.992609Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:57.993343Z","level":"info","event":"--- Traitement Sous-Catégorie 94 : 'Sèche-linge professionnels' (1 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:57.994164Z","level":"info","event":"--- (1) Scraping de 'Sèche-linge professionnels' (Objectif: 1 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.494768Z","level":"info","event":"   -> 1 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.495201Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.501001Z","level":"info","event":"      -> 1 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.501571Z","level":"info","event":"   -> Scraping terminé. 1 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.527121Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.531826Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.532524Z","level":"info","event":"   -> 1 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:46:58.537589Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:01.537806Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:01.538458Z","level":"info","event":"--- Traitement Sous-Catégorie 95 : 'AirDressers' (1 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:01.562270Z","level":"info","event":"--- (1) Scraping de 'AirDressers' (Objectif: 1 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.075025Z","level":"info","event":"   -> 1 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.075475Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.081120Z","level":"info","event":"      -> 1 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.081616Z","level":"info","event":"   -> Scraping terminé. 1 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.104919Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.108323Z","level":"info","event":"   -> 1 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.112582Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:02.113161Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.112853Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.113349Z","level":"info","event":"--- Traitement Sous-Catégorie 96 : 'Essoreuses' (1 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.113697Z","level":"info","event":"--- (1) Scraping de 'Essoreuses' (Objectif: 1 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.938411Z","level":"info","event":"   -> 1 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.938978Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.945088Z","level":"info","event":"      -> 1 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.945616Z","level":"info","event":"   -> Scraping terminé. 1 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.967689Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.973309Z","level":"info","event":"   -> 1 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.973891Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:05.976965Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:08.977152Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:08.977731Z","level":"info","event":"--- Traitement Sous-Catégorie 97 : 'Lave-vaisselle' (220 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:08.993161Z","level":"info","event":"--- (1) Scraping de 'Lave-vaisselle' (Objectif: 220 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:10.065028Z","level":"info","event":"   -> 220 produits sur 10 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:10.065577Z","level":"info","event":"   -> Scraping de la Page 1/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:10.080211Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:12.080352Z","level":"info","event":"   -> Scraping de la Page 2/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:13.339741Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:15.339868Z","level":"info","event":"   -> Scraping de la Page 3/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:16.441241Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:18.441428Z","level":"info","event":"   -> Scraping de la Page 4/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:19.739429Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:21.739597Z","level":"info","event":"   -> Scraping de la Page 5/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:22.997394Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:28.331700Z","level":"info","event":"   -> Scraping de la Page 6/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:29.415162Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:31.415381Z","level":"info","event":"   -> Scraping de la Page 7/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:32.849370Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:34.849438Z","level":"info","event":"   -> Scraping de la Page 8/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:35.917899Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:37.918105Z","level":"info","event":"   -> Scraping de la Page 9/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:38.978561Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:40.978865Z","level":"info","event":"   -> Scraping de la Page 10/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:41.998096Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:41.998641Z","level":"info","event":"   -> Scraping terminé. 220 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:42.020556Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:42.584938Z","level":"info","event":"   -> 220 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:42.585542Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:42.589909Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:45.590094Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:45.590603Z","level":"info","event":"--- Traitement Sous-Catégorie 98 : 'Lave-vaisselle encastrables' (156 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:45.604719Z","level":"info","event":"--- (1) Scraping de 'Lave-vaisselle encastrables' (Objectif: 156 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:46.725655Z","level":"info","event":"   -> 156 produits sur 7 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:46.726215Z","level":"info","event":"   -> Scraping de la Page 1/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:46.741006Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:48.741145Z","level":"info","event":"   -> Scraping de la Page 2/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:50.147197Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:52.147377Z","level":"info","event":"   -> Scraping de la Page 3/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:53.500717Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:55.500867Z","level":"info","event":"   -> Scraping de la Page 4/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:47:56.556829Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:01.891302Z","level":"info","event":"   -> Scraping de la Page 5/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:03.229152Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:05.229595Z","level":"info","event":"   -> Scraping de la Page 6/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:06.382552Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:08.382729Z","level":"info","event":"   -> Scraping de la Page 7/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:09.207050Z","level":"info","event":"      -> 12 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:09.207498Z","level":"info","event":"   -> Scraping terminé. 156 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:09.231685Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:09.798094Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:09.798788Z","level":"info","event":"   -> 156 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:09.803401Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:12.803568Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:12.804672Z","level":"info","event":"--- Traitement Sous-Catégorie 99 : 'Lave-vaisselle pose libre' (64 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:12.805119Z","level":"info","event":"--- (1) Scraping de 'Lave-vaisselle pose libre' (Objectif: 64 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:14.136430Z","level":"info","event":"   -> 64 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:14.136926Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:14.152783Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:16.152966Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:17.166787Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:19.166895Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:20.218347Z","level":"info","event":"      -> 16 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:20.218853Z","level":"info","event":"   -> Scraping terminé. 64 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:20.240489Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:20.394872Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:20.395355Z","level":"info","event":"   -> 64 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:20.398753Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:23.399070Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:23.399959Z","level":"info","event":"--- Traitement Sous-Catégorie 100 : 'Frigos pose libre' (460 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:23.400667Z","level":"info","event":"--- (1) Scraping de 'Frigos pose libre' (Objectif: 460 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:24.989379Z","level":"info","event":"   -> 460 produits sur 20 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:24.989807Z","level":"info","event":"   -> Scraping de la Page 1/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:25.006119Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:27.006377Z","level":"info","event":"   -> Scraping de la Page 2/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:28.388174Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:30.388414Z","level":"info","event":"   -> Scraping de la Page 3/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:31.498006Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:36.832376Z","level":"info","event":"   -> Scraping de la Page 4/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:37.930664Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:39.930901Z","level":"info","event":"   -> Scraping de la Page 5/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:41.325940Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:43.326046Z","level":"info","event":"   -> Scraping de la Page 6/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:44.457165Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:46.457304Z","level":"info","event":"   -> Scraping de la Page 7/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:47.774734Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:49.774937Z","level":"info","event":"   -> Scraping de la Page 8/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:50.846350Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:52.846499Z","level":"info","event":"   -> Scraping de la Page 9/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:54.075690Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:56.075824Z","level":"info","event":"   -> Scraping de la Page 10/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:57.444003Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:48:59.444191Z","level":"info","event":"   -> Scraping de la Page 11/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:00.510202Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:02.510409Z","level":"info","event":"   -> Scraping de la Page 12/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:03.565070Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:08.899483Z","level":"info","event":"   -> Scraping de la Page 13/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:10.380306Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:12.380530Z","level":"info","event":"   -> Scraping de la Page 14/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:13.554233Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:15.554436Z","level":"info","event":"   -> Scraping de la Page 15/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:16.899718Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:18.899861Z","level":"info","event":"   -> Scraping de la Page 16/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:19.924674Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:21.924852Z","level":"info","event":"   -> Scraping de la Page 17/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:22.983436Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:24.983599Z","level":"info","event":"   -> Scraping de la Page 18/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:26.337595Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:28.337772Z","level":"info","event":"   -> Scraping de la Page 19/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:29.376131Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:31.376323Z","level":"info","event":"   -> Scraping de la Page 20/20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:32.089078Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:32.089622Z","level":"info","event":"   -> Scraping terminé. 460 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:32.111916Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:33.539470Z","level":"info","event":"   -> 460 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:33.539956Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:33.554311Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:36.543559Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:36.544100Z","level":"info","event":"--- Traitement Sous-Catégorie 101 : 'Frigos 1 porte' (148 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:36.544533Z","level":"info","event":"--- (1) Scraping de 'Frigos 1 porte' (Objectif: 148 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:37.831737Z","level":"info","event":"   -> 148 produits sur 7 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:37.832218Z","level":"info","event":"   -> Scraping de la Page 1/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:37.846289Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:43.180772Z","level":"info","event":"   -> Scraping de la Page 2/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:44.169151Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:46.169392Z","level":"info","event":"   -> Scraping de la Page 3/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:47.458120Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:49.458293Z","level":"info","event":"   -> Scraping de la Page 4/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:50.417106Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:52.417315Z","level":"info","event":"   -> Scraping de la Page 5/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:53.395033Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:55.395165Z","level":"info","event":"   -> Scraping de la Page 6/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:56.837451Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:58.837558Z","level":"info","event":"   -> Scraping de la Page 7/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:59.491381Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:59.491922Z","level":"info","event":"   -> Scraping terminé. 148 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:59.514357Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:59.951055Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:59.951601Z","level":"info","event":"   -> 148 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:49:59.954828Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:02.954961Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:02.955469Z","level":"info","event":"--- Traitement Sous-Catégorie 102 : 'Frigos - congélateurs' (229 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:02.969496Z","level":"info","event":"--- (1) Scraping de 'Frigos - congélateurs' (Objectif: 229 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:04.047663Z","level":"info","event":"   -> 229 produits sur 10 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:04.048114Z","level":"info","event":"   -> Scraping de la Page 1/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:04.061773Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:06.062085Z","level":"info","event":"   -> Scraping de la Page 2/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:07.391167Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:09.391344Z","level":"info","event":"   -> Scraping de la Page 3/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:10.399702Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:15.734209Z","level":"info","event":"   -> Scraping de la Page 4/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:17.101367Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:19.101549Z","level":"info","event":"   -> Scraping de la Page 5/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:20.236328Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:22.236487Z","level":"info","event":"   -> Scraping de la Page 6/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:23.308539Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:25.308637Z","level":"info","event":"   -> Scraping de la Page 7/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:26.735504Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:28.735644Z","level":"info","event":"   -> Scraping de la Page 8/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:29.785335Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:31.785509Z","level":"info","event":"   -> Scraping de la Page 9/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:33.107867Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:35.108022Z","level":"info","event":"   -> Scraping de la Page 10/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:35.929397Z","level":"info","event":"      -> 13 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:35.929901Z","level":"info","event":"   -> Scraping terminé. 229 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:35.951979Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:36.609204Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:36.609720Z","level":"info","event":"   -> 229 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:36.613979Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:39.614128Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:39.614675Z","level":"info","event":"--- Traitement Sous-Catégorie 103 : 'Frigos américains' (72 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:39.628598Z","level":"info","event":"--- (1) Scraping de 'Frigos américains' (Objectif: 72 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:40.625654Z","level":"info","event":"   -> 72 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:40.626157Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:40.639182Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:42.639448Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:44.082232Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:49.416439Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:50.429217Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:50.429780Z","level":"info","event":"   -> Scraping terminé. 72 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:50.456131Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:50.713148Z","level":"info","event":"   -> 1 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:50.713664Z","level":"info","event":"   -> 71 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:50.717506Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:53.717647Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:53.718171Z","level":"info","event":"--- Traitement Sous-Catégorie 104 : 'Frigos de table' (52 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:53.718591Z","level":"info","event":"--- (1) Scraping de 'Frigos de table' (Objectif: 52 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:54.696475Z","level":"info","event":"   -> 52 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:54.697018Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:54.711937Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:56.712122Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:57.909507Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:50:59.909704Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:00.538889Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:00.539384Z","level":"info","event":"   -> Scraping terminé. 52 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:00.561894Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:00.707095Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:00.707555Z","level":"info","event":"   -> 52 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:00.710716Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:03.710884Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:03.711398Z","level":"info","event":"--- Traitement Sous-Catégorie 105 : 'Mini frigos' (12 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:03.711826Z","level":"info","event":"--- (1) Scraping de 'Mini frigos' (Objectif: 12 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.594130Z","level":"info","event":"   -> 12 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.594543Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.604232Z","level":"info","event":"      -> 12 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.604625Z","level":"info","event":"   -> Scraping terminé. 12 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.627653Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.666194Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.666659Z","level":"info","event":"   -> 12 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:04.669750Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:07.669936Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:07.670428Z","level":"info","event":"--- Traitement Sous-Catégorie 106 : 'Frigos encastrables' (221 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:07.684157Z","level":"info","event":"--- (1) Scraping de 'Frigos encastrables' (Objectif: 221 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:08.991459Z","level":"info","event":"   -> 221 produits sur 10 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:08.991989Z","level":"info","event":"   -> Scraping de la Page 1/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:09.007069Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:11.007342Z","level":"info","event":"   -> Scraping de la Page 2/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:12.064460Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:14.064657Z","level":"info","event":"   -> Scraping de la Page 3/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:15.282493Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:17.282630Z","level":"info","event":"   -> Scraping de la Page 4/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:18.288223Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:23.622755Z","level":"info","event":"   -> Scraping de la Page 5/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:24.691111Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:26.691331Z","level":"info","event":"   -> Scraping de la Page 6/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:28.050945Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:30.051007Z","level":"info","event":"   -> Scraping de la Page 7/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:31.084156Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:33.084309Z","level":"info","event":"   -> Scraping de la Page 8/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:34.369755Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:36.369950Z","level":"info","event":"   -> Scraping de la Page 9/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:37.391926Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:39.392054Z","level":"info","event":"   -> Scraping de la Page 10/10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:40.066771Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:40.067299Z","level":"info","event":"   -> Scraping terminé. 221 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:40.090018Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:40.703255Z","level":"info","event":"   -> 221 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:40.703859Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:40.707032Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:43.708339Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:43.710443Z","level":"info","event":"--- Traitement Sous-Catégorie 107 : 'Frigos 1 porte encastrables' (160 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:43.741700Z","level":"info","event":"--- (1) Scraping de 'Frigos 1 porte encastrables' (Objectif: 160 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:45.137418Z","level":"info","event":"   -> 160 produits sur 7 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:45.138028Z","level":"info","event":"   -> Scraping de la Page 1/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:45.152129Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:47.152305Z","level":"info","event":"   -> Scraping de la Page 2/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:48.143991Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:50.144202Z","level":"info","event":"   -> Scraping de la Page 3/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:51.299676Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:56.634226Z","level":"info","event":"   -> Scraping de la Page 4/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:57.641648Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:51:59.641880Z","level":"info","event":"   -> Scraping de la Page 5/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:00.657234Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:02.657239Z","level":"info","event":"   -> Scraping de la Page 6/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:03.931304Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:05.931502Z","level":"info","event":"   -> Scraping de la Page 7/7...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:06.746423Z","level":"info","event":"      -> 16 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:06.746981Z","level":"info","event":"   -> Scraping terminé. 160 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:06.769402Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:07.226306Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:07.226818Z","level":"info","event":"   -> 160 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:07.231115Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:10.231324Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:10.232490Z","level":"info","event":"--- Traitement Sous-Catégorie 108 : 'Frigos - congélateurs encastrables' (111 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:10.233014Z","level":"info","event":"--- (1) Scraping de 'Frigos - congélateurs encastrables' (Objectif: 111 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:11.241440Z","level":"info","event":"   -> 111 produits sur 5 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:11.242039Z","level":"info","event":"   -> Scraping de la Page 1/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:11.256126Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:13.256446Z","level":"info","event":"   -> Scraping de la Page 2/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:14.699055Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:16.699261Z","level":"info","event":"   -> Scraping de la Page 3/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:17.699967Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:19.700146Z","level":"info","event":"   -> Scraping de la Page 4/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:20.665679Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:22.665814Z","level":"info","event":"   -> Scraping de la Page 5/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:23.850852Z","level":"info","event":"      -> 15 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:23.851363Z","level":"info","event":"   -> Scraping terminé. 111 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:23.879630Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:24.329890Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:24.330575Z","level":"info","event":"   -> 111 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:24.334242Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:30.668627Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:30.669155Z","level":"info","event":"--- Traitement Sous-Catégorie 109 : 'Congélateurs armoires' (87 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:30.669550Z","level":"info","event":"--- (1) Scraping de 'Congélateurs armoires' (Objectif: 87 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:31.675805Z","level":"info","event":"   -> 87 produits sur 4 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:31.676194Z","level":"info","event":"   -> Scraping de la Page 1/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:31.691285Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:33.690716Z","level":"info","event":"   -> Scraping de la Page 2/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:35.004015Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:37.004221Z","level":"info","event":"   -> Scraping de la Page 3/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:37.953498Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:39.953636Z","level":"info","event":"   -> Scraping de la Page 4/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:40.737675Z","level":"info","event":"      -> 15 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:40.738181Z","level":"info","event":"   -> Scraping terminé. 87 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:40.761283Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:40.976109Z","level":"info","event":"   -> 87 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:40.976682Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:40.979736Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:43.979973Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:43.981140Z","level":"info","event":"--- Traitement Sous-Catégorie 110 : 'Congélateurs bahut' (22 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:43.994268Z","level":"info","event":"--- (1) Scraping de 'Congélateurs bahut' (Objectif: 22 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.123523Z","level":"info","event":"   -> 22 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.124030Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.136131Z","level":"info","event":"      -> 22 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.136691Z","level":"info","event":"   -> Scraping terminé. 22 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.157684Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.213608Z","level":"info","event":"   -> 22 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.214079Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:45.216971Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.217193Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.217732Z","level":"info","event":"--- Traitement Sous-Catégorie 111 : 'Petits congélateurs' (2 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.218113Z","level":"info","event":"--- (1) Scraping de 'Petits congélateurs' (Objectif: 2 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.757660Z","level":"info","event":"   -> 2 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.758178Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.764642Z","level":"info","event":"      -> 2 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.764967Z","level":"info","event":"   -> Scraping terminé. 2 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.784529Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.790022Z","level":"info","event":"   -> 2 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.790607Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:48.793622Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:51.793815Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:51.794314Z","level":"info","event":"--- Traitement Sous-Catégorie 112 : 'Congélateurs encastrables' (24 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:51.806941Z","level":"info","event":"--- (1) Scraping de 'Congélateurs encastrables' (Objectif: 24 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.729032Z","level":"info","event":"   -> 24 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.729521Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.742005Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.742454Z","level":"info","event":"   -> Scraping terminé. 24 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.762648Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.824725Z","level":"info","event":"   -> 24 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.825290Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:52.828039Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:55.828393Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:55.828953Z","level":"info","event":"--- Traitement Sous-Catégorie 113 : 'Caves à vin' (75 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:55.829369Z","level":"info","event":"--- (1) Scraping de 'Caves à vin' (Objectif: 75 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:57.015203Z","level":"info","event":"   -> 75 produits sur 4 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:57.015680Z","level":"info","event":"   -> Scraping de la Page 1/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:52:57.030034Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:02.364420Z","level":"info","event":"   -> Scraping de la Page 2/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:03.441394Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:05.441739Z","level":"info","event":"   -> Scraping de la Page 3/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:06.713412Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:08.713710Z","level":"info","event":"   -> Scraping de la Page 4/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:09.425391Z","level":"info","event":"      -> 3 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:09.425966Z","level":"info","event":"   -> Scraping terminé. 75 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:09.453385Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:09.745852Z","level":"info","event":"   -> 75 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:09.746438Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:09.750108Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:12.750517Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:12.751454Z","level":"info","event":"--- Traitement Sous-Catégorie 114 : 'Caves à vin encastrables' (22 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:12.769547Z","level":"info","event":"--- (1) Scraping de 'Caves à vin encastrables' (Objectif: 22 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.639027Z","level":"info","event":"   -> 22 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.639512Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.650930Z","level":"info","event":"      -> 22 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.651495Z","level":"info","event":"   -> Scraping terminé. 22 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.673580Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.733013Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.733491Z","level":"info","event":"   -> 22 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:13.736178Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:16.736381Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:16.736873Z","level":"info","event":"--- Traitement Sous-Catégorie 115 : 'Glacières électriques' (1 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:16.737232Z","level":"info","event":"--- (1) Scraping de 'Glacières électriques' (Objectif: 1 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.614719Z","level":"info","event":"   -> 1 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.615227Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.620948Z","level":"info","event":"      -> 1 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.621300Z","level":"info","event":"   -> Scraping terminé. 1 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.641368Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.644227Z","level":"info","event":"   -> 1 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.644708Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:17.647618Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:20.647835Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:20.648931Z","level":"info","event":"--- Traitement Sous-Catégorie 116 : 'Caves à vin pose libre' (52 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:20.664745Z","level":"info","event":"--- (1) Scraping de 'Caves à vin pose libre' (Objectif: 52 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:21.544966Z","level":"info","event":"   -> 52 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:21.545605Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:21.557538Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:23.558831Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:24.393028Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:26.393268Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:27.165364Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:27.165819Z","level":"info","event":"   -> Scraping terminé. 52 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:27.187326Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:27.315654Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:27.316132Z","level":"info","event":"   -> 52 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:27.319036Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:30.319243Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:30.319823Z","level":"info","event":"--- Traitement Sous-Catégorie 117 : 'Taques de cuisson électriques' (175 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:30.320273Z","level":"info","event":"--- (1) Scraping de 'Taques de cuisson électriques' (Objectif: 175 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:31.443507Z","level":"info","event":"   -> 175 produits sur 8 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:31.444070Z","level":"info","event":"   -> Scraping de la Page 1/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:31.457729Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:36.792213Z","level":"info","event":"   -> Scraping de la Page 2/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:37.807191Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:39.807287Z","level":"info","event":"   -> Scraping de la Page 3/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:41.192515Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:43.192679Z","level":"info","event":"   -> Scraping de la Page 4/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:44.291413Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:46.291571Z","level":"info","event":"   -> Scraping de la Page 5/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:47.787042Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:49.787154Z","level":"info","event":"   -> Scraping de la Page 6/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:50.771742Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:52.771923Z","level":"info","event":"   -> Scraping de la Page 7/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:53.744662Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:55.745080Z","level":"info","event":"   -> Scraping de la Page 8/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:56.814748Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:56.815223Z","level":"info","event":"   -> Scraping terminé. 175 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:56.836543Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:57.328699Z","level":"info","event":"   -> 175 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:57.329252Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:53:57.332302Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:00.332518Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:00.333030Z","level":"info","event":"--- Traitement Sous-Catégorie 118 : 'Taques à induction' (104 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:00.345679Z","level":"info","event":"--- (1) Scraping de 'Taques à induction' (Objectif: 104 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:01.348647Z","level":"info","event":"   -> 104 produits sur 5 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:01.349233Z","level":"info","event":"   -> Scraping de la Page 1/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:01.363426Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:03.363790Z","level":"info","event":"   -> Scraping de la Page 2/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:04.312976Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:09.647403Z","level":"info","event":"   -> Scraping de la Page 3/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:10.969955Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:12.970149Z","level":"info","event":"   -> Scraping de la Page 4/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:13.912619Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:15.912809Z","level":"info","event":"   -> Scraping de la Page 5/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:16.662230Z","level":"info","event":"      -> 8 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:16.662752Z","level":"info","event":"   -> Scraping terminé. 104 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:16.683835Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:16.952828Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:16.953313Z","level":"info","event":"   -> 104 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:16.956294Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:19.956544Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:19.957056Z","level":"info","event":"--- Traitement Sous-Catégorie 119 : 'Taques vitrocéramiques' (37 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:19.957386Z","level":"info","event":"--- (1) Scraping de 'Taques vitrocéramiques' (Objectif: 37 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:21.254158Z","level":"info","event":"   -> 37 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:21.254586Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:21.270344Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:23.269606Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:24.031137Z","level":"info","event":"      -> 13 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:24.031593Z","level":"info","event":"   -> Scraping terminé. 37 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:24.054238Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:24.181605Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:24.182644Z","level":"info","event":"   -> 37 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:24.187258Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:27.187453Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:27.188039Z","level":"info","event":"--- Traitement Sous-Catégorie 120 : 'Taques avec hotte intégrée' (21 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:27.201598Z","level":"info","event":"--- (1) Scraping de 'Taques avec hotte intégrée' (Objectif: 21 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.315356Z","level":"info","event":"   -> 21 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.315866Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.328811Z","level":"info","event":"      -> 21 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.329211Z","level":"info","event":"   -> Scraping terminé. 21 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.349273Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.413430Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.413859Z","level":"info","event":"   -> 21 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:28.416830Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:31.417028Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:31.417609Z","level":"info","event":"--- Traitement Sous-Catégorie 121 : 'Taques au gaz' (45 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:31.418043Z","level":"info","event":"--- (1) Scraping de 'Taques au gaz' (Objectif: 45 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:32.328307Z","level":"info","event":"   -> 45 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:32.328818Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:32.342024Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:34.342251Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:35.361188Z","level":"info","event":"      -> 21 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:35.361708Z","level":"info","event":"   -> Scraping terminé. 45 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:35.383290Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:35.506670Z","level":"info","event":"   -> 44 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:35.507156Z","level":"info","event":"   -> 1 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:35.509927Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:41.844513Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:41.845088Z","level":"info","event":"--- Traitement Sous-Catégorie 122 : 'Éléments modulaires encastrables' (15 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:41.858315Z","level":"info","event":"--- (1) Scraping de 'Éléments modulaires encastrables' (Objectif: 15 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.600937Z","level":"info","event":"   -> 15 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.601418Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.610831Z","level":"info","event":"      -> 15 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.611190Z","level":"info","event":"   -> Scraping terminé. 15 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.634115Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.688395Z","level":"info","event":"   -> 2 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.688952Z","level":"info","event":"   -> 13 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:42.692840Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:45.693707Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:45.694678Z","level":"info","event":"--- Traitement Sous-Catégorie 123 : 'Réchauds électriques' (12 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:45.695400Z","level":"info","event":"--- (1) Scraping de 'Réchauds électriques' (Objectif: 12 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.495078Z","level":"info","event":"   -> 12 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.495575Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.503439Z","level":"info","event":"      -> 12 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.503851Z","level":"info","event":"   -> Scraping terminé. 12 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.526609Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.567988Z","level":"info","event":"   -> 12 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.568521Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:46.572806Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:49.573021Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:49.573773Z","level":"info","event":"--- Traitement Sous-Catégorie 124 : 'Cuisinières électriques' (56 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:49.593554Z","level":"info","event":"--- (1) Scraping de 'Cuisinières électriques' (Objectif: 56 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:50.849559Z","level":"info","event":"   -> 56 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:50.850070Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:50.863842Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:52.864068Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:53.850827Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:55.851002Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:56.555522Z","level":"info","event":"      -> 8 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:56.556017Z","level":"info","event":"   -> Scraping terminé. 56 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:56.579075Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:56.757697Z","level":"info","event":"   -> 56 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:56.758342Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:56.761915Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:59.762129Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:59.765473Z","level":"info","event":"--- Traitement Sous-Catégorie 125 : 'Cuisinières à induction' (40 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:54:59.766119Z","level":"info","event":"--- (1) Scraping de 'Cuisinières à induction' (Objectif: 40 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:00.965531Z","level":"info","event":"   -> 40 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:00.965951Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:00.980526Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:02.980712Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:03.952213Z","level":"info","event":"      -> 16 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:03.952735Z","level":"info","event":"   -> Scraping terminé. 40 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:03.976783Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:04.097327Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:04.097891Z","level":"info","event":"   -> 40 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:04.100665Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:07.100900Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:07.101474Z","level":"info","event":"--- Traitement Sous-Catégorie 126 : 'Cuisinières vitrocéramiques' (13 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:07.101832Z","level":"info","event":"--- (1) Scraping de 'Cuisinières vitrocéramiques' (Objectif: 13 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.254286Z","level":"info","event":"   -> 13 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.254739Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.265106Z","level":"info","event":"      -> 13 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.265563Z","level":"info","event":"   -> Scraping terminé. 13 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.287736Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.322270Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.322755Z","level":"info","event":"   -> 13 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:08.325585Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:11.325754Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:11.326372Z","level":"info","event":"--- Traitement Sous-Catégorie 127 : 'Cuisinières électriques traditionnelles' (4 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:11.326754Z","level":"info","event":"--- (1) Scraping de 'Cuisinières électriques traditionnelles' (Objectif: 4 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.265991Z","level":"info","event":"   -> 4 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.266503Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.274814Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.275181Z","level":"info","event":"   -> Scraping terminé. 4 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.298016Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.309456Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.310050Z","level":"info","event":"   -> 4 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:15.313705Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:18.313795Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:18.314205Z","level":"info","event":"--- Traitement Sous-Catégorie 128 : 'Cuisinières au gaz' (7 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:18.328256Z","level":"info","event":"--- (1) Scraping de 'Cuisinières au gaz' (Objectif: 7 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.023805Z","level":"info","event":"   -> 7 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.024285Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.032292Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.032630Z","level":"info","event":"   -> Scraping terminé. 7 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.057458Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.083574Z","level":"info","event":"   -> 7 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.084039Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:19.087654Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:22.087736Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:22.088218Z","level":"info","event":"--- Traitement Sous-Catégorie 129 : 'Cuisinières mixtes' (33 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:22.088572Z","level":"info","event":"--- (1) Scraping de 'Cuisinières mixtes' (Objectif: 33 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:23.437975Z","level":"info","event":"   -> 33 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:23.438457Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:23.452725Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:25.452917Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:26.192476Z","level":"info","event":"      -> 9 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:26.195657Z","level":"info","event":"   -> Scraping terminé. 33 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:26.214446Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:26.297743Z","level":"info","event":"   -> 30 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:26.298263Z","level":"info","event":"   -> 3 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:26.302008Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:29.302124Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:29.302672Z","level":"info","event":"--- Traitement Sous-Catégorie 130 : 'Hottes' (289 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:29.315407Z","level":"info","event":"--- (1) Scraping de 'Hottes' (Objectif: 289 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:30.696171Z","level":"info","event":"   -> 289 produits sur 13 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:30.696599Z","level":"info","event":"   -> Scraping de la Page 1/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:30.712353Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:32.712472Z","level":"info","event":"   -> Scraping de la Page 2/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:33.855189Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:35.855342Z","level":"info","event":"   -> Scraping de la Page 3/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:37.412023Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:39.412199Z","level":"info","event":"   -> Scraping de la Page 4/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:40.512826Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:42.513003Z","level":"info","event":"   -> Scraping de la Page 5/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:43.881006Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:49.215379Z","level":"info","event":"   -> Scraping de la Page 6/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:50.309428Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:52.309519Z","level":"info","event":"   -> Scraping de la Page 7/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:53.431124Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:55.431330Z","level":"info","event":"   -> Scraping de la Page 8/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:56.897027Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:55:58.897211Z","level":"info","event":"   -> Scraping de la Page 9/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:00.073690Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:02.073842Z","level":"info","event":"   -> Scraping de la Page 10/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:03.375954Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:05.376269Z","level":"info","event":"   -> Scraping de la Page 11/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:06.424329Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:08.424472Z","level":"info","event":"   -> Scraping de la Page 12/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:09.547228Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:11.547378Z","level":"info","event":"   -> Scraping de la Page 13/13...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:12.522606Z","level":"info","event":"      -> 1 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:12.523065Z","level":"info","event":"   -> Scraping terminé. 289 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:12.546202Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:13.613073Z","level":"info","event":"   -> 268 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:13.613699Z","level":"info","event":"   -> 21 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:13.619358Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:16.619525Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:16.620050Z","level":"info","event":"--- Traitement Sous-Catégorie 131 : 'Hottes plan de travail' (5 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:16.636941Z","level":"info","event":"--- (1) Scraping de 'Hottes plan de travail' (Objectif: 5 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.225168Z","level":"info","event":"   -> 5 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.225647Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.234562Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.234969Z","level":"info","event":"   -> Scraping terminé. 5 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.256387Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.270207Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.270734Z","level":"info","event":"   -> 5 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:17.274040Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:23.609155Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:23.609723Z","level":"info","event":"--- Traitement Sous-Catégorie 132 : 'Hottes îlots' (19 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:23.610120Z","level":"info","event":"--- (1) Scraping de 'Hottes îlots' (Objectif: 19 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.470485Z","level":"info","event":"   -> 19 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.471128Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.482573Z","level":"info","event":"      -> 19 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.483145Z","level":"info","event":"   -> Scraping terminé. 19 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.509624Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.578882Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.579445Z","level":"info","event":"   -> 19 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:24.582993Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:27.583189Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:27.583749Z","level":"info","event":"--- Traitement Sous-Catégorie 133 : 'Hottes télescopiques' (55 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:27.598382Z","level":"info","event":"--- (1) Scraping de 'Hottes télescopiques' (Objectif: 55 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:29.039188Z","level":"info","event":"   -> 55 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:29.039701Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:29.053446Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:31.053715Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:32.064967Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:34.065133Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:34.784233Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:34.785100Z","level":"info","event":"   -> Scraping terminé. 55 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:34.839004Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:35.078684Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:35.079819Z","level":"info","event":"   -> 55 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:35.083252Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:38.083460Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:38.084026Z","level":"info","event":"--- Traitement Sous-Catégorie 134 : 'Hottes plafond' (18 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:38.084441Z","level":"info","event":"--- (1) Scraping de 'Hottes plafond' (Objectif: 18 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.163288Z","level":"info","event":"   -> 18 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.163886Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.177421Z","level":"info","event":"      -> 18 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.177994Z","level":"info","event":"   -> Scraping terminé. 18 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.197735Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.249659Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.250161Z","level":"info","event":"   -> 18 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:39.253251Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:42.253487Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:42.254155Z","level":"info","event":"--- Traitement Sous-Catégorie 135 : 'Hottes murales' (105 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:42.254504Z","level":"info","event":"--- (1) Scraping de 'Hottes murales' (Objectif: 105 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:43.273546Z","level":"info","event":"   -> 105 produits sur 5 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:43.274066Z","level":"info","event":"   -> Scraping de la Page 1/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:43.288304Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:45.288581Z","level":"info","event":"   -> Scraping de la Page 2/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:46.822897Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:48.822992Z","level":"info","event":"   -> Scraping de la Page 3/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:49.792228Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:55.126070Z","level":"info","event":"   -> Scraping de la Page 4/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:56.963195Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:58.963337Z","level":"info","event":"   -> Scraping de la Page 5/5...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:59.928904Z","level":"info","event":"      -> 9 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:59.929925Z","level":"info","event":"   -> Scraping terminé. 105 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:56:59.972249Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:00.606654Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:00.607291Z","level":"info","event":"   -> 105 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:00.625679Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:03.612520Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:03.613065Z","level":"info","event":"--- Traitement Sous-Catégorie 136 : 'Fours encastrables' (175 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:03.613493Z","level":"info","event":"--- (1) Scraping de 'Fours encastrables' (Objectif: 175 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:04.716947Z","level":"info","event":"   -> 175 produits sur 8 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:04.717622Z","level":"info","event":"   -> Scraping de la Page 1/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:04.732808Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:06.732955Z","level":"info","event":"   -> Scraping de la Page 2/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:08.189228Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:10.189436Z","level":"info","event":"   -> Scraping de la Page 3/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:11.269178Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:13.269364Z","level":"info","event":"   -> Scraping de la Page 4/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:14.896294Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:16.896510Z","level":"info","event":"   -> Scraping de la Page 5/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:17.973052Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:19.973198Z","level":"info","event":"   -> Scraping de la Page 6/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:21.503578Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:23.503727Z","level":"info","event":"   -> Scraping de la Page 7/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:24.881151Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:30.215688Z","level":"info","event":"   -> Scraping de la Page 8/8...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:31.217072Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:31.217723Z","level":"info","event":"   -> Scraping terminé. 175 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:31.248015Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:31.989960Z","level":"info","event":"   -> 175 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:31.990512Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:31.994944Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:34.995134Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:34.995815Z","level":"info","event":"--- Traitement Sous-Catégorie 137 : 'Fours à vapeur encastrables' (21 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:34.996317Z","level":"info","event":"--- (1) Scraping de 'Fours à vapeur encastrables' (Objectif: 21 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.296383Z","level":"info","event":"   -> 21 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.297018Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.319305Z","level":"info","event":"      -> 21 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.319992Z","level":"info","event":"   -> Scraping terminé. 21 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.353497Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.458984Z","level":"info","event":"   -> 3 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.459641Z","level":"info","event":"   -> 18 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:36.464341Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:39.464641Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:39.465189Z","level":"info","event":"--- Traitement Sous-Catégorie 138 : 'Micro-ondes encastrables' (73 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:39.465726Z","level":"info","event":"--- (1) Scraping de 'Micro-ondes encastrables' (Objectif: 73 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:40.865535Z","level":"info","event":"   -> 73 produits sur 4 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:40.866075Z","level":"info","event":"   -> Scraping de la Page 1/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:40.880774Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:42.880898Z","level":"info","event":"   -> Scraping de la Page 2/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:43.961153Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:45.961319Z","level":"info","event":"   -> Scraping de la Page 3/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:47.129628Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.129792Z","level":"info","event":"   -> Scraping de la Page 4/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.684500Z","level":"info","event":"      -> 1 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.685025Z","level":"info","event":"   -> Scraping terminé. 73 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.707697Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.937747Z","level":"info","event":"   -> 31 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.938237Z","level":"info","event":"   -> 42 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:49.942164Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:52.942352Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:52.943630Z","level":"info","event":"--- Traitement Sous-Catégorie 139 : 'Micro-ondes pose libre' (77 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:52.944203Z","level":"info","event":"--- (1) Scraping de 'Micro-ondes pose libre' (Objectif: 77 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:53.990739Z","level":"info","event":"   -> 77 produits sur 4 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:53.991256Z","level":"info","event":"   -> Scraping de la Page 1/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:54.004162Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:56.004347Z","level":"info","event":"   -> Scraping de la Page 2/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:57:57.234525Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:02.569073Z","level":"info","event":"   -> Scraping de la Page 3/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:03.520193Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:05.520444Z","level":"info","event":"   -> Scraping de la Page 4/4...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:06.389563Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:06.390200Z","level":"info","event":"   -> Scraping terminé. 77 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:06.419059Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:06.746258Z","level":"info","event":"   -> 77 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:06.746764Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:06.750937Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:09.751178Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:09.751877Z","level":"info","event":"--- Traitement Sous-Catégorie 140 : 'Fours pose libre' (68 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:09.752615Z","level":"info","event":"--- (1) Scraping de 'Fours pose libre' (Objectif: 68 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:10.961645Z","level":"info","event":"   -> 68 produits sur 3 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:10.962214Z","level":"info","event":"   -> Scraping de la Page 1/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:10.977650Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:12.976455Z","level":"info","event":"   -> Scraping de la Page 2/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:13.893073Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:15.893296Z","level":"info","event":"   -> Scraping de la Page 3/3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:16.983528Z","level":"info","event":"      -> 20 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:16.984035Z","level":"info","event":"   -> Scraping terminé. 68 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:17.016339Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:17.313145Z","level":"info","event":"   -> 33 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:17.314477Z","level":"info","event":"   -> 35 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:17.320805Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.320933Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.321566Z","level":"info","event":"--- Traitement Sous-Catégorie 141 : 'Fours à vapeur' (4 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.321960Z","level":"info","event":"--- (1) Scraping de 'Fours à vapeur' (Objectif: 4 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.885218Z","level":"info","event":"   -> 4 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.885732Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.892565Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.893038Z","level":"info","event":"   -> Scraping terminé. 4 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.918278Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.934075Z","level":"info","event":"   -> 0 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.934641Z","level":"info","event":"   -> 4 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:20.938675Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:23.939652Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:23.941008Z","level":"info","event":"--- Traitement Sous-Catégorie 142 : 'Tiroirs chauffants et sous vide' (7 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:23.941708Z","level":"info","event":"--- (1) Scraping de 'Tiroirs chauffants et sous vide' (Objectif: 7 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.590837Z","level":"info","event":"   -> 7 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.591377Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.598793Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.599170Z","level":"info","event":"   -> Scraping terminé. 7 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.621403Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.642971Z","level":"info","event":"   -> 7 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.643454Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:24.646649Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:27.646925Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:27.647504Z","level":"info","event":"--- Traitement Sous-Catégorie 143 : 'Cuiseurs à riz' (9 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:27.647872Z","level":"info","event":"--- (1) Scraping de 'Cuiseurs à riz' (Objectif: 9 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.308827Z","level":"info","event":"   -> 9 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.309319Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.316709Z","level":"info","event":"      -> 9 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.317127Z","level":"info","event":"   -> Scraping terminé. 9 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.339520Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.367340Z","level":"info","event":"   -> 9 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.367843Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:28.371137Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:31.371294Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:31.371785Z","level":"info","event":"--- Traitement Sous-Catégorie 144 : 'Cuiseurs vapeur' (9 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:31.385421Z","level":"info","event":"--- (1) Scraping de 'Cuiseurs vapeur' (Objectif: 9 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.207531Z","level":"info","event":"   -> 9 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.208087Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.218737Z","level":"info","event":"      -> 9 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.219122Z","level":"info","event":"   -> Scraping terminé. 9 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.243187Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.276952Z","level":"info","event":"   -> 8 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.277624Z","level":"info","event":"   -> 1 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:37.282003Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:40.282245Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:40.282749Z","level":"info","event":"--- Traitement Sous-Catégorie 145 : 'Multicuiseurs' (15 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:40.299251Z","level":"info","event":"--- (1) Scraping de 'Multicuiseurs' (Objectif: 15 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.110717Z","level":"info","event":"   -> 15 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.111352Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.122713Z","level":"info","event":"      -> 15 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.123212Z","level":"info","event":"   -> Scraping terminé. 15 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.148596Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.210314Z","level":"info","event":"   -> 15 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.210930Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:41.215495Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:44.215637Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:44.216131Z","level":"info","event":"--- Traitement Sous-Catégorie 146 : 'Accessoires micro-ondes' (7 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:44.216496Z","level":"info","event":"--- (1) Scraping de 'Accessoires micro-ondes' (Objectif: 7 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:44.999545Z","level":"info","event":"   -> 7 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.000091Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.007533Z","level":"info","event":"      -> 7 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.008020Z","level":"info","event":"   -> Scraping terminé. 7 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.031907Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.070816Z","level":"info","event":"   -> 7 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.071495Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:45.077123Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.077370Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.077848Z","level":"info","event":"--- Traitement Sous-Catégorie 147 : 'Nettoyage taque / four / cuisine' (12 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.091521Z","level":"info","event":"--- (1) Scraping de 'Nettoyage taque / four / cuisine' (Objectif: 12 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.760256Z","level":"info","event":"   -> 12 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.760736Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.769064Z","level":"info","event":"      -> 12 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.769428Z","level":"info","event":"   -> Scraping terminé. 12 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.791303Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.832814Z","level":"info","event":"   -> 12 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.833376Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:48.836723Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:51.836929Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:51.837443Z","level":"info","event":"--- Traitement Sous-Catégorie 148 : 'Accessoires four' (40 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:51.837818Z","level":"info","event":"--- (1) Scraping de 'Accessoires four' (Objectif: 40 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:52.680475Z","level":"info","event":"   -> 40 produits sur 2 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:52.681132Z","level":"info","event":"   -> Scraping de la Page 1/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:52.693119Z","level":"info","event":"      -> 24 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:54.693295Z","level":"info","event":"   -> Scraping de la Page 2/2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:55.740062Z","level":"info","event":"      -> 16 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:55.740630Z","level":"info","event":"   -> Scraping terminé. 40 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:55.766198Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:55.921857Z","level":"info","event":"   -> 40 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:55.922455Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:55.927162Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:58.927388Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:58.928052Z","level":"info","event":"--- Traitement Sous-Catégorie 149 : 'Mijoteuses' (15 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:58.929147Z","level":"info","event":"--- (1) Scraping de 'Mijoteuses' (Objectif: 15 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.706653Z","level":"info","event":"   -> 15 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.707108Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.719479Z","level":"info","event":"      -> 15 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.719976Z","level":"info","event":"   -> Scraping terminé. 15 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.742269Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.789891Z","level":"info","event":"   -> 5 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.790415Z","level":"info","event":"   -> 10 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:58:59.793842Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:02.793980Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:02.794461Z","level":"info","event":"--- Traitement Sous-Catégorie 150 : 'Casseroles à pression' (5 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:02.794850Z","level":"info","event":"--- (1) Scraping de 'Casseroles à pression' (Objectif: 5 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.529687Z","level":"info","event":"   -> 5 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.530184Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.538268Z","level":"info","event":"      -> 5 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.538743Z","level":"info","event":"   -> Scraping terminé. 5 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.562015Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.577336Z","level":"info","event":"   -> 5 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.577821Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:03.581006Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:09.915404Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:09.915906Z","level":"info","event":"--- Traitement Sous-Catégorie 151 : 'Machines à café encastrables' (4 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:09.929990Z","level":"info","event":"--- (1) Scraping de 'Machines à café encastrables' (Objectif: 4 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.520246Z","level":"info","event":"   -> 4 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.520744Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.528067Z","level":"info","event":"      -> 4 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.528451Z","level":"info","event":"   -> Scraping terminé. 4 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.551401Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.565985Z","level":"info","event":"   -> 4 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.566693Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:10.570526Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:13.570717Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:13.571206Z","level":"info","event":"--- Traitement Sous-Catégorie 152 : 'Services installation' (11 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:13.571622Z","level":"info","event":"--- (1) Scraping de 'Services installation' (Objectif: 11 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.517315Z","level":"info","event":"   -> 11 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.517858Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.526416Z","level":"info","event":"      -> 11 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.526906Z","level":"info","event":"   -> Scraping terminé. 11 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.551835Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.614200Z","level":"info","event":"   -> 11 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.615316Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:14.618655Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:17.618804Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:17.619285Z","level":"info","event":"--- Traitement Sous-Catégorie 153 : 'Vanden Borre Life' (2 articles) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:17.632673Z","level":"info","event":"--- (1) Scraping de 'Vanden Borre Life' (Objectif: 2 produits)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.192312Z","level":"info","event":"   -> 2 produits sur 1 pages.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.192798Z","level":"info","event":"   -> Scraping de la Page 1/1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.199092Z","level":"info","event":"      -> 2 produits extraits.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.199571Z","level":"info","event":"   -> Scraping terminé. 2 produits découverts.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.224836Z","level":"info","event":"--- (1) Chargement des produits dans Staging_Product_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.233498Z","level":"info","event":"   -> 2 nouveaux produits insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.234000Z","level":"info","event":"   -> 0 produits existants réactivés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:18.238125Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:21.238276","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-29T13:59:21.258280Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:21.258765Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-29T13:59:21.260839Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): Etape_1_Discover_Products>","chan":"stdout","logger":"task"}
