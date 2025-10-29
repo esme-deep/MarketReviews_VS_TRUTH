@@ -404,9 +404,16 @@ def parse_and_clean_json(raw_json_string):
     """
     data = json.loads(raw_json_string)
     cleaned_data = {}
-    
     cleaned_data['sku'] = data.get('sku')
-    cleaned_data['name'] = data.get('name')
+    # --- MODIFICATION ICI ---
+    product_name = data.get('name')
+    if product_name:
+        # Utilise regex pour supprimer " (YYYY)" ou "(YYYY)" à la fin du nom
+        # Ex: "SONY ... (2021)" -> "SONY ..."
+        product_name = re.sub(r'\s*\(\d{4}\)$', '', product_name).strip()
+    
+    cleaned_data['name'] = product_name
+    # --- FIN DE LA MODIFICATION ---
     cleaned_data['brand'] = data.get('brand', {}).get('name')
     cleaned_data['category'] = data.get('category')
     
