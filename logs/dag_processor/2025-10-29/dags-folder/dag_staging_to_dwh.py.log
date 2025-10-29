@@ -1,0 +1,12 @@
+{"timestamp":"2025-10-29T14:37:05.452696","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:37:36.473337","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:38:08.383917","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:38:38.996291","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:39:11.618289","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:39:42.369003","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:40:16.107817","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:40:49.458209","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:41:22.213164","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:41:55.904753","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:42:29.024802","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-29T14:42:54.329667","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_staging_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
