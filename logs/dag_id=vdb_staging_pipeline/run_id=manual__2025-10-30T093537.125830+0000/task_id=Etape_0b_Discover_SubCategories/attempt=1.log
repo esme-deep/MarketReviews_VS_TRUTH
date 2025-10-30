@@ -1,0 +1,123 @@
+{"timestamp":"2025-10-30T09:35:41.739798","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-30T09:35:41.740573","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_vdb_staging.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-30T09:35:41.981060Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:41.981979Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:41.985091Z","level":"info","event":"Current task name:Etape_0b_Discover_SubCategories","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:41.985686Z","level":"info","event":"Dag name:vdb_staging_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:41.997749Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:41.998221Z","level":"info","event":"--- DÉBUT : Étape 0b (Découverte Sous-Catégories) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.041479Z","level":"info","event":"   -> 13 thèmes à traiter trouvés. Lancement boucle...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.042120Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.042802Z","level":"info","event":"--- Traitement Thème 10 : 'Lave-linge - Sèche-linge' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.043282Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/lave-linge-seche-linge (Recherche : 'Lave-linge - Sèche-linge')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.647999Z","level":"info","event":"   -> 11 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.679347Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.748007Z","level":"info","event":"   -> 0 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.748876Z","level":"info","event":"   -> 11 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:42.755229Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:45.755657Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:45.756250Z","level":"info","event":"--- Traitement Thème 11 : 'Lave-vaisselle' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:45.756627Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/lave-vaisselle (Recherche : 'Lave-vaisselle')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:46.508591Z","level":"info","event":"   -> 8 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:46.534500Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:46.574127Z","level":"info","event":"   -> 5 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:46.574696Z","level":"info","event":"   -> 3 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:46.579037Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:49.581352Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:49.582221Z","level":"info","event":"--- Traitement Thème 12 : 'Frigo - Congélateur' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:49.582620Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/frigo-congelateur (Recherche : 'Frigo - Congélateur')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:50.183167Z","level":"info","event":"   -> 17 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:50.232931Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:50.329291Z","level":"info","event":"   -> 2 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:50.330315Z","level":"info","event":"   -> 15 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:50.337114Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.077940Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.079042Z","level":"info","event":"--- Traitement Thème 13 : 'Cave à vin' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.079740Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/cave-a-vin (Recherche : 'Cave à vin')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.681522Z","level":"info","event":"   -> 3 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.713826Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.725698Z","level":"info","event":"   -> 1 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.726308Z","level":"info","event":"   -> 0 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.726887Z","level":"info","event":"   -> 2 sous-catégories ignorées (appartiennent à un autre parent).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:54.731307Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:57.733203Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:57.733921Z","level":"info","event":"--- Traitement Thème 14 : 'Taque de cuisson' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:57.734531Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/taque-de-cuisson (Recherche : 'Taque de cuisson')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:58.698209Z","level":"info","event":"   -> 7 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:58.732801Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:58.767944Z","level":"info","event":"   -> 6 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:58.768758Z","level":"info","event":"   -> 1 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:35:58.774919Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:01.775319Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:01.775956Z","level":"info","event":"--- Traitement Thème 15 : 'Cuisinière' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:01.776444Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/cuisiniere (Recherche : 'Cuisinière')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:02.388311Z","level":"info","event":"   -> 6 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:02.437222Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:02.491353Z","level":"info","event":"   -> 6 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:02.492112Z","level":"info","event":"   -> 0 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:02.497382Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:05.497686Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:05.498277Z","level":"info","event":"--- Traitement Thème 16 : 'Hotte' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:05.498695Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/hotte (Recherche : 'Hotte')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:06.124966Z","level":"info","event":"   -> 6 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:06.157738Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:06.195529Z","level":"info","event":"   -> 6 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:06.196073Z","level":"info","event":"   -> 0 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:06.201890Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:09.202294Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:09.203026Z","level":"info","event":"--- Traitement Thème 17 : 'Fours et cuisinière' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:09.203636Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/four-encastrable-a-vapeur (Recherche : 'Fours et cuisinière')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:09.974153Z","level":"info","event":"   -> 14 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:10.004055Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:10.073402Z","level":"info","event":"   -> 5 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:10.074274Z","level":"info","event":"   -> 3 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:10.074872Z","level":"info","event":"   -> 6 sous-catégories ignorées (appartiennent à un autre parent).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:10.080457Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.080851Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.081597Z","level":"info","event":"--- Traitement Thème 19 : 'Encastrable' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.082173Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/encastrable (Recherche : 'Encastrable')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.884550Z","level":"info","event":"   -> 16 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.913423Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.963517Z","level":"info","event":"   -> 0 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.964293Z","level":"info","event":"   -> 1 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.964948Z","level":"info","event":"   -> 15 sous-catégories ignorées (appartiennent à un autre parent).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:13.971800Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:16.972040Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:16.972780Z","level":"info","event":"--- Traitement Thème 21 : 'Services encastrable' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:16.973289Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/services-encastrable (Recherche : 'Services encastrable')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:17.500490Z","level":"info","event":"   -> 1 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:17.526783Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:17.528605Z","level":"info","event":"   -> 0 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:17.529300Z","level":"info","event":"   -> 0 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:17.529780Z","level":"info","event":"   -> 1 sous-catégories ignorées (appartiennent à un autre parent).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:17.534020Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:20.537657Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:20.538937Z","level":"info","event":"--- Traitement Thème 22 : 'Vanden Borre Life' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:20.541193Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/vanden-borre-life (Recherche : 'Vanden Borre Life')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:21.231640Z","level":"info","event":"   -> 1 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:21.260717Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:21.264542Z","level":"info","event":"   -> 0 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:21.265384Z","level":"info","event":"   -> 1 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:21.270373Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:24.845002Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:24.847451Z","level":"info","event":"--- Traitement Thème 23 : 'Réfrigérateur/Congélateur encastrable' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:24.848219Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/refrigerateur-congelateur-encastrable (Recherche : 'Réfrigérateur/Congélateur encastrable')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:25.399148Z","level":"info","event":"   -> 4 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:25.430355Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:25.438197Z","level":"info","event":"   -> 0 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:25.438988Z","level":"info","event":"   -> 0 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:25.439621Z","level":"info","event":"   -> 4 sous-catégories ignorées (appartiennent à un autre parent).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:25.443654Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:28.443991Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:28.444785Z","level":"info","event":"--- Traitement Thème 24 : 'Taque et hotte' ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:28.445423Z","level":"info","event":"--- (0b) Scraping de : https://www.vandenborre.be/fr/gros-electro/taques-et-hottes (Recherche : 'Taque et hotte')","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:29.380468Z","level":"info","event":"   -> 10 sous-catégories 'families' trouvées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:29.410891Z","level":"info","event":"--- (0b) Chargement des sous-catégories dans Staging_SubCategory_Queue ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:29.431908Z","level":"info","event":"   -> 0 nouvelles sous-catégories insérées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:29.432607Z","level":"info","event":"   -> 0 sous-catégories mises à jour.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:29.433021Z","level":"info","event":"   -> 10 sous-catégories ignorées (appartiennent à un autre parent).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:29.437299Z","level":"info","event":"   -> Pause de 3 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:32.437502","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-30T09:36:32.458811Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:32.462063Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T09:36:32.462875Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): Etape_0b_Discover_SubCategories>","chan":"stdout","logger":"task"}
