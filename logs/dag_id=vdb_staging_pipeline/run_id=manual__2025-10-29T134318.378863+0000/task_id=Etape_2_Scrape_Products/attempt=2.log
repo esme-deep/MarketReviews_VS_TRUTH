@@ -7152,3 +7152,33 @@
 {"timestamp":"2025-10-30T11:37:54.563288Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mwf-259-sg-extraspace...","chan":"stdout","logger":"task"}
 {"timestamp":"2025-10-30T11:37:55.389177Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7836600...","chan":"stdout","logger":"task"}
 {"timestamp":"2025-10-30T11:37:55.396063Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:37:57.396289Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:37:57.396854Z","level":"info","event":"--- Traitement Produit 1430/1609 (ID: 4229, SKU: 7795009) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:37:57.397199Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mwsc-833-sb...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:37:58.538607Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7795009...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:37:58.547383Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:00.547645Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:00.548212Z","level":"info","event":"--- Traitement Produit 1431/1609 (ID: 4230, SKU: 8349517) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:00.548531Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mcp-347-bl-chef-plus...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:01.393701Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8349517...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:01.401498Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:03.401707Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:03.402232Z","level":"info","event":"--- Traitement Produit 1432/1609 (ID: 4231, SKU: 7752334) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:03.402531Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/sharp-r270w...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:04.148246Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7752334...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:04.154853Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:06.155131Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:06.155697Z","level":"info","event":"--- Traitement Produit 1433/1609 (ID: 4232, SKU: 7794991) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:06.156011Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mwsc-833-sx...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:07.506859Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7794991...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:07.515064Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:09.517150Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:09.517909Z","level":"info","event":"--- Traitement Produit 1434/1609 (ID: 4233, SKU: 8341990) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:09.518557Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/samsung-mc28h5015aw...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:10.728851Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8341990...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:10.745802Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:12.745530Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:12.747219Z","level":"info","event":"--- Traitement Produit 1435/1609 (ID: 4234, SKU: 8616469) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:12.748111Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-cd575mepg-inverter...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:13.649757Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8616469...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:13.659090Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
