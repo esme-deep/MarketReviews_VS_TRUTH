@@ -1,0 +1,1030 @@
+{"timestamp":"2025-10-30T13:23:06.218095","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-30T13:23:06.218837","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-30T13:23:06.334739","level":"warning","event":"/opt/airflow/scripts/reddit_engine.py:155: SyntaxWarning: invalid escape sequence '\\+'\n  'BLUETOOTH', 'WIFI', 'WI-FI', 'ANC', 'DAB\\+', 'DAB', 'FM', 'SMART',\n","logger":"py.warnings"}
+{"timestamp":"2025-10-30T13:23:06.360222Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.360766Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.361209Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.361630Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.362700Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.409609Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.421095Z","level":"info","event":"--- ✅ SUCCÈS : 1772 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.422460Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.422860Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.423230Z","level":"info","event":"--- Lancement de la boucle de scraping pour 1772 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.423634Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.423978Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.424303Z","level":"info","event":"--- Traitement Produit 1/1772 (Key: 1) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.425431Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED55C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.425772Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED55C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.726260Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:06.726929Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.760168Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.765600Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.766131Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.767444Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED55C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.769289Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.770962Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.771374Z","level":"info","event":"--- Traitement Produit 2/1772 (Key: 2) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.771882Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE ONE AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:13.772337Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE ONE AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:14.049564Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:14.050074Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.077404Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.084703Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.085419Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.086945Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS THE ONE AMBILIGHT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.089090Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.089691Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.090351Z","level":"info","event":"--- Traitement Produit 3/1772 (Key: 3) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.091008Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT FULL 32PFS6900'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.091632Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT FULL 32PFS6900' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.657065Z","level":"info","event":"   -> 15 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:21.657698Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.804672Z","level":"info","event":"   -> (L) Chargement de 15 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.898511Z","level":"info","event":"   -> 15 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.899057Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.900365Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT FULL 32PFS6900' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.902033Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.902638Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.903281Z","level":"info","event":"--- Traitement Produit 4/1772 (Key: 4) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.904124Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 32FV140'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:28.904692Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 32FV140' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:29.440339Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:29.441012Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.464925Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.576976Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.577612Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.578797Z","level":"info","event":"   -> ✅ Données pour 'JVC LT 32FV140' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.580177Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.580714Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.581272Z","level":"info","event":"--- Traitement Produit 5/1772 (Key: 5) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.581776Z","level":"info","event":"   -> Mot-clé généré : 'SONY BRAVIA KD32W804PAEP'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:36.582307Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY BRAVIA KD32W804PAEP' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:37.218048Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:37.218580Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.250734Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.378328Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.378977Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.380362Z","level":"info","event":"   -> ✅ Données pour 'SONY BRAVIA KD32W804PAEP' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.382008Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.382453Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.382836Z","level":"info","event":"--- Traitement Produit 6/1772 (Key: 6) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.383385Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE65S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.383814Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE65S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.590347Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:44.590855Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.594463Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE65S95FATXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.595187Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.595801Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.596536Z","level":"info","event":"--- Traitement Produit 7/1772 (Key: 7) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.597295Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 43FV140'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.597947Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 43FV140' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.904246Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:51.905166Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.017057Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'JVC LT 43FV140' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.017805Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.018318Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.019378Z","level":"info","event":"--- Traitement Produit 8/1772 (Key: 8) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.020369Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE50Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.021053Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE50Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.246352Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:23:59.247038Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.248410Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE50Q7F3AUXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.249005Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.249398Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.249692Z","level":"info","event":"--- Traitement Produit 9/1772 (Key: 9) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.250155Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED42C54LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.250607Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED42C54LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.540152Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:06.540732Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.565556Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.566847Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.567250Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.567992Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED42C54LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.569750Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.570550Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.571490Z","level":"info","event":"--- Traitement Produit 10/1772 (Key: 10) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.572752Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE77S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.573424Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE77S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.787154Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:13.787786Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:20.788725Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE77S95FATXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:20.790341Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:20.790863Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:20.791291Z","level":"info","event":"--- Traitement Produit 11/1772 (Key: 11) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:20.791879Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG CRYSTAL UE43U8090FUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:20.792325Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG CRYSTAL UE43U8090FUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:21.072659Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:21.073248Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.198670Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.226367Z","level":"info","event":"   -> 5 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.227032Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.228336Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG CRYSTAL UE43U8090FUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.229900Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.230350Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.230789Z","level":"info","event":"--- Traitement Produit 12/1772 (Key: 12) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.231337Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS FULL 40PFS6000 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.231697Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS FULL 40PFS6000 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.473421Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:28.474031Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.474965Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS FULL 40PFS6000 12' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.476593Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.477191Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.477580Z","level":"info","event":"--- Traitement Produit 13/1772 (Key: 13) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.478086Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILITGH 48OLED810 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.478539Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILITGH 48OLED810 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.723837Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:35.724357Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:42.725388Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS AMBILITGH 48OLED810 12' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:42.726115Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:42.726497Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:42.726848Z","level":"info","event":"--- Traitement Produit 14/1772 (Key: 14) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:42.727423Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE55QN77FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:42.727885Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE55QN77FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:43.246307Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:43.246927Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.274580Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.303986Z","level":"info","event":"   -> 7 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.304487Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.305618Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE55QN77FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.307070Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.307535Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.308020Z","level":"info","event":"--- Traitement Produit 15/1772 (Key: 15) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.308602Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE ONE AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.309039Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE ONE AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.540362Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:50.540996Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.673035Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.674947Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.675483Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.676346Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS THE ONE AMBILIGHT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.678443Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.679171Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.679653Z","level":"info","event":"--- Traitement Produit 16/1772 (Key: 16) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.680338Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS FULL 32PFS6000 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:57.680969Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS FULL 32PFS6000 12' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:58.918314Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:24:58.919128Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:05.947481Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.143826Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.144643Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.146903Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS FULL 32PFS6000 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.149374Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.150218Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.150838Z","level":"info","event":"--- Traitement Produit 17/1772 (Key: 17) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.151617Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE55S93FAEXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.152599Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE55S93FAEXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.387178Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:06.387975Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.389064Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE55S93FAEXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.389595Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.389955Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.390291Z","level":"info","event":"--- Traitement Produit 18/1772 (Key: 18) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.390700Z","level":"info","event":"   -> Mot-clé généré : 'LG 43UT73006LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.391084Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG 43UT73006LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.603510Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:13.604062Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.605484Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG 43UT73006LA' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.606055Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.606376Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.606762Z","level":"info","event":"--- Traitement Produit 19/1772 (Key: 19) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.607110Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED48C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.607603Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED48C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.887197Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:20.887742Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.037089Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.039060Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.039826Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.041045Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED48C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.043219Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.044041Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.044686Z","level":"info","event":"--- Traitement Produit 20/1772 (Key: 20) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.045344Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS 24PHS6000 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:28.045922Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS 24PHS6000 12' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:29.009372Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:29.010144Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.038515Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.157642Z","level":"info","event":"   -> 19 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.158235Z","level":"info","event":"   -> 6 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.160588Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS 24PHS6000 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.161823Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.162335Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.162812Z","level":"info","event":"--- Traitement Produit 21/1772 (Key: 21) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.163282Z","level":"info","event":"   -> Mot-clé généré : 'LG 32LQ63006LA 2022'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.163823Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG 32LQ63006LA 2022' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.990765Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:36.991276Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.019258Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.155256Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.155812Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.157069Z","level":"info","event":"   -> ✅ Données pour 'LG 32LQ63006LA 2022' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.158588Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.159197Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.159796Z","level":"info","event":"--- Traitement Produit 22/1772 (Key: 22) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.160387Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE55S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.160803Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE55S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.382221Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:44.382809Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.384382Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE55S95FATXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.384957Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.385364Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.385718Z","level":"info","event":"--- Traitement Produit 23/1772 (Key: 23) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.386305Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 55QNED93A6A'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.386817Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 55QNED93A6A' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.692425Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:51.693133Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.849515Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.854809Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.855370Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.856593Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 55QNED93A6A' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.858215Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.858695Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.859218Z","level":"info","event":"--- Traitement Produit 24/1772 (Key: 24) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.859820Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG FULL 32 INCH'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:58.860249Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG FULL 32 INCH' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:59.820286Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:25:59.820831Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:06.844831Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.000135Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.000864Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.002316Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG FULL 32 INCH' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.004142Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.004673Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.005187Z","level":"info","event":"--- Traitement Produit 25/1772 (Key: 25) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.005736Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE43Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.006205Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE43Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.559330Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:07.560008Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.033025Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE43Q7F3AUXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.033577Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.034009Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.034358Z","level":"info","event":"--- Traitement Produit 26/1772 (Key: 26) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.034949Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 85QNED93A6A'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.035500Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 85QNED93A6A' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.319025Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:15.319486Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.348058Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.349915Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.350556Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.351927Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 85QNED93A6A' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.353912Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.354684Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.355383Z","level":"info","event":"--- Traitement Produit 27/1772 (Key: 27) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.356069Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT 55PUS8349 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.356567Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT 55PUS8349 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.641703Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:22.642296Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.577413Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.585604Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.586225Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.588060Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT 55PUS8349 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.590266Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.591046Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.591705Z","level":"info","event":"--- Traitement Produit 28/1772 (Key: 28) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.592404Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED65C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.593016Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED65C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.916076Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:29.916608Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.943282Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.944906Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.945674Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.946619Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED65C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.948897Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.949762Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.950322Z","level":"info","event":"--- Traitement Produit 29/1772 (Key: 29) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.950825Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG THE FRAME 50'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:36.951327Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG THE FRAME 50' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:37.249273Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:37.250110Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.277419Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.288214Z","level":"info","event":"   -> 2 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.288768Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.289980Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG THE FRAME 50' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.291508Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.293159Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.293725Z","level":"info","event":"--- Traitement Produit 30/1772 (Key: 30) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.294446Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE ONE AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.294936Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE ONE AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.702111Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:44.702626Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.748182Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.751754Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.752437Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.755111Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS THE ONE AMBILIGHT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.758174Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.759180Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.766677Z","level":"info","event":"--- Traitement Produit 31/1772 (Key: 31) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.768003Z","level":"info","event":"   -> Mot-clé généré : 'LG G5 evo OLED55G56LS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:51.768865Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG G5 evo OLED55G56LS' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:52.022390Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:52.023079Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.127203Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG G5 evo OLED55G56LS' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.127995Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.128542Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.128949Z","level":"info","event":"--- Traitement Produit 32/1772 (Key: 32) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.129510Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE55QN93FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.130045Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE55QN93FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.442536Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:26:59.443060Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.470357Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.478809Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.479290Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.479800Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE55QN93FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.481105Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.481597Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.481983Z","level":"info","event":"--- Traitement Produit 33/1772 (Key: 33) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.482395Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMIBLIGHT 42OLED810 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.482706Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMIBLIGHT 42OLED810 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.725531Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:06.726047Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:13.727233Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS AMIBLIGHT 42OLED810 12' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:13.727759Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:13.728143Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:13.728473Z","level":"info","event":"--- Traitement Produit 34/1772 (Key: 34) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:13.728967Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE75QN77FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:13.729633Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE75QN77FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:14.005436Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:14.006002Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.028690Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.036564Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.037082Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.037665Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE75QN77FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.039038Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.039557Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.040141Z","level":"info","event":"--- Traitement Produit 35/1772 (Key: 35) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.040717Z","level":"info","event":"   -> Mot-clé généré : 'LG OLED55B56LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.041288Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG OLED55B56LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.253963Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:21.254518Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.359075Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG OLED55B56LA' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.359753Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.360287Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.360872Z","level":"info","event":"--- Traitement Produit 36/1772 (Key: 36) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.361580Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS 43PUS7800 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.362395Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS 43PUS7800 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.624546Z","level":"info","event":"   -> 3 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:28.625302Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.651949Z","level":"info","event":"   -> (L) Chargement de 3 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.661933Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.662555Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.664334Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS 43PUS7800 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.667026Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.667903Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.668598Z","level":"info","event":"--- Traitement Produit 37/1772 (Key: 37) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.669432Z","level":"info","event":"   -> Mot-clé généré : 'LG evo OLED55C46LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.670129Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG evo OLED55C46LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.948426Z","level":"info","event":"   -> 3 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:35.949082Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.972454Z","level":"info","event":"   -> (L) Chargement de 3 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.975893Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.976415Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.977247Z","level":"info","event":"   -> ✅ Données pour 'LG evo OLED55C46LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.978767Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.979289Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.979962Z","level":"info","event":"--- Traitement Produit 38/1772 (Key: 38) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.980514Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT 55OLED910 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:42.980929Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT 55OLED910 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:43.260832Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:43.261470Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.285277Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.288805Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.289447Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.290309Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT 55OLED910 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.291996Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.292531Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.293088Z","level":"info","event":"--- Traitement Produit 39/1772 (Key: 39) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.293688Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG THE FRAME FULL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:50.294694Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG THE FRAME FULL' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:51.344135Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:51.344622Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.474737Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.649352Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.649852Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.651348Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG THE FRAME FULL' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.653242Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.654003Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.654609Z","level":"info","event":"--- Traitement Produit 40/1772 (Key: 40) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.655159Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 24FD120'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:58.655614Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 24FD120' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:59.248851Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:27:59.249296Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.279320Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.314198Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.315010Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.315522Z","level":"info","event":"   -> ✅ Données pour 'JVC LT 24FD120' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.316958Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.317441Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.318027Z","level":"info","event":"--- Traitement Produit 41/1772 (Key: 41) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.318671Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE XTRA AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.319140Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE XTRA AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.584330Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:06.585040Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.586203Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS THE XTRA AMBILIGHT' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.586867Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.587204Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.587518Z","level":"info","event":"--- Traitement Produit 42/1772 (Key: 42) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.587963Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG THE FRAME F'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.588387Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG THE FRAME F' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.863000Z","level":"info","event":"   -> 6 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:13.863570Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.890188Z","level":"info","event":"   -> (L) Chargement de 6 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.911078Z","level":"info","event":"   -> 4 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.911578Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.912548Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG THE FRAME F' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.914089Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.914774Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.915249Z","level":"info","event":"--- Traitement Produit 43/1772 (Key: 43) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.915784Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG FULL 40F6000F 2025'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:20.916226Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG FULL 40F6000F 2025' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:21.187133Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:21.187699Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.294793Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG FULL 40F6000F 2025' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.295418Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.295766Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.296107Z","level":"info","event":"--- Traitement Produit 44/1772 (Key: 44) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.296603Z","level":"info","event":"   -> Mot-clé généré : 'LG AI B4 OLED55B46LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.296984Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG AI B4 OLED55B46LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.590077Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:28.590717Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:35.591939Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG AI B4 OLED55B46LA' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:35.592438Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:35.592800Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:35.593309Z","level":"info","event":"--- Traitement Produit 45/1772 (Key: 45) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:35.593828Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG CRYSTAL UE55U8090FUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:35.594242Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG CRYSTAL UE55U8090FUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:36.044432Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:36.045232Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.071797Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.078263Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.079140Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.079931Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG CRYSTAL UE55U8090FUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.081769Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.083336Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.083885Z","level":"info","event":"--- Traitement Produit 46/1772 (Key: 46) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.084398Z","level":"info","event":"   -> Mot-clé généré : 'LG G5 evo OLED48G56LS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.084800Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG G5 evo OLED48G56LS' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.336578Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:43.337150Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:50.338467Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG G5 evo OLED48G56LS' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:50.338982Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:50.339347Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:50.339638Z","level":"info","event":"--- Traitement Produit 47/1772 (Key: 47) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:50.340065Z","level":"info","event":"   -> Mot-clé généré : 'LG G5 evo OLED83G55LW'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:50.340485Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG G5 evo OLED83G55LW' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:51.439805Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:51.440298Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.550670Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG G5 evo OLED83G55LW' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.551231Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.551593Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.551989Z","level":"info","event":"--- Traitement Produit 48/1772 (Key: 48) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.552518Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS 75PUS7609 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.552894Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS 75PUS7609 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.819202Z","level":"info","event":"   -> 3 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:28:58.819843Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.845086Z","level":"info","event":"   -> (L) Chargement de 3 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.849150Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.849677Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.850423Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS 75PUS7609 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.852142Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.852687Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.853227Z","level":"info","event":"--- Traitement Produit 49/1772 (Key: 49) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.853760Z","level":"info","event":"   -> Mot-clé généré : 'TCL 75P79K'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:05.854201Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TCL 75P79K' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:06.070424Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:06.070921Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.072892Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'TCL 75P79K' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.073569Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.073953Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.074329Z","level":"info","event":"--- Traitement Produit 50/1772 (Key: 50) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.075050Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT QD 55MLED910'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.075542Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT QD 55MLED910' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.330895Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:13.331481Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.332666Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS AMBILIGHT QD 55MLED910' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.333283Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.333888Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.334315Z","level":"info","event":"--- Traitement Produit 51/1772 (Key: 51) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.334802Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE48S93FAEXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.335304Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE48S93FAEXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.545084Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:20.545650Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.659446Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE48S93FAEXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.660128Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.660599Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.661297Z","level":"info","event":"--- Traitement Produit 52/1772 (Key: 52) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.661870Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE55Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.662236Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE55Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.870020Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:27.870744Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:34.871995Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE55Q7F3AUXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:34.872821Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:34.876784Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:34.877514Z","level":"info","event":"--- Traitement Produit 53/1772 (Key: 53) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:34.877998Z","level":"info","event":"   -> Mot-clé généré : 'LG G5 evo OLED65G55LW'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:34.878309Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG G5 evo OLED65G55LW' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:35.143917Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:35.144486Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.146027Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG G5 evo OLED65G55LW' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.146839Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.147671Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.148316Z","level":"info","event":"--- Traitement Produit 54/1772 (Key: 54) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.148895Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE ONE AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.149410Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE ONE AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.411925Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:42.412723Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.437269Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.438640Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.439018Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.439847Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS THE ONE AMBILIGHT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.441178Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.441575Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.441966Z","level":"info","event":"--- Traitement Produit 55/1772 (Key: 55) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.442532Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 75'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.442943Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 75' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.716521Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:49.717040Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.861598Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.863381Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.864075Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.864862Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 75' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.866553Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.867421Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.867888Z","level":"info","event":"--- Traitement Produit 56/1772 (Key: 56) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.868336Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 65QNED87A6B'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:56.868724Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 65QNED87A6B' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:57.515265Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:29:57.515776Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.544256Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.546034Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.546645Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.547522Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 65QNED87A6B' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.549403Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.550028Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.550667Z","level":"info","event":"--- Traitement Produit 57/1772 (Key: 57) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.551181Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 43FV850'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.551630Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 43FV850' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.850869Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:04.851404Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:11.854480Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'JVC LT 43FV850' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:11.855383Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:11.856561Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:11.857252Z","level":"info","event":"--- Traitement Produit 58/1772 (Key: 58) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:11.858262Z","level":"info","event":"   -> Mot-clé généré : 'TCL QD 85MQLED85K'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:11.859754Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TCL QD 85MQLED85K' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:12.230815Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:12.231628Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.254551Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.287231Z","level":"info","event":"   -> 5 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.287873Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.288867Z","level":"info","event":"   -> ✅ Données pour 'TCL QD 85MQLED85K' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.290310Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.290723Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.291328Z","level":"info","event":"--- Traitement Produit 59/1772 (Key: 59) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.292006Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG CRYSTAL UE50U8090FUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.292649Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG CRYSTAL UE50U8090FUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.676603Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:19.677128Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.807109Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.816141Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.816716Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.817624Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG CRYSTAL UE50U8090FUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.819520Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.820177Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.820692Z","level":"info","event":"--- Traitement Produit 60/1772 (Key: 60) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.821321Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 32FV250'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:26.821882Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 32FV250' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:27.531286Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:27.531926Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.573289Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.651352Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.652233Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.653320Z","level":"info","event":"   -> ✅ Données pour 'JVC LT 32FV250' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.655981Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.659259Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.660129Z","level":"info","event":"--- Traitement Produit 61/1772 (Key: 61) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.660858Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT 55OLED850 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:34.661462Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT 55OLED850 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:35.000353Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:35.001027Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.026384Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.029093Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.029593Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.030196Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT 55OLED850 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.031787Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.032214Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.032659Z","level":"info","event":"--- Traitement Produit 62/1772 (Key: 62) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.033199Z","level":"info","event":"   -> Mot-clé généré : 'LG 43UA73006LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.033699Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG 43UA73006LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.306218Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:42.307263Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.307815Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG 43UA73006LA' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.308355Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.308828Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.309152Z","level":"info","event":"--- Traitement Produit 63/1772 (Key: 63) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.310187Z","level":"info","event":"   -> Mot-clé généré : 'LG B5 48 INCH'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.310664Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG B5 48 INCH' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.732560Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:49.733086Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.858324Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.865148Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.865672Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.866729Z","level":"info","event":"   -> ✅ Données pour 'LG B5 48 INCH' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.868217Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.869778Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.870353Z","level":"info","event":"--- Traitement Produit 64/1772 (Key: 64) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.870952Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE ONE AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:56.871452Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE ONE AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:57.150295Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:30:57.150825Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.178301Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.180058Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.180722Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.181302Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS THE ONE AMBILIGHT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.183373Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.184014Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.184450Z","level":"info","event":"--- Traitement Produit 65/1772 (Key: 65) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.185120Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG CRYSTAL UE75DU7190UXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.185650Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG CRYSTAL UE75DU7190UXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.563551Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:04.564137Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.595376Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.607290Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.608456Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.610112Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG CRYSTAL UE75DU7190UXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.612847Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.613676Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.614363Z","level":"info","event":"--- Traitement Produit 66/1772 (Key: 66) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.615159Z","level":"info","event":"   -> Mot-clé généré : 'TCL QD 65MQLED80K'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.615898Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TCL QD 65MQLED80K' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.998375Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:11.999222Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.021870Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.027666Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.028146Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.028714Z","level":"info","event":"   -> ✅ Données pour 'TCL QD 65MQLED80K' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.030002Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.031337Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.031818Z","level":"info","event":"--- Traitement Produit 67/1772 (Key: 67) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.032392Z","level":"info","event":"   -> Mot-clé généré : 'TCL QD 50C69K'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.032887Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TCL QD 50C69K' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.360038Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:19.360517Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.384137Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.390039Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.390590Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.391283Z","level":"info","event":"   -> ✅ Données pour 'TCL QD 50C69K' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.392908Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.393392Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.393937Z","level":"info","event":"--- Traitement Produit 68/1772 (Key: 68) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.394431Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT QD 75MLED910'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.394829Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT QD 75MLED910' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.774309Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:26.774815Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:33.777647Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS AMBILIGHT QD 75MLED910' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:33.778208Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:33.778602Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:33.779004Z","level":"info","event":"--- Traitement Produit 69/1772 (Key: 69) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:33.779380Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 55FV850'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:33.779862Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 55FV850' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:34.041553Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:34.042065Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.043419Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'JVC LT 55FV850' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.044117Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.044581Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.044964Z","level":"info","event":"--- Traitement Produit 70/1772 (Key: 70) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.045560Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG THE FRAME F'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.046045Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG THE FRAME F' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.354507Z","level":"info","event":"   -> 6 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:41.355000Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.381046Z","level":"info","event":"   -> (L) Chargement de 6 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.390064Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.390693Z","level":"info","event":"   -> 6 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.391347Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG THE FRAME F' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.392893Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.393385Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.393852Z","level":"info","event":"--- Traitement Produit 71/1772 (Key: 71) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.394546Z","level":"info","event":"   -> Mot-clé généré : 'LG B5 OLED65B56LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.394887Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG B5 OLED65B56LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.655020Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:48.655488Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:55.656980Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG B5 OLED65B56LA' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:55.658306Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:55.658737Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:55.659086Z","level":"info","event":"--- Traitement Produit 72/1772 (Key: 72) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:55.659575Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG FULL QE32Q50A'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:55.659940Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG FULL QE32Q50A' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:56.867947Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:31:56.868442Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:03.893414Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.083777Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.084499Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.085834Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG FULL QE32Q50A' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.088200Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.089408Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.089957Z","level":"info","event":"--- Traitement Produit 73/1772 (Key: 73) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.090850Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG THE FRAME Neo'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.091731Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG THE FRAME Neo' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.366842Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:04.367477Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.368675Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG THE FRAME Neo' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.370091Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.370790Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.371352Z","level":"info","event":"--- Traitement Produit 74/1772 (Key: 74) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.372020Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 75QNED93A6A'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.372580Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 75QNED93A6A' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.683759Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:11.684389Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.710543Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.712170Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.712713Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.713586Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 75QNED93A6A' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.715095Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.716553Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.717101Z","level":"info","event":"--- Traitement Produit 75/1772 (Key: 75) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.717829Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED77C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:18.718540Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED77C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:19.027957Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:19.028492Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.057975Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.059420Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.059920Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.060646Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED77C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.061889Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.062300Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.062821Z","level":"info","event":"--- Traitement Produit 76/1772 (Key: 76) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.063555Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE50QN93FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.064513Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE50QN93FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.400837Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:26.401352Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.529158Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.536774Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.537238Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.537793Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE50QN93FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.539238Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.540051Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.540598Z","level":"info","event":"--- Traitement Produit 77/1772 (Key: 77) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.541230Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE83S90FAEXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.541787Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE83S90FAEXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.798514Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:33.799044Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:40.800244Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE83S90FAEXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:40.800870Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:40.801273Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:40.801664Z","level":"info","event":"--- Traitement Produit 78/1772 (Key: 78) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:40.802255Z","level":"info","event":"   -> Mot-clé généré : 'SONY BRAVIA KD 43X75WL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:40.804393Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY BRAVIA KD 43X75WL' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:41.105354Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:41.106012Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.132837Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.149171Z","level":"info","event":"   -> 2 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.149819Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.151088Z","level":"info","event":"   -> ✅ Données pour 'SONY BRAVIA KD 43X75WL' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.153241Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.153968Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.154575Z","level":"info","event":"--- Traitement Produit 79/1772 (Key: 79) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.155280Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE43QN93FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.155896Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE43QN93FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.540730Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:48.541240Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.565168Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.573901Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.574458Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.575116Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE43QN93FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.576521Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.576974Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.577355Z","level":"info","event":"--- Traitement Produit 80/1772 (Key: 80) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.577761Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED 55QNED80T6A'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.578098Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED 55QNED80T6A' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.887859Z","level":"info","event":"   -> 6 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:32:55.888381Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.018574Z","level":"info","event":"   -> (L) Chargement de 6 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.043329Z","level":"info","event":"   -> 3 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.043861Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.045334Z","level":"info","event":"   -> ✅ Données pour 'LG QNED 55QNED80T6A' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.046931Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.047455Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.048024Z","level":"info","event":"--- Traitement Produit 81/1772 (Key: 81) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.048679Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG CRYSTAL UE65U8090FUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.049202Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG CRYSTAL UE65U8090FUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.396180Z","level":"info","event":"   -> 5 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:03.396708Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.421193Z","level":"info","event":"   -> (L) Chargement de 5 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.427975Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.428520Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.429558Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG CRYSTAL UE65U8090FUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.431129Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.431639Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.432139Z","level":"info","event":"--- Traitement Produit 82/1772 (Key: 82) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.432642Z","level":"info","event":"   -> Mot-clé généré : 'PROLINE L3220HD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.433266Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PROLINE L3220HD' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.685014Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:10.689697Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:17.687381Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PROLINE L3220HD' dans r/all.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:17.688031Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:17.688481Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:17.688909Z","level":"info","event":"--- Traitement Produit 83/1772 (Key: 83) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:17.689457Z","level":"info","event":"   -> Mot-clé généré : 'LG G5 evo OLED77G55LW'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:17.689938Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG G5 evo OLED77G55LW' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:18.056978Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:18.057595Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.058770Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG G5 evo OLED77G55LW' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.059312Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.059632Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.060019Z","level":"info","event":"--- Traitement Produit 84/1772 (Key: 84) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.060725Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT 3 32PFS6908'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.061139Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT 3 32PFS6908' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.910212Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:25.910713Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.043469Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.185468Z","level":"info","event":"   -> 22 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.186138Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.187266Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT 3 32PFS6908' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.188765Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.189382Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.189876Z","level":"info","event":"--- Traitement Produit 85/1772 (Key: 85) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.190409Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED 43QNED84A6C'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.190810Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED 43QNED84A6C' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.514888Z","level":"info","event":"   -> 6 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:33.515832Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.539124Z","level":"info","event":"   -> (L) Chargement de 6 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.546694Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.547171Z","level":"info","event":"   -> 6 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.547867Z","level":"info","event":"   -> ✅ Données pour 'LG QNED 43QNED84A6C' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.549449Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.549873Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.550258Z","level":"info","event":"--- Traitement Produit 86/1772 (Key: 86) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.550835Z","level":"info","event":"   -> Mot-clé généré : 'TCL 65P79K'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.551634Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TCL 65P79K' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.822097Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:40.822633Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:47.824213Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'TCL 65P79K' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:47.824864Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:47.825284Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:47.825724Z","level":"info","event":"--- Traitement Produit 87/1772 (Key: 87) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:47.826325Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 65QNED84A6C'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:47.826942Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 65QNED84A6C' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:48.230050Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:48.230628Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.253876Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.255326Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.255806Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.256472Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 65QNED84A6C' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.257850Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.258255Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.258739Z","level":"info","event":"--- Traitement Produit 88/1772 (Key: 88) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.259196Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE65QN83FAUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.259549Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE65QN83FAUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.598562Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:33:55.599115Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.732721Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.742088Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.742726Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.743812Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE65QN83FAUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.746169Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.747129Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.747795Z","level":"info","event":"--- Traitement Produit 89/1772 (Key: 89) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.748364Z","level":"info","event":"   -> Mot-clé généré : 'SONY BRAVIA 3 K43S39BPCE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:02.748888Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY BRAVIA 3 K43S39BPCE' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:03.230193Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:03.230790Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.261688Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.267912Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.268470Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.270110Z","level":"info","event":"   -> ✅ Données pour 'SONY BRAVIA 3 K43S39BPCE' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.271832Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.272367Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.273053Z","level":"info","event":"--- Traitement Produit 90/1772 (Key: 90) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.273638Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT 65OLED850 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.274074Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT 65OLED850 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.612313Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:10.613007Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.635797Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.638232Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.638731Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.639314Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT 65OLED850 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.640731Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.641226Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.641573Z","level":"info","event":"--- Traitement Produit 91/1772 (Key: 91) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.642053Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE65Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.642419Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE65Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.899901Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:17.900408Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:24.901823Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SAMSUNG QE65Q7F3AUXXN' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:24.902350Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:24.902682Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:24.903040Z","level":"info","event":"--- Traitement Produit 92/1772 (Key: 92) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:24.903544Z","level":"info","event":"   -> Mot-clé généré : 'THOMSON 32HA4M44'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:24.903917Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'THOMSON 32HA4M44' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:25.158225Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:25.158669Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.276326Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'THOMSON 32HA4M44' dans r/all.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.276816Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.277195Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.277639Z","level":"info","event":"--- Traitement Produit 93/1772 (Key: 93) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.278101Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE85QN93D'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.278555Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE85QN93D' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.609072Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:32.609752Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.640401Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.652720Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.653369Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.654290Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE85QN93D' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.656132Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.656856Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.657392Z","level":"info","event":"--- Traitement Produit 94/1772 (Key: 94) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.657924Z","level":"info","event":"   -> Mot-clé généré : 'LG OLED65B46LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.658470Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG OLED65B46LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.916813Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:39.917432Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:46.919154Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG OLED65B46LA' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:46.919928Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:46.920533Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:46.921081Z","level":"info","event":"--- Traitement Produit 95/1772 (Key: 95) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:46.921879Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo 75QN900FTXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:46.922587Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo 75QN900FTXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:47.300201Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:47.300840Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.329842Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.340739Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.341336Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.342017Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo 75QN900FTXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.343529Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.343956Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.344400Z","level":"info","event":"--- Traitement Produit 96/1772 (Key: 96) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.344869Z","level":"info","event":"   -> Mot-clé généré : 'LG QNED evo 55QNED84A6C'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.345298Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG QNED evo 55QNED84A6C' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.825994Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:34:54.826548Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.967409Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.969801Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.970680Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.971684Z","level":"info","event":"   -> ✅ Données pour 'LG QNED evo 55QNED84A6C' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.973883Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.976414Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.977228Z","level":"info","event":"--- Traitement Produit 97/1772 (Key: 97) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.978218Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILIGHT 55PUS8550 12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:01.978715Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILIGHT 55PUS8550 12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:02.321256Z","level":"info","event":"   -> 2 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:02.321916Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.350375Z","level":"info","event":"   -> (L) Chargement de 2 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.356831Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.357701Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.358508Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILIGHT 55PUS8550 12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.360402Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.361101Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.361708Z","level":"info","event":"--- Traitement Produit 98/1772 (Key: 98) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.362402Z","level":"info","event":"   -> Mot-clé généré : 'SONY BRAVIA 5 K55XR59BCEI'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.363075Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY BRAVIA 5 K55XR59BCEI' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.670046Z","level":"info","event":"   -> 4 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:09.670743Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.696282Z","level":"info","event":"   -> (L) Chargement de 4 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.731264Z","level":"info","event":"   -> 4 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.731903Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.733646Z","level":"info","event":"   -> ✅ Données pour 'SONY BRAVIA 5 K55XR59BCEI' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.735765Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.736426Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.736943Z","level":"info","event":"--- Traitement Produit 99/1772 (Key: 99) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.737392Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG Neo QE65QN88DBTXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:16.738013Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG Neo QE65QN88DBTXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:17.070560Z","level":"info","event":"   -> 7 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:17.071173Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.095417Z","level":"info","event":"   -> (L) Chargement de 7 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.103339Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.103837Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.104489Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG Neo QE65QN88DBTXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.105949Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.106580Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.107060Z","level":"info","event":"--- Traitement Produit 100/1772 (Key: 100) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.107770Z","level":"info","event":"   -> Mot-clé généré : 'LG 32LQ630B6LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.108146Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG 32LQ630B6LA' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.414263Z","level":"info","event":"   -> 1 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:24.414805Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.550660Z","level":"info","event":"   -> (L) Chargement de 1 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.557895Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.558664Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.560453Z","level":"info","event":"   -> ✅ Données pour 'LG 32LQ630B6LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.562001Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.562463Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.563147Z","level":"info","event":"--- Traitement Produit 101/1772 (Key: 101) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.563775Z","level":"info","event":"   -> Mot-clé généré : 'THOMSON 43UG4S14W'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.564225Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'THOMSON 43UG4S14W' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.815464Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:31.816033Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:38.817141Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'THOMSON 43UG4S14W' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:38.817745Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:38.818200Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:38.818550Z","level":"info","event":"--- Traitement Produit 102/1772 (Key: 102) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:38.819004Z","level":"info","event":"   -> Mot-clé généré : 'JVC LT 65FV850'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:38.819374Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC LT 65FV850' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:39.087194Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:39.088094Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:44.114614Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.090325Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'JVC LT 65FV850' dans r/Televisions.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.091009Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.093578Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.094155Z","level":"info","event":"--- Traitement Produit 103/1772 (Key: 103) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.094720Z","level":"info","event":"   -> Mot-clé généré : 'HISENSE 65E79Q'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.095243Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'HISENSE 65E79Q' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.367588Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:46.368137Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:35:49.164017Z","level":"error","event":"Task killed!","logger":"task"}

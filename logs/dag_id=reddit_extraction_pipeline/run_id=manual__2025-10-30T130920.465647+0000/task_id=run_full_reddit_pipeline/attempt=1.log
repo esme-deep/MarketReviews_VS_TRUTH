@@ -1,0 +1,82 @@
+{"timestamp":"2025-10-30T13:09:22.298427","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-30T13:09:22.299161","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-30T13:09:22.391217Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.391994Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.392483Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.392870Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.393758Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.441603Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.463427Z","level":"info","event":"--- ✅ SUCCÈS : 1771 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.464937Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.465401Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.465972Z","level":"info","event":"--- Lancement de la boucle de scraping pour 1771 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.466487Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.466876Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.467306Z","level":"info","event":"--- Traitement Produit 1/1771 (Key: 1) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.469199Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.469823Z","level":"info","event":"   -> Mot-clé généré : 'LG LG C5 OLED evo 4K 55 POUCES OLED55C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.470253Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG C5 OLED evo 4K 55 POUCES OLED55C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.980154Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:22.980783Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.018337Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.173721Z","level":"info","event":"   -> 20 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.174447Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.176504Z","level":"info","event":"   -> ✅ Données pour 'LG LG C5 OLED evo 4K 55 POUCES OLED55C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.178749Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.179586Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.180371Z","level":"info","event":"--- Traitement Produit 2/1771 (Key: 2) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.181162Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.181938Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 43 POUCES 43PUS9050/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.182659Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 43 POUCES 43PUS9050/12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.585940Z","level":"info","event":"   -> 12 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:30.586553Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.610689Z","level":"info","event":"   -> (L) Chargement de 12 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.657288Z","level":"info","event":"   -> 8 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.657827Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.659139Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 43 POUCES 43PUS9050/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.660580Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.661167Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.661694Z","level":"info","event":"--- Traitement Produit 3/1771 (Key: 3) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.662178Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.662533Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS AMBILIGHT LED FULL HD 32 POUCES 32PFS6900/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:37.663006Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS AMBILIGHT LED FULL HD 32 POUCES 32PFS6900/12' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:39.067544Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:39.068192Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.094189Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.320249Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.320810Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.322355Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS AMBILIGHT LED FULL HD 32 POUCES 32PFS6900/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.323887Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.324426Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.324979Z","level":"info","event":"--- Traitement Produit 4/1771 (Key: 4) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.325607Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.326123Z","level":"info","event":"   -> Mot-clé généré : 'JVC JVC LED HD LT-32FV140 32 POUCES'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:46.326606Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC JVC LED HD LT-32FV140 32 POUCES' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:47.037192Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:47.037760Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.164994Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.312814Z","level":"info","event":"   -> 24 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.313570Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.314879Z","level":"info","event":"   -> ✅ Données pour 'JVC JVC LED HD LT-32FV140 32 POUCES' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.316514Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.316941Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.317339Z","level":"info","event":"--- Traitement Produit 5/1771 (Key: 5) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.317790Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.318135Z","level":"info","event":"   -> Mot-clé généré : 'SONY SONY BRAVIA LED HD 32 POUCES KD32W804PAEP'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:54.318512Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY SONY BRAVIA LED HD 32 POUCES KD32W804PAEP' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:55.318936Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:09:55.319479Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:00.335781Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.346608Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.543654Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.544250Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.545487Z","level":"info","event":"   -> ✅ Données pour 'SONY SONY BRAVIA LED HD 32 POUCES KD32W804PAEP' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.547068Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.548702Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.549206Z","level":"info","event":"--- Traitement Produit 6/1771 (Key: 6) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.549794Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.550202Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG OLED 4K 65 POUCES QE65S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:02.550976Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG OLED 4K 65 POUCES QE65S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:03.134895Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:03.135363Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:05.376552Z","level":"error","event":"Task killed!","logger":"task"}

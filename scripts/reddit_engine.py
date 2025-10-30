@@ -127,21 +127,67 @@ def get_products_to_search_v1(dwh_cursor):
     return products
 
 def generate_search_keyword(product_name, brand):
-    """Tente de nettoyer un nom de produit retail en un mot-clé de recherche."""
+    """
+    MODIFIÉ (v8) : Ajoute plus de polluants comme FHD, FULL, 
+    et les années (ex: 2022).
+    """
     if not product_name: return None
     if not brand: brand = ""
+    
     try:
-        clean_name = re.sub(f'^{re.escape(brand)}', '', product_name, flags=re.IGNORECASE).strip()
-        stop_words_regex = r'\b(BLACK|NOIR|WHITE|BLANC|POUCES|CM|\(2025\)|\(2024\)|4K|QLED|OLED|LED|FULL HD|AMBILIGHT|EVO|NEO|THE ONE)\b'
-        clean_name = re.sub(stop_words_regex, '', clean_name, flags=re.IGNORECASE)
+        clean_name = product_name
+        
+        if brand:
+            clean_name = re.sub(f'^{re.escape(brand)}', '', clean_name, flags=re.IGNORECASE).strip()
+            
+        measurements_regex = r'\b\d+([.,]\d+)?\s*(POUCES|CM|"|\'|M|ML|GB|GBT|DB|GO|W)\b'
+        clean_name = re.sub(measurements_regex, '', clean_name, flags=re.IGNORECASE)
+
+        POLLUTANT_WORDS = [
+            'ACCSUP', 'CLEANER', 'SCREENCLEANING', 'CABLE', 'CAB', 'HDMI', 'RCA', 
+            'JACK', 'USB', 'USB-C', 'VGA', 'SCART', 'OPTIC', 'OPTIQUE', 'COAX', 
+            'COAXIAL', 'DVI', 'LIGHTNING', 'ADAPT', 'ADAPTER', 'CONVERTER', 
+            'SPLITTER', 'KIT', 'ANTENNA', 'ANTENNE', 'REMOTE', 'FICHES', 'MOUNT', 
+            'WALLMOUNT', 'FLOORSTAND', 'STAND', 'SUPPORT', 'FIX', 'TILT', 
+            'ORIENTABLE', 'MICRO', 'MICROPHONE', 'CASE', 'CHARGE', 'HD', 'FHD', 'FULL', 'UHD', 
+            '4K', '8K', '2K', 'QLED', 'OLED', 'LED', 'LCD', 'MINI-LED', 'BT', 
+            'BLUETOOTH', 'WIFI', 'WI-FI', 'ANC', 'DAB\+', 'DAB', 'FM', 'SMART', 
+            'WIRELESS', 'SANS FIL', 'FILAIRE', 'INTERNET', 'STEREO', 'SURROUND', 
+            'BLACK', 'BLK', 'NOIR', 'WHITE', 'WHT', 'WH', 'BLANC', 'BLUE', 'BLEU', 
+            'RED', 'ROSE', 'PINK', 'GREY', 'GRAY', 'GRIS', 'SILVER', 'ARGENT', 
+            'GOLD', 'OR', 'GREEN', 'VERT', 'ORANGE', 'PURPLE', 'CREAM', 'WOOD', 
+            'COPPER', 'LILAC', 'CHARCOAL', 'SLATE', 'WALNUT', 'ASH', 'MALE', 'FEMALE',
+            'GEN', 'GÉNÉRATION', 'GENERATION', 'MKII', 'V2', 'V3', 'V4', 'PACK', 
+            'KIDS', 'ECO', 'WW', 'EU', 'PAIR', 'PAIRE', 'BUNDLE', 'X2', 'X5', 
+            '3 IN 1', 'ULTRA', 'PRO', 'MINI', 'NANO', 'LITE', 'AIR', 'MAX', 'PLUS',
+            'TV', 'AUDIO', 'HOME', 'SPEAKER', 'HEADPHONE', 'EARBUDS', 'TWS',
+            '2021', '2022', '2023', '2024', '2025' # Ajout des années
+        ]
+        pollutants_regex = r'\b(' + '|'.join(POLLUTANT_WORDS) + r')\b'
+        clean_name = re.sub(pollutants_regex, '', clean_name, flags=re.IGNORECASE)
+
+        clean_name = re.sub(r'[\(\)/\\\-+_]', ' ', clean_name)
+        clean_name = re.sub(r'[^a-zA-Z0-9\s]', '', clean_name)
+        
+        # Supprime les nombres "orphelins" (1-2 chiffres)
+        clean_name = re.sub(r'\b\d{1,2}\b', '', clean_name)
+        
         clean_name = re.sub(r'\s+', ' ', clean_name).strip()
-        search_keyword = f"{brand} {clean_name}".strip()
-        parts = search_keyword.split(' ')
+        
+        if len(clean_name) < 3: 
+             print(f"   -> ⚠️ Mot-clé rejeté car trop court après nettoyage (Nom nettoyé: '{clean_name}').")
+             return None 
+
+        final_keyword = f"{brand} {clean_name}".strip()
+        
+        parts = final_keyword.split(' ')
         if len(parts) > 4:
-            search_keyword = " ".join(parts[:4])
-        return search_keyword
+            final_keyword = " ".join(parts[:4])
+            
+        return final_keyword
+
     except Exception as e:
-        print(f"    -> ⚠️ Erreur (generate_search_keyword): {e}")
+        print(f"    -> ⚠️ Erreur (generate_search_keyword): {e}. Retour du nom original.")
         return f"{brand} {product_name}"
     
 def get_subreddit_for_category(category_name):
@@ -214,81 +260,132 @@ def get_subreddit_for_category(category_name):
     target_subreddit = SUBREDDIT_MAPPING.get(clean_category, "all")
     return target_subreddit
 
-def search_reddit_api(search_keyword, subreddit, limit=25):
-    """Appelle l'API de recherche Reddit pour un mot-clé de recherche propre."""
+#
+# --- REMPLACEZ CETTE FONCTION (VERSION À DEUX PASSES) ---
+#
+def _execute_reddit_search(search_keyword, subreddit, limit):
+    """Fonction helper pour exécuter un appel API."""
     print(f"   -> (E) Appel API Reddit pour : '{search_keyword}' dans r/{subreddit}")
     url = f"https://www.reddit.com/r/{subreddit}/search.json"
-    params = {'q': search_keyword, 'sort': 'new', 'restrict_sr': 'true', 't': 'year', 'limit': limit}
-    # Si le subreddit est 'all' (parce qu'on n'a pas trouvé de mapping),
-    # on ne restreint PAS la recherche au subreddit "all".
+    params = {'q': search_keyword, 'sort': 'relevance', 'restrict_sr': 'true', 't': 'year', 'limit': limit}
+    
     if subreddit == "all":
         params['restrict_sr'] = 'false'
+        
     headers = {'User-Agent': 'ProjetDataEngineering-Asmae-v1.0'}
-    posts_found = []
+    
     try:
         response = requests.get(url, params=params, headers=headers)
         response.raise_for_status() 
         data = response.json()
-        posts = data['data']['children']
-        print(f"   -> {len(posts)} posts bruts trouvés.")
-        for post in posts:
-            post_data = post['data']
-            post_date = datetime.fromtimestamp(post_data.get('created_utc', 0))
-            posts_found.append({
-                "PostID": post_data.get('name'), "PostTitle": post_data.get('title'),
-                "PostText": post_data.get('selftext'), "PostURL": post_data.get('permalink'),
-                "PostDate": post_date, "AuthorName": post_data.get('author')
-            })
-        return posts_found
+        return data['data']['children']
     except Exception as e:
-        print(f"   -> ❌ ERREUR (search_reddit_api) : {e}")
+        print(f"   -> ❌ ERREUR (_execute_reddit_search) : {e}")
         return []
     finally:
-        # --- PAUSE DE SÉCURITÉ INTÉGRÉE ---
-        # Garantit que nous respectons la limite de 10 req/min (6s/req)
         print("   -> Pause de 7 secondes (respect des limites API)...")
         time.sleep(7)
 
+def search_reddit_api(search_keyword, subreddit, limit=25):
+    """
+    MODIFIÉ (v8 - Deux Passes) :
+    Passe 1 : Tente une recherche spécifique.
+    Passe 2 : Si échec, tente une recherche large (juste la marque).
+    """
+    
+    # --- PASSE 1 : Recherche Spécifique ---
+    posts_data = _execute_reddit_search(search_keyword, subreddit, limit)
+    
+    # --- PASSE 2 : Recherche Large (si la Passe 1 échoue) ---
+    if not posts_data:
+        print(f"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour '{search_keyword}'.")
+        # On extrait la marque (le premier mot du mot-clé)
+        brand = search_keyword.split(' ')[0]
+        
+        # On ne fait la passe 2 que si la marque est différente du mot-clé
+        if brand != search_keyword and len(brand) > 2:
+            print(f"   -> Lancement Passe 2 (large) avec juste la marque: '{brand}'")
+            posts_data = _execute_reddit_search(brand, subreddit, limit)
+        else:
+            print(f"   -> Mot-clé trop générique, annulation de la Passe 2.")
+
+    # --- Traitement des résultats (des deux passes) ---
+    print(f"   -> {len(posts_data)} posts bruts trouvés au total.")
+    posts_found = []
+    
+    for post in posts_data:
+        post_data = post['data']
+        post_date = datetime.fromtimestamp(post_data.get('created_utc', 0))
+        
+        author_cakeday_utc = post_data.get('author_cakeday') 
+        author_creation_date = None
+        if author_cakeday_utc:
+            author_creation_date = datetime.fromtimestamp(author_cakeday_utc)
+
+        posts_found.append({
+            "PostID": post_data.get('name'), 
+            "PostTitle": post_data.get('title'),
+            "PostText": post_data.get('selftext'), 
+            "PostURL": post_data.get('permalink'),
+            "PostDate": post_date, 
+            "AuthorName": post_data.get('author'),
+            "AuthorCreationDate": author_creation_date
+        })
+    return posts_found
+
 # --- 3. Fonction de Chargement (MODIFIÉE) ---
 
-def save_raw_posts_to_staging(staging_cursor, posts_to_save, product_key, product_name, search_keyword):
+def save_raw_posts_to_staging(staging_cursor, posts_to_save, product_key, product_name, search_keyword, brand):
     """
-    Enregistre les posts bruts dans la table Staging_Reddit_Posts.
-    MAINTENANT : Inclut les nouvelles colonnes de traçabilité.
+    MODIFIÉ (Filtre de Pertinence) :
+    Enregistre les posts bruts MAIS SEULEMENT SI le titre ou le texte
+    contient la marque, pour filtrer les résultats non pertinents.
     """
-    print(f"   -> (L) Chargement de {len(posts_to_save)} posts dans Staging_Reddit_Posts...")
+    # 1. On ajoute un nouveau compteur
+    print(f"   -> (L) {len(posts_to_save)} posts reçus. Application du filtre de pertinence (Marque: '{brand}')...")
     insert_count = 0
     skipped_count = 0
+    filtered_out_count = 0 # Compteur pour les posts hors sujet
     BASE_REDDIT_URL = "https://www.reddit.com"
 
     for post in posts_to_save:
         try:
-            staging_cursor.execute("SELECT 1 FROM Staging_Reddit_Posts WHERE PostID = ?", (post['PostID'])) #ca c'est bien pensé
+            # 2. Vérification des doublons (votre code, ne change pas)
+            staging_cursor.execute("SELECT 1 FROM Staging_Reddit_Posts WHERE PostID = ?", (post['PostID']))
             if staging_cursor.fetchone():
                 skipped_count += 1
                 continue 
             
+            # --- 3. FILTRE DE PERTINENCE (NOUVEAU) ---
+            # On vérifie si la marque (ex: 'philips') est dans le texte
+            # On gère le cas où la marque serait None
+            if brand and brand.strip() != "":
+                # On combine le titre et le texte pour la recherche
+                title = post['PostTitle'] or ""
+                text = post['PostText'] or ""
+                full_text = f"{title} {text}".lower() # Tout en minuscules
+                
+                if brand.lower() not in full_text:
+                    filtered_out_count += 1
+                    continue # Le post est hors sujet, on le saute
+            # --- FIN DU FILTRE ---
+
             full_url = f"{BASE_REDDIT_URL}{post['PostURL']}"
             
-            # --- REQUÊTE INSERT MODIFIÉE ---
+            # 4. Insertion (votre code, ne change pas)
             staging_cursor.execute(
                 """
                 INSERT INTO Staging_Reddit_Posts
-                    (ProductKey_Ref, ProductName_Ref, Search_Keyword_Used, -- Colonnes ajoutées
+                    (ProductKey_Ref, ProductName_Ref, Search_Keyword_Used,
                      PostID, PostTitle, PostText, PostURL, PostDate, AuthorName, 
-                     Status)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending_sentiment')
+                     AuthorCreationDate, Status)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending_sentiment')
                 """,
                 (
-                    product_key,
-                    product_name,     # Nouvelle donnée
-                    search_keyword,   # Nouvelle donnée
-                    post['PostID'],
-                    post['PostTitle'],
-                    post['PostText'],
-                    full_url,
-                    post['PostDate'],
-                    post['AuthorName']
+                    product_key, product_name, search_keyword,
+                    post['PostID'], post['PostTitle'], post['PostText'],
+                    full_url, post['PostDate'], post['AuthorName'],
+                    post['AuthorCreationDate']
                 )
             )
             insert_count += 1
@@ -300,7 +397,7 @@ def save_raw_posts_to_staging(staging_cursor, posts_to_save, product_key, produc
             print(f"   -> ❌ ERREUR (save_raw_posts_to_staging) : {e}")
             raise 
             
-    print(f"   -> {insert_count} nouveaux posts insérés.")
+    # 5. Affichage des 3 compteurs
+    print(f"   -> {insert_count} nouveaux posts (pertinents) insérés.")
+    print(f"   -> {filtered_out_count} posts filtrés (hors sujet).")
     print(f"   -> {skipped_count} posts ignorés (doublons).")
-
-

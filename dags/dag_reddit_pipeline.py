@@ -12,7 +12,12 @@ if PROJECT_ROOT not in sys.path:
 from airflow.decorators import dag, task
 
 # --- Import de votre moteur ---
-import scripts.reddit_engine as rpe 
+# (Nous importons depuis le dossier 'scripts/' comme convenu)
+try:
+    from scripts import reddit_engine as rpe 
+except ImportError:
+    print("ERREUR : Impossible d'importer 'reddit_engine' depuis le dossier 'scripts/'.")
+    raise
 
 # --- Définition de la TÂCHE UNIQUE ---
 
@@ -37,7 +42,6 @@ def run_full_reddit_pipeline_task():
         print("   -> ✅ Connecté au DWH.")
 
         # Appelle la fonction originale (récupère Nom, Marque, etc.)
-        # Nous modifions le moteur pour récupérer toutes les infos
         query = """
             SELECT p.ProductKey, p.ProductName, p.Brand, p.Category
             FROM Projet_Market_DWH.dbo.Dim_Product AS p
@@ -105,9 +109,18 @@ def run_full_reddit_pipeline_task():
                 conn_staging = rpe.get_staging_connection()
                 cursor_staging = conn_staging.cursor()
                 
+                # --- CORRECTION APPLIQUÉE ICI ---
+                # On passe maintenant 'brand' comme dernier argument
+                # pour correspondre à la nouvelle fonction moteur.
                 rpe.save_raw_posts_to_staging(
-                    cursor_staging, raw_posts, product_key, product_name, search_keyword
+                    cursor_staging, 
+                    raw_posts, 
+                    product_key, 
+                    product_name, 
+                    search_keyword,
+                    brand  # <-- L'ARGUMENT MANQUANT A ÉTÉ AJOUTÉ
                 )
+                # ---------------------------------
                 
                 conn_staging.commit()
                 print(f"   -> ✅ Données pour '{search_keyword}' sauvegardées.")
@@ -118,8 +131,6 @@ def run_full_reddit_pipeline_task():
             print(f"   -> ❌ ERREUR lors du traitement du produit {product_name} : {e}")
             if conn_staging: conn_staging.rollback()
             # On log l'erreur mais on continue la boucle
-            # (pour ne pas bloquer les 1000 autres produits)
-            # Si vous voulez que tout s'arrête, changez 'print' par 'raise'
             print(f"   -> ERREUR IGNORÉE, passage au produit suivant.") 
         finally:
             if cursor_staging: cursor_staging.close()
@@ -135,7 +146,7 @@ def run_full_reddit_pipeline_task():
     start_date=datetime(2025, 10, 29),
     schedule="@daily",
     catchup=False,
-    tags=['reddit_posts_search']
+    tags=['reddit_posts_search'] # J'ai gardé votre tag
 )
 def reddit_pipeline_dag():
     """

@@ -7182,3 +7182,877 @@
 {"timestamp":"2025-10-30T11:38:12.748111Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-cd575mepg-inverter...","chan":"stdout","logger":"task"}
 {"timestamp":"2025-10-30T11:38:13.649757Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8616469...","chan":"stdout","logger":"task"}
 {"timestamp":"2025-10-30T11:38:13.659090Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:15.659370Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:15.659962Z","level":"info","event":"--- Traitement Produit 1436/1609 (ID: 4235, SKU: 8493472) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:15.660488Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-cd565bepg...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:17.098624Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8493472...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:17.111439Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:19.111607Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:19.112316Z","level":"info","event":"--- Traitement Produit 1437/1609 (ID: 4236, SKU: 7745842) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:19.112821Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/severin-mw7874...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:19.948900Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7745842...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:19.957838Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:21.958064Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:21.958668Z","level":"info","event":"--- Traitement Produit 1438/1609 (ID: 4237, SKU: 8014086) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:21.959137Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mwp103b-cook20...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:22.779578Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8014086...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:22.787435Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:24.787678Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:24.788259Z","level":"info","event":"--- Traitement Produit 1439/1609 (ID: 4238, SKU: 7652364) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:24.788566Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-sm21qwepg...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:25.864350Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7652364...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:25.873388Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:27.873522Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:27.874141Z","level":"info","event":"--- Traitement Produit 1440/1609 (ID: 4239, SKU: 7652305) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:27.874484Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-cd88qsepg-4-airfryer...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:28.677723Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7652305...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:28.684239Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:30.684431Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:30.685075Z","level":"info","event":"--- Traitement Produit 1441/1609 (ID: 4240, SKU: 8811784) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:30.685396Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/sharp-r-971-ww...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:31.570808Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8811784...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:31.580601Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:33.580803Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:33.581386Z","level":"info","event":"--- Traitement Produit 1442/1609 (ID: 4241, SKU: 8215928) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:33.581807Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mwp-303-sb...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:34.623773Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8215928...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:34.631197Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:36.631509Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:36.632564Z","level":"info","event":"--- Traitement Produit 1443/1609 (ID: 4242, SKU: 8811849) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:36.633559Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/sharp-r-971-stw...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:37.712515Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8811849...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:37.721196Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:39.721758Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:39.722680Z","level":"info","event":"--- Traitement Produit 1444/1609 (ID: 4243, SKU: 7652348) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:39.723565Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-gm22qbepg...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:40.586325Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7652348...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:40.595054Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:42.595317Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:42.595892Z","level":"info","event":"--- Traitement Produit 1445/1609 (ID: 4244, SKU: 8259755) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:42.596300Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/sharp-r15at-horeca-pro...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:43.653938Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8259755...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:43.664230Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:45.664529Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:45.664993Z","level":"info","event":"--- Traitement Produit 1446/1609 (ID: 4245, SKU: 7934807) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:45.665306Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-ds59nmetg...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:46.425482Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7934807...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:46.433869Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:48.434000Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:48.434584Z","level":"info","event":"--- Traitement Produit 1447/1609 (ID: 4246, SKU: 7794975) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:48.434886Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/whirlpool-mwsc-933-sw-supreme-chef...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:49.366667Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7794975...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:49.376042Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:51.376242Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:51.376792Z","level":"info","event":"--- Traitement Produit 1448/1609 (ID: 4247, SKU: 7652321) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:51.377154Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/panasonic-nn-gd34qwepg...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:52.106067Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7652321...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:52.114176Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:54.114338Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:54.115716Z","level":"info","event":"--- Traitement Produit 1449/1609 (ID: 4248, SKU: 7646984) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:54.116686Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/micro-onde/samsung-ms23k3513ak-en...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:55.226987Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7646984...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:55.234516Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:57.234740Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:57.235311Z","level":"info","event":"--- Traitement Produit 1450/1609 (ID: 4249, SKU: 8655359) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:57.235639Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/moulinex-ox464810-optimo-33l...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:58.066744Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8655359...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:38:58.074631Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:00.074744Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:00.075255Z","level":"info","event":"--- Traitement Produit 1451/1609 (ID: 4250, SKU: 8089086) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:00.075554Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/moulinex-ox286810-delicio-tact-39l...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:00.840187Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8089086...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:00.848737Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:02.848937Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:02.849502Z","level":"info","event":"--- Traitement Produit 1452/1609 (ID: 4251, SKU: 8317836) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:02.849861Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/moulinex-ox485e10-optimo-39l...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:03.864914Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8317836...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:03.871972Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:05.872200Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:05.872793Z","level":"info","event":"--- Traitement Produit 1453/1609 (ID: 4252, SKU: 7967268) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:05.873104Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/proline-pmo30...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:06.860826Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7967268...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:06.872960Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:08.924408Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:08.925038Z","level":"info","event":"--- Traitement Produit 1454/1609 (ID: 4253, SKU: 7959052) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:08.925548Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/proline-pmo19...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:09.959556Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7959052...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:09.968643Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:11.970630Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:11.971240Z","level":"info","event":"--- Traitement Produit 1455/1609 (ID: 4254, SKU: 7932413) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:11.971722Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/proline-pmf60a...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:12.776437Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7932413...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:12.785709Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:14.785914Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:14.787160Z","level":"info","event":"--- Traitement Produit 1456/1609 (ID: 4255, SKU: 7924585) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:14.787751Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/electrolux-eso46digit...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:15.665830Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7924585...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:15.675021Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:17.675189Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:17.675727Z","level":"info","event":"--- Traitement Produit 1457/1609 (ID: 4256, SKU: 7689241) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:17.676011Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/thomson-thmo22af...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:18.414223Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7689241...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:18.422867Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:20.423083Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:20.423814Z","level":"info","event":"--- Traitement Produit 1458/1609 (ID: 4257, SKU: 7830688) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:20.424603Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2056...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:21.473049Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7830688...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:21.482168Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:23.482222Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:23.482790Z","level":"info","event":"--- Traitement Produit 1459/1609 (ID: 4258, SKU: 7838743) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:23.483112Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/electrolux-eso936...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:24.229974Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7838743...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:24.237510Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:26.237711Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:26.238213Z","level":"info","event":"--- Traitement Produit 1460/1609 (ID: 4259, SKU: 7736584) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:26.238565Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/four-a-vapeur/smeg-cof01creu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:27.079880Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7736584...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:27.088999Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:29.089214Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:29.089696Z","level":"info","event":"--- Traitement Produit 1461/1609 (ID: 4260, SKU: 7724128) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:29.090026Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/four-a-vapeur/smeg-cof01wheu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:30.032437Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7724128...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:30.041988Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:32.042174Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:32.042802Z","level":"info","event":"--- Traitement Produit 1462/1609 (ID: 4261, SKU: 7831080) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:32.043163Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2067...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:32.783817Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7831080...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:32.790871Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:34.791061Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:34.791625Z","level":"info","event":"--- Traitement Produit 1463/1609 (ID: 4262, SKU: 7682549) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:34.792001Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/barbecue/ninja-artisan-mo201eu-four-a-pizza-electrique-d-exterieur...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:35.552639Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7682549...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:35.561298Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:37.614993Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:37.615573Z","level":"info","event":"--- Traitement Produit 1464/1609 (ID: 4263, SKU: 8332053) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:37.616013Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/riviera-bar-qfr-460...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:38.684863Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8332053...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:38.695988Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:40.696383Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:40.697045Z","level":"info","event":"--- Traitement Produit 1465/1609 (ID: 4264, SKU: 8027293) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:40.697592Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/riviera-bar-qfr300...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:41.472593Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8027293...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:41.479995Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:43.480214Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:43.480810Z","level":"info","event":"--- Traitement Produit 1466/1609 (ID: 4265, SKU: 7863594) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:43.481223Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/moulinex-new-delice-xl-ox283810...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:44.310522Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7863594...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:44.318661Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:46.318894Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:46.319483Z","level":"info","event":"--- Traitement Produit 1467/1609 (ID: 4266, SKU: 7756216) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:46.319880Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/barbecue/ninja-four-electrique-plein-air-8-en-1-woodfire-four-a-pizza-oo101eu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:47.508303Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7756216...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:47.516764Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:49.517013Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:49.518403Z","level":"info","event":"--- Traitement Produit 1468/1609 (ID: 4267, SKU: 7672535) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:49.518969Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/sage-the-smart-oven-air-fryer-xl-sov905bss4xek1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:50.224703Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7672535...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:50.231447Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:52.231708Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:52.232570Z","level":"info","event":"--- Traitement Produit 1469/1609 (ID: 4268, SKU: 7672527) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:52.233007Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/sage-the-smart-oven-pizzaiolo-spz820bss4eeu1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:53.010422Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7672527...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:53.017674Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:55.017910Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:55.018514Z","level":"info","event":"--- Traitement Produit 1470/1609 (ID: 4269, SKU: 7724136) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:55.018849Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/four-a-vapeur/smeg-cof01bleu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:55.929627Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7724136...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:55.936547Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:57.936778Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:57.937387Z","level":"info","event":"--- Traitement Produit 1471/1609 (ID: 4270, SKU: 7830750) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:57.937788Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2052...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:58.677902Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7830750...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:39:58.684286Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:00.684551Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:00.685111Z","level":"info","event":"--- Traitement Produit 1472/1609 (ID: 4271, SKU: 8498997) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:00.685526Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/moulinex-ox495810-optimo-60l...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:01.459588Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8498997...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:01.466813Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:03.466975Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:03.467385Z","level":"info","event":"--- Traitement Produit 1473/1609 (ID: 4272, SKU: 7830653) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:03.467655Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2042...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:04.409780Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7830653...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:04.416872Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:06.417096Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:06.417710Z","level":"info","event":"--- Traitement Produit 1474/1609 (ID: 4273, SKU: 7830971) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:06.418078Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2068...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:07.366693Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7830971...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:07.375968Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:09.376307Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:09.376812Z","level":"info","event":"--- Traitement Produit 1475/1609 (ID: 4274, SKU: 7962592) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:09.377150Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/sage-the-smart-oven-pro...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:10.164669Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7962592...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:10.175415Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:12.175886Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:12.176497Z","level":"info","event":"--- Traitement Produit 1476/1609 (ID: 4275, SKU: 8332126) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:12.176824Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/riviera-bar-qfr600...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:13.226347Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8332126...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:13.234419Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:15.234696Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:15.235242Z","level":"info","event":"--- Traitement Produit 1477/1609 (ID: 4276, SKU: 8613443) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:15.235670Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/moulinex-optimo-ox485810...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:16.070266Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8613443...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:16.078952Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:18.079069Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:18.079663Z","level":"info","event":"--- Traitement Produit 1478/1609 (ID: 4277, SKU: 7675089) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:18.079992Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/princess-01-112756...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:18.836238Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7675089...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:18.843601Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:20.843800Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:20.844366Z","level":"info","event":"--- Traitement Produit 1479/1609 (ID: 4278, SKU: 7830785) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:20.844712Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2074...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:21.842488Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7830785...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:21.851842Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:23.852084Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:23.852602Z","level":"info","event":"--- Traitement Produit 1480/1609 (ID: 4279, SKU: 7830831) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:23.852966Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2073...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:24.651152Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7830831...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:24.659336Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:26.659707Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:26.660494Z","level":"info","event":"--- Traitement Produit 1481/1609 (ID: 4280, SKU: 7962614) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:26.661122Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/sage-the-smart-oven-air...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:27.509223Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7962614...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:27.516073Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:29.516317Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:29.516942Z","level":"info","event":"--- Traitement Produit 1482/1609 (ID: 4281, SKU: 8287678) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:29.517317Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/rotissoire/severin-to2058...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:30.879296Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8287678...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:30.886086Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:32.886302Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:32.886824Z","level":"info","event":"--- Traitement Produit 1483/1609 (ID: 4282, SKU: 7769806) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:32.887145Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/siemens-bi710c1b1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:33.559129Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7769806...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:33.565834Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:35.566237Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:35.566850Z","level":"info","event":"--- Traitement Produit 1484/1609 (ID: 4283, SKU: 8448418) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:35.567280Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/siemens-iq500-bi510cnr0...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:36.386191Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8448418...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:36.396352Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:38.447003Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:38.447574Z","level":"info","event":"--- Traitement Produit 1485/1609 (ID: 4284, SKU: 8241139) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:38.448062Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/aeg-kde911424b...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:39.160501Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8241139...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:39.171292Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:41.171587Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:41.173359Z","level":"info","event":"--- Traitement Produit 1486/1609 (ID: 4285, SKU: 7769792) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:41.174271Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/bosch-bic7101b1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:42.301315Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7769792...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:42.311285Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:44.311525Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:44.314413Z","level":"info","event":"--- Traitement Produit 1487/1609 (ID: 4286, SKU: 8047138) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:44.317111Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/miele-esw-7010-bw...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:44.956246Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8047138...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:44.966260Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:46.966557Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:46.967255Z","level":"info","event":"--- Traitement Produit 1488/1609 (ID: 4287, SKU: 8552150) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:46.967796Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/aeg-kde-911423-b...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:47.971821Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8552150...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:47.981004Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:49.981224Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:49.981772Z","level":"info","event":"--- Traitement Produit 1489/1609 (ID: 4288, SKU: 8329435) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:49.982082Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/tiroir-chauffant-ou-sous-vide/whirlpool-w1114...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:50.845571Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8329435...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:50.852374Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:52.852711Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:52.853273Z","level":"info","event":"--- Traitement Produit 1490/1609 (ID: 4289, SKU: 7813325) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:52.853610Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/proline-cuiseur-vapeur-et-a-riz-rc500w...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:53.531279Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7813325...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:53.540651Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:55.540831Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:55.541353Z","level":"info","event":"--- Traitement Produit 1491/1609 (ID: 4290, SKU: 8332525) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:55.541690Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/simeo-crm230...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:56.263470Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8332525...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:56.270236Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:58.270504Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:58.271122Z","level":"info","event":"--- Traitement Produit 1492/1609 (ID: 4291, SKU: 8689091) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:58.271451Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/solis-rice-cooker-duo-program-type-817...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:59.223196Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8689091...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:40:59.230061Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:01.230307Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:01.231635Z","level":"info","event":"--- Traitement Produit 1493/1609 (ID: 4292, SKU: 7690010) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:01.232001Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/thomson-thrc500...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:01.878022Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7690010...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:01.885753Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:03.886013Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:03.886557Z","level":"info","event":"--- Traitement Produit 1494/1609 (ID: 4293, SKU: 7991339) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:03.886875Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/proline-fs6x...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:04.573102Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7991339...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:04.579762Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:06.580043Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:06.580800Z","level":"info","event":"--- Traitement Produit 1495/1609 (ID: 4294, SKU: 7783604) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:06.581703Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/russell-hobbs-19750-56...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:07.616380Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7783604...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:07.624417Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:09.624842Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:09.625627Z","level":"info","event":"--- Traitement Produit 1496/1609 (ID: 4295, SKU: 7759231) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:09.626173Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/riviera-bar-low-sugar-qcr370...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:10.296108Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7759231...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:10.304590Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:12.304915Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:12.305598Z","level":"info","event":"--- Traitement Produit 1497/1609 (ID: 4296, SKU: 8191166) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:12.306127Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/tefal-new-classic-rk103811...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:13.020739Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8191166...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:13.030846Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:15.031089Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:15.031625Z","level":"info","event":"--- Traitement Produit 1498/1609 (ID: 4297, SKU: 7669941) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:15.032150Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/panasonic-sr-da152kxe...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:15.978479Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7669941...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:15.986975Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:17.987254Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:17.987816Z","level":"info","event":"--- Traitement Produit 1499/1609 (ID: 4298, SKU: 8870748) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:17.988241Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/seb-vc145100-convenient-inox...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:18.765611Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8870748...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:18.773348Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:20.773477Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:20.774012Z","level":"info","event":"--- Traitement Produit 1500/1609 (ID: 4299, SKU: 7935749) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:20.774342Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/tefal-convenient-series-deluxe-vc502d10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:21.541425Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7935749...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:21.549062Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:23.549313Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:23.549866Z","level":"info","event":"--- Traitement Produit 1501/1609 (ID: 4300, SKU: 8242070) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:23.550189Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/russell-hobbs-home-stoomkoker-19270-56...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:24.234712Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8242070...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:24.241994Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:26.242218Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:26.242774Z","level":"info","event":"--- Traitement Produit 1502/1609 (ID: 4301, SKU: 8475369) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:26.243176Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/magimix-11582eb...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:27.440127Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8475369...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:27.446681Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:29.446935Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:29.447543Z","level":"info","event":"--- Traitement Produit 1503/1609 (ID: 4302, SKU: 7780249) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:29.447876Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/thomson-thfs800...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:30.130078Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7780249...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:30.137744Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:32.137909Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:32.138424Z","level":"info","event":"--- Traitement Produit 1504/1609 (ID: 4303, SKU: 8080887) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:32.138731Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/seb-vc204800-ultra-compact...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:33.051775Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8080887...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:33.059155Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:35.059344Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:35.059885Z","level":"info","event":"--- Traitement Produit 1505/1609 (ID: 4304, SKU: 8724369) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:35.060187Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/dejelin-bio-pur...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:36.004215Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8724369...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:36.012287Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:38.070243Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:38.070860Z","level":"info","event":"--- Traitement Produit 1506/1609 (ID: 4305, SKU: 8745145) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:38.071300Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/cuiseur-vapeur-a-riz/braun-fs-3000...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:38.782577Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8745145...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:38.791832Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:40.792020Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:40.792707Z","level":"info","event":"--- Traitement Produit 1507/1609 (ID: 4306, SKU: 7658915) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:40.793355Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-infinity-wifi-20-in-1-noir-ce9828f0-avec-airfryer...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:41.519669Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7658915...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:41.526770Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:43.527162Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:43.527771Z","level":"info","event":"--- Traitement Produit 1508/1609 (ID: 4307, SKU: 7972636) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:43.528137Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-robot-de-cuisine/moulinex-accessoire-cookeo-extra-crisp-airfryer-ez150800...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:44.498322Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7972636...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:44.508518Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:46.508741Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:46.509382Z","level":"info","event":"--- Traitement Produit 1509/1609 (ID: 4308, SKU: 7833423) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:46.509861Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-ce85ba10...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:47.549483Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7833423...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:47.559672Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:49.559952Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:49.560552Z","level":"info","event":"--- Traitement Produit 1510/1609 (ID: 4309, SKU: 7766254) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:49.560899Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/ninja-speedi-rapid-cooker-airfryer-on400eu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:50.336653Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7766254...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:50.344992Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:52.345207Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:52.346471Z","level":"info","event":"--- Traitement Produit 1511/1609 (ID: 4310, SKU: 8080933) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:52.347344Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-touch-wifi-noir-yy4632fb...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:53.452133Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8080933...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:53.462809Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:55.463000Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:55.463574Z","level":"info","event":"--- Traitement Produit 1512/1609 (ID: 4311, SKU: 7697716) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:55.463885Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-mini-eco-design-ce88e310...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:56.224446Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7697716...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:56.232406Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:58.232605Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:58.233155Z","level":"info","event":"--- Traitement Produit 1513/1609 (ID: 4312, SKU: 7795017) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:58.233567Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-touch-pro-blue-ce943410...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:59.303829Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7795017...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:41:59.311408Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:01.311633Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:01.312211Z","level":"info","event":"--- Traitement Produit 1514/1609 (ID: 4313, SKU: 7762046) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:01.312602Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/greenpan-omnicooker-black...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:02.120476Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7762046...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:02.127300Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:04.127527Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:04.128101Z","level":"info","event":"--- Traitement Produit 1515/1609 (ID: 4314, SKU: 7722621) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:04.128503Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-wifi-9-in-1-ce952810...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:04.908132Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7722621...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:04.917238Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:06.917450Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:06.918308Z","level":"info","event":"--- Traitement Produit 1516/1609 (ID: 4315, SKU: 7925530) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:06.918701Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-turbocuisine-ce754810...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:07.684454Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7925530...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:07.691791Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:09.692247Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:09.692884Z","level":"info","event":"--- Traitement Produit 1517/1609 (ID: 4316, SKU: 7718462) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:09.693286Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/ninja-combi-12-in-1-sfp700eu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:10.734562Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7718462...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:10.746995Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:12.748833Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:12.749665Z","level":"info","event":"--- Traitement Produit 1518/1609 (ID: 4317, SKU: 7721285) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:12.750293Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-multicook-fry-mz7311f0...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:13.467823Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7721285...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:13.477044Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:15.477311Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:15.477984Z","level":"info","event":"--- Traitement Produit 1519/1609 (ID: 4318, SKU: 7799306) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:15.482830Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/moulinex-cookeo-mini-blue-ce880410...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:16.296934Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7799306...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:16.308346Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:18.308488Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:18.309094Z","level":"info","event":"--- Traitement Produit 1520/1609 (ID: 4319, SKU: 7665431) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:18.309617Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/philips-hd3093-80...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:19.315207Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7665431...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:19.325213Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:21.325422Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:21.326008Z","level":"info","event":"--- Traitement Produit 1521/1609 (ID: 4320, SKU: 7782209) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:21.326327Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/crock-pot-turbo-express-cr062...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:21.990170Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7782209...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:21.996805Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:23.997046Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:23.997557Z","level":"info","event":"--- Traitement Produit 1522/1609 (ID: 4321, SKU: 335606) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:23.997855Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/temium-dish-cover...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:24.687939Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 335606...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:24.697744Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:26.697944Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:26.698509Z","level":"info","event":"--- Traitement Produit 1523/1609 (ID: 4322, SKU: 8670498) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:26.698927Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/wpro-microwave-cleaner-mwo111...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:27.710172Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8670498...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:27.718811Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:29.718999Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:29.719568Z","level":"info","event":"--- Traitement Produit 1524/1609 (ID: 4323, SKU: 489816) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:29.719905Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/whirlpool-crisp-avm190-cake...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:30.401730Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 489816...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:30.410130Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:32.410347Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:32.411032Z","level":"info","event":"--- Traitement Produit 1525/1609 (ID: 4324, SKU: 401781) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:32.411519Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/whirlpool-crisp-avm290-29cm...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:33.059075Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 401781...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:33.066977Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:35.067182Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:35.067793Z","level":"info","event":"--- Traitement Produit 1526/1609 (ID: 4325, SKU: 627488) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:35.068128Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/sharp-ebr9900-wit...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:35.924256Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 627488...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:35.931051Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:37.982219Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:37.982746Z","level":"info","event":"--- Traitement Produit 1527/1609 (ID: 4326, SKU: 8664560) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:37.983053Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/whirlpool-avm250-small-crisp-plate...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:38.569409Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8664560...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:38.577809Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:40.578976Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:40.579523Z","level":"info","event":"--- Traitement Produit 1528/1609 (ID: 4327, SKU: 8664544) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:40.585805Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-micro-ondes/whirlpool-steam-stm008...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:41.217344Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8664544...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:41.225385Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:43.225964Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:43.226468Z","level":"info","event":"--- Traitement Produit 1529/1609 (ID: 4328, SKU: 8667527) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:43.226872Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/wpro-vitro-cleaner-spray...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:43.892971Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8667527...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:43.902709Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:45.902961Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:45.903454Z","level":"info","event":"--- Traitement Produit 1530/1609 (ID: 4329, SKU: 266574) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:45.903814Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/wpro-inox-cleaner-spray...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:46.902267Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 266574...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:46.913871Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:48.914026Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:48.914689Z","level":"info","event":"--- Traitement Produit 1531/1609 (ID: 4330, SKU: 223816) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:48.915129Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/wpro-vitro-cleaner-kit...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:49.566995Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 223816...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:49.576741Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:51.576962Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:51.578227Z","level":"info","event":"--- Traitement Produit 1532/1609 (ID: 4331, SKU: 7834691) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:51.578583Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/miele-gp-cl-h-0502-l...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:52.192454Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7834691...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:52.199350Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:54.199597Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:54.200148Z","level":"info","event":"--- Traitement Produit 1533/1609 (ID: 4332, SKU: 197343) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:54.200457Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/temium-scraper-blades-x10-tem...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:55.075495Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 197343...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:55.084560Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:57.084800Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:57.085447Z","level":"info","event":"--- Traitement Produit 1534/1609 (ID: 4333, SKU: 8667535) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:57.085874Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/wpro-vitro-cleaner-cream...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:57.691424Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8667535...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:57.698832Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:59.698986Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:59.699529Z","level":"info","event":"--- Traitement Produit 1535/1609 (ID: 4334, SKU: 8665842) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:42:59.699836Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/wpro-inox-cleaner-cream...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:00.311431Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8665842...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:00.318551Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:02.318778Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:02.320021Z","level":"info","event":"--- Traitement Produit 1536/1609 (ID: 4335, SKU: 8125619) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:02.320912Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/cooky-microfibre-cloths-x2...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:02.903133Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8125619...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:02.910654Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:04.910865Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:04.911468Z","level":"info","event":"--- Traitement Produit 1537/1609 (ID: 4336, SKU: 7835515) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:04.911763Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/electrolux-m3ocs300...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:05.901778Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7835515...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:05.910508Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:07.963065Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:07.963590Z","level":"info","event":"--- Traitement Produit 1538/1609 (ID: 4337, SKU: 7728190) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:07.963921Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/dacem-lot-de-5-eponges-epongeni...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:08.582655Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7728190...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:08.589465Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:10.589813Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:10.590478Z","level":"info","event":"--- Traitement Produit 1539/1609 (ID: 4338, SKU: 8335737) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:10.590813Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/electrolux-stainless-steel-spray...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:11.301779Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8335737...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:11.309453Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:13.309730Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:13.310384Z","level":"info","event":"--- Traitement Produit 1540/1609 (ID: 4339, SKU: 258865) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:13.310805Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/nettoyage-taque-four-cuisine/wpro-terra-bianca...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:14.237678Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 258865...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:14.248603Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:16.248876Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:16.249462Z","level":"info","event":"--- Traitement Produit 1541/1609 (ID: 4340, SKU: 8473706) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:16.249801Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/aeg-grill-plancha-a9hl33...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:16.962739Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8473706...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:16.975210Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:18.975423Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:18.976015Z","level":"info","event":"--- Traitement Produit 1542/1609 (ID: 4341, SKU: 7906773) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:18.976346Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-easy2clean-deep-m9ooec01...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:19.576057Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7906773...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:19.584019Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:21.584279Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:21.584875Z","level":"info","event":"--- Traitement Produit 1543/1609 (ID: 4342, SKU: 8370656) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:21.585251Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-cleaner-discaler-1000ml...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:22.187609Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8370656...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:22.194620Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:24.194867Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:24.195499Z","level":"info","event":"--- Traitement Produit 1544/1609 (ID: 4343, SKU: 7924992) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:24.195867Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-easy2clean-a9ooaf11...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:25.031798Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7924992...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:25.038987Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:27.039309Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:27.040729Z","level":"info","event":"--- Traitement Produit 1545/1609 (ID: 4344, SKU: 8693773) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:27.041733Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/bosch-hez390522-grill...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:27.686399Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8693773...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:27.695702Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:29.695906Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:29.696538Z","level":"info","event":"--- Traitement Produit 1546/1609 (ID: 4345, SKU: 8465185) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:29.696949Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/ampoule-four-hotte-frigo/temium-wpro-lfo-139...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:30.296884Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8465185...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:30.305146Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:32.305411Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:32.305998Z","level":"info","event":"--- Traitement Produit 1547/1609 (ID: 4346, SKU: 7731051) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:32.306307Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/tefal-holder-creabake-j3040104...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:33.171460Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7731051...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:33.178667Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:35.178759Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:35.179207Z","level":"info","event":"--- Traitement Produit 1548/1609 (ID: 4347, SKU: 7773528) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:35.179513Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-a9obgc23-steamkit-2-pc...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:35.749578Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7773528...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:35.756615Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:37.814036Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:37.814806Z","level":"info","event":"--- Traitement Produit 1549/1609 (ID: 4348, SKU: 8263086) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:37.815452Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-tr3lfstv...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:38.455624Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8263086...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:38.464829Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:40.465358Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:40.465918Z","level":"info","event":"--- Traitement Produit 1550/1609 (ID: 4349, SKU: 7766084) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:40.466223Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/atag-bs2535-plat-a-rotir...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:41.139528Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7766084...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:41.149509Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:43.152628Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:43.153102Z","level":"info","event":"--- Traitement Produit 1551/1609 (ID: 4350, SKU: 196061) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:43.153411Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/siemens-hz-390090-wok...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:44.054989Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 196061...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:44.065296Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:46.066072Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:46.066816Z","level":"info","event":"--- Traitement Produit 1552/1609 (ID: 4351, SKU: 8473323) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:46.067379Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/bosch-hez-390011...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:46.695410Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8473323...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:46.702913Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:48.703188Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:48.703937Z","level":"info","event":"--- Traitement Produit 1553/1609 (ID: 4352, SKU: 8723958) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:48.704473Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/bosch-hez-631070...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:49.390987Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8723958...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:49.399898Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:51.400175Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:51.402210Z","level":"info","event":"--- Traitement Produit 1554/1609 (ID: 4353, SKU: 8567891) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:51.403300Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/siemens-hz-633070...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:52.028967Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8567891...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:52.039461Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:54.039668Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:54.040337Z","level":"info","event":"--- Traitement Produit 1555/1609 (ID: 4354, SKU: 8473315) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:54.040803Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/bosch-hez-390012...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:54.845410Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8473315...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:54.853378Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:56.853642Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:56.857800Z","level":"info","event":"--- Traitement Produit 1556/1609 (ID: 4355, SKU: 8924554) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:56.858772Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-tr1lfstv...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:57.534640Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8924554...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:57.542675Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:59.542857Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:59.543344Z","level":"info","event":"--- Traitement Produit 1557/1609 (ID: 4356, SKU: 7773536) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:43:59.543669Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-a9ozs10-steamkit-8-pc...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:00.151243Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7773536...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:00.158383Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:02.158596Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:02.159276Z","level":"info","event":"--- Traitement Produit 1558/1609 (ID: 4357, SKU: 8945780) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:02.159637Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-tr3lfv...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:03.008874Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8945780...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:03.017288Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:05.017503Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:05.018157Z","level":"info","event":"--- Traitement Produit 1559/1609 (ID: 4358, SKU: 8718725) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:05.018523Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/siemens-hz-636000...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:05.621952Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8718725...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:05.629620Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:07.629800Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:07.630385Z","level":"info","event":"--- Traitement Produit 1560/1609 (ID: 4359, SKU: 7796668) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:07.630785Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/bosch-hez629070-airfry...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:08.328352Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7796668...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:08.335331Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:10.335801Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:10.336331Z","level":"info","event":"--- Traitement Produit 1561/1609 (ID: 4360, SKU: 8737924) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:10.336646Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-ab-45-7-l-cs...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:11.033424Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8737924...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:11.044958Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:13.045188Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:13.046008Z","level":"info","event":"--- Traitement Produit 1562/1609 (ID: 4361, SKU: 7834772) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:13.046580Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hbbl-71...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:14.053330Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7834772...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:14.064847Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:16.065020Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:16.065646Z","level":"info","event":"--- Traitement Produit 1563/1609 (ID: 4362, SKU: 8631948) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:16.065986Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hbbr-71...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:16.648864Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8631948...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:16.656989Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:18.657221Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:18.657718Z","level":"info","event":"--- Traitement Produit 1564/1609 (ID: 4363, SKU: 8363978) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:18.658137Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hfc70-c...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:19.299424Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8363978...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:19.307923Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:21.308111Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:21.308737Z","level":"info","event":"--- Traitement Produit 1565/1609 (ID: 4364, SKU: 8352356) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:21.309087Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hbb-71...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:22.227882Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8352356...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:22.236436Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:24.236637Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:24.237209Z","level":"info","event":"--- Traitement Produit 1566/1609 (ID: 4365, SKU: 8698287) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:24.237525Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hfc-71...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:24.830222Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8698287...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:24.837264Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:26.837693Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:26.838468Z","level":"info","event":"--- Traitement Produit 1567/1609 (ID: 4366, SKU: 8685347) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:26.839592Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hbbr-72...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:27.587443Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8685347...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:27.595920Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:29.596141Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:29.596784Z","level":"info","event":"--- Traitement Produit 1568/1609 (ID: 4367, SKU: 7765533) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:29.597126Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hgbb-71-grill-roasting...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:30.171131Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7765533...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:30.177753Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:32.177989Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:32.178586Z","level":"info","event":"--- Traitement Produit 1569/1609 (ID: 4368, SKU: 8054614) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:32.178920Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/autres-acc-gros-electro/delonghi-cat901...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:33.000091Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8054614...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:33.007836Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:35.008088Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:35.009311Z","level":"info","event":"--- Traitement Produit 1570/1609 (ID: 4369, SKU: 7772149) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:35.009919Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/siemens-hz638070-telesc-rails-pyr...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:35.596428Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7772149...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:35.604149Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:37.604445Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:37.605033Z","level":"info","event":"--- Traitement Produit 1571/1609 (ID: 4370, SKU: 7686773) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:37.605352Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/electrolux-m3ocd301...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:38.220073Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7686773...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:38.227542Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:40.228032Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:40.228693Z","level":"info","event":"--- Traitement Produit 1572/1609 (ID: 4371, SKU: 263451) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:40.229292Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/smeg-wokghu...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:40.818929Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 263451...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:40.827161Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:42.827430Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:42.827974Z","level":"info","event":"--- Traitement Produit 1573/1609 (ID: 4372, SKU: 8697353) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:42.830392Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/siemens-hz-631070...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:43.702802Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8697353...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:43.710190Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:45.710432Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:45.710960Z","level":"info","event":"--- Traitement Produit 1574/1609 (ID: 4373, SKU: 8941696) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:45.711398Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/aeg-tr1lfv...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:46.346864Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8941696...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:46.354124Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:48.354337Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:48.354881Z","level":"info","event":"--- Traitement Produit 1575/1609 (ID: 4374, SKU: 7915136) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:48.355297Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-8122410-left...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:48.974950Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7915136...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:48.984944Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:50.985169Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:50.985841Z","level":"info","event":"--- Traitement Produit 1576/1609 (ID: 4375, SKU: 135216) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:50.986267Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/siemens-hz-298105...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:51.884522Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 135216...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:51.895407Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:53.895622Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:53.897051Z","level":"info","event":"--- Traitement Produit 1577/1609 (ID: 4376, SKU: 8473722) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:53.897720Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-taque/siemens-hz39050-cookingsensor-plus...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:54.535049Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8473722...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:54.544255Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:56.544477Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:56.545032Z","level":"info","event":"--- Traitement Produit 1578/1609 (ID: 4377, SKU: 8354316) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:56.545383Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/siemens-hz531010...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:57.231056Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8354316...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:57.242321Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:59.242511Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:59.243151Z","level":"info","event":"--- Traitement Produit 1579/1609 (ID: 4378, SKU: 8697361) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:59.243462Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/siemens-hz634000-grill...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:59.811767Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8697361...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:44:59.819045Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:01.819259Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:01.819881Z","level":"info","event":"--- Traitement Produit 1580/1609 (ID: 4379, SKU: 8394342) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:01.820317Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/accessoires-four-four-a-vapeur/miele-hgs100-4317620...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:02.611681Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8394342...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:02.620219Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:04.620401Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:04.620966Z","level":"info","event":"--- Traitement Produit 1581/1609 (ID: 4380, SKU: 7762062) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:04.621412Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/greenpan-slowcooker-black...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:05.312322Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7762062...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:05.319391Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:07.319764Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:07.320761Z","level":"info","event":"--- Traitement Produit 1582/1609 (ID: 4381, SKU: 7687036) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:07.321767Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/fritel-sc2395...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:08.045893Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7687036...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:08.053275Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:10.053747Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:10.054198Z","level":"info","event":"--- Traitement Produit 1583/1609 (ID: 4382, SKU: 8124647) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:10.054506Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/crock-pot-cr605-slow-cooker-next-gen-5-7l-programmable...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:11.151193Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8124647...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:11.158913Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:13.159291Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:13.159975Z","level":"info","event":"--- Traitement Produit 1584/1609 (ID: 4383, SKU: 7781946) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:13.160442Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/crock-pot-cr111-sizzle-stew...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:13.846081Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7781946...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:13.854245Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:15.854898Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:15.855377Z","level":"info","event":"--- Traitement Produit 1585/1609 (ID: 4384, SKU: 8124671) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:15.855726Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/mijoteuse/crock-pot-cr052-slow-cooker-4-7l...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:16.591280Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8124671...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:16.600682Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:18.600806Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:18.601395Z","level":"info","event":"--- Traitement Produit 1586/1609 (ID: 4385, SKU: 7718411) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:18.601722Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/casserole-a-pression/tefal-clipsominut-easy-p4620768...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:19.459124Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7718411...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:19.466798Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:21.467074Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:21.467725Z","level":"info","event":"--- Traitement Produit 1587/1609 (ID: 4386, SKU: 7718438) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:21.468363Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/casserole-a-pression/tefal-clipsominut-easy-p4624866...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:22.139118Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7718438...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:22.148253Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:24.148447Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:24.148988Z","level":"info","event":"--- Traitement Produit 1588/1609 (ID: 4387, SKU: 7718381) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:24.149357Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/casserole-a-pression/tefal-clipsominut-p4624966...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:24.925244Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7718381...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:24.932563Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:26.932909Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:26.934272Z","level":"info","event":"--- Traitement Produit 1589/1609 (ID: 4388, SKU: 7718403) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:26.935045Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/casserole-a-pression/tefal-p2580702...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:27.677373Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7718403...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:27.686737Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:29.686966Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:29.687607Z","level":"info","event":"--- Traitement Produit 1590/1609 (ID: 4389, SKU: 7840691) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:29.688019Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/casserole-a-pression/seb-clipso-minut-eco-respect-yy5148fa...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:30.451494Z","level":"info","event":"   -> ⚠️ JSON-LD '@type':'Product' non trouvé.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:30.480121Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:32.480282Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:32.480846Z","level":"info","event":"--- Traitement Produit 1591/1609 (ID: 4390, SKU: 7778414) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:32.481177Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/machine-a-expresso-encastrable/bosch-ctl7181b0...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:33.330217Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7778414...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:33.337711Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:35.338007Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:35.338595Z","level":"info","event":"--- Traitement Produit 1592/1609 (ID: 4391, SKU: 7791208) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:35.338942Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/machine-a-expresso-encastrable/siemens-ct718l1b0...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:36.179065Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7791208...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:36.186387Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:38.242269Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:38.242829Z","level":"info","event":"--- Traitement Produit 1593/1609 (ID: 4392, SKU: 8055173) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:38.243238Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/machine-a-expresso-encastrable/smeg-cms4303x...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:39.275499Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8055173...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:39.283420Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:41.283800Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:41.284441Z","level":"info","event":"--- Traitement Produit 1594/1609 (ID: 4393, SKU: 8329443) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:41.284988Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/machine-a-expresso-encastrable/whirlpool-w11-cm145...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:42.029028Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 8329443...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:42.037103Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:44.037314Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:44.037924Z","level":"info","event":"--- Traitement Produit 1595/1609 (ID: 4394, SKU: 120073) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:44.040727Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-lave-vaisselle-encastrable...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:44.804010Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120073...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:44.813781Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:46.814022Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:46.814785Z","level":"info","event":"--- Traitement Produit 1596/1609 (ID: 4395, SKU: 120014) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:46.815346Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-de-votre-appareil-encastrable-1-porte...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:47.885340Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120014...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:47.895782Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:49.895947Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:49.896635Z","level":"info","event":"--- Traitement Produit 1597/1609 (ID: 4396, SKU: 120030) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:49.897175Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-taque-de-cuisson-et-adaptation-du-plan-de-travail...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:50.788291Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120030...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:50.796879Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:52.797077Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:52.797671Z","level":"info","event":"--- Traitement Produit 1598/1609 (ID: 4397, SKU: 120228) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:52.798017Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-four-encastrable-four-a-vapeur...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:53.670570Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120228...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:53.680452Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:55.680642Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:55.681161Z","level":"info","event":"--- Traitement Produit 1599/1609 (ID: 4398, SKU: 120111) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:55.681924Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-hotte-decorative-ou-autre-hotte...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:56.446897Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120111...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:56.455002Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:58.455163Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:58.455805Z","level":"info","event":"--- Traitement Produit 1600/1609 (ID: 4399, SKU: 120022) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:58.456186Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-four-a-micro-ondes-encastrable...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:59.610755Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120022...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:45:59.618757Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:01.618924Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:01.619465Z","level":"info","event":"--- Traitement Produit 1601/1609 (ID: 4400, SKU: 120057) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:01.620490Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-frigo-2-portes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:02.275467Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120057...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:02.284232Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:04.284477Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:04.285074Z","level":"info","event":"--- Traitement Produit 1602/1609 (ID: 4401, SKU: 120065) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:04.285463Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-hotte-classique...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:05.070252Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120065...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:05.077243Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:07.077761Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:07.081118Z","level":"info","event":"--- Traitement Produit 1603/1609 (ID: 4402, SKU: 120049) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:07.082440Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-lave-linge-ou-seche-linge...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:08.191815Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120049...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:08.200624Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:10.202481Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:10.203102Z","level":"info","event":"--- Traitement Produit 1604/1609 (ID: 4403, SKU: 120219) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:10.203480Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-machine-a-expresso-encastrable...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:10.922343Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120219...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:10.932853Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:12.941575Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:12.942232Z","level":"info","event":"--- Traitement Produit 1605/1609 (ID: 4404, SKU: 120243) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:12.942704Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/service-installation/vanden-borre-installation-frigo-americain-encastrable...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:13.557871Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 120243...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:13.566176Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:15.566456Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:15.566912Z","level":"info","event":"--- Traitement Produit 1606/1609 (ID: 4405, SKU: 7844263) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:15.567222Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/vanden-borre-life/vanden-borre-vanden-borre-life-gros-electro...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:16.435306Z","level":"info","event":"   -> ⚠️ JSON-LD '@type':'Product' non trouvé.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:16.469887Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:18.470014Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:18.470596Z","level":"info","event":"--- Traitement Produit 1607/1609 (ID: 4406, SKU: 7844271) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:18.470963Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/vanden-borre-life/vanden-borre-vanden-borre-life-gros-electro-tv...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:19.062323Z","level":"info","event":"   -> ⚠️ JSON-LD '@type':'Product' non trouvé.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:19.088027Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:21.088260Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:21.088877Z","level":"info","event":"--- Traitement Produit 1608/1609 (ID: 4407, SKU: 7697902) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:21.089401Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/lave-linge/haier-hw90-bp14929a-s-i-pro-series-1...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:21.978285Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7697902...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:21.985884Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:23.986057Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:23.986635Z","level":"info","event":"--- Traitement Produit 1609/1609 (ID: 4408, SKU: 7671296) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:23.986956Z","level":"info","event":"   -> (2) Scraping de : https://www.vandenborre.be/fr/seche-linge/hisense-dh3s902bw3...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:25.029982Z","level":"info","event":"   -> (2) Chargement du JSON pour SKU 7671296...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:25.037990Z","level":"info","event":"   -> Pause de 2 secondes...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:27.038447","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-30T11:46:27.076585Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:27.077308Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T11:46:27.081733Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): Etape_2_Scrape_Products>","chan":"stdout","logger":"task"}

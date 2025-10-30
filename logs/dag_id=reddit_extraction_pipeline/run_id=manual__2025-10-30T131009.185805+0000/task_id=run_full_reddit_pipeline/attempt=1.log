@@ -1,0 +1,283 @@
+{"timestamp":"2025-10-30T13:10:10.596588","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-30T13:10:10.597288","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-30T13:10:10.690830Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.691648Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.692246Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.692683Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.693298Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.744976Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.761705Z","level":"info","event":"--- ✅ SUCCÈS : 1771 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.763655Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.764353Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.765039Z","level":"info","event":"--- Lancement de la boucle de scraping pour 1771 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.765862Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.766488Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.767250Z","level":"info","event":"--- Traitement Produit 1/1771 (Key: 1) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.768031Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.768734Z","level":"info","event":"   -> Mot-clé généré : 'LG LG C5 OLED evo 4K 55 POUCES OLED55C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:10.769974Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG C5 OLED evo 4K 55 POUCES OLED55C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:11.352104Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:11.352789Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.383892Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.508003Z","level":"info","event":"   -> 25 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.508562Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.509693Z","level":"info","event":"   -> ✅ Données pour 'LG LG C5 OLED evo 4K 55 POUCES OLED55C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.511189Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.511593Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.512120Z","level":"info","event":"--- Traitement Produit 2/1771 (Key: 2) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.512637Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.513036Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 43 POUCES 43PUS9050/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.513423Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 43 POUCES 43PUS9050/12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.869793Z","level":"info","event":"   -> 12 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:18.870304Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.004349Z","level":"info","event":"   -> (L) Chargement de 12 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.055731Z","level":"info","event":"   -> 10 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.056317Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.057377Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 43 POUCES 43PUS9050/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.058749Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.059186Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.059585Z","level":"info","event":"--- Traitement Produit 3/1771 (Key: 3) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.060156Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.060739Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS AMBILIGHT LED FULL HD 32 POUCES 32PFS6900/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:26.061185Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS AMBILIGHT LED FULL HD 32 POUCES 32PFS6900/12' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:27.441500Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:27.442118Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.469080Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.641934Z","level":"info","event":"   -> 23 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.642506Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.645019Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS AMBILIGHT LED FULL HD 32 POUCES 32PFS6900/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.646537Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.647184Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.647608Z","level":"info","event":"--- Traitement Produit 4/1771 (Key: 4) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.648116Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.648547Z","level":"info","event":"   -> Mot-clé généré : 'JVC JVC LED HD LT-32FV140 32 POUCES'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:34.649266Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC JVC LED HD LT-32FV140 32 POUCES' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:35.309813Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:35.310390Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.334692Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.441878Z","level":"info","event":"   -> 23 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.442425Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.443645Z","level":"info","event":"   -> ✅ Données pour 'JVC JVC LED HD LT-32FV140 32 POUCES' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.445223Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.445645Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.446099Z","level":"info","event":"--- Traitement Produit 5/1771 (Key: 6) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.446703Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.447107Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG OLED 4K 65 POUCES QE65S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:42.447543Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG OLED 4K 65 POUCES QE65S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:43.019091Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:43.019812Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.047668Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.191153Z","level":"info","event":"   -> 18 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.191941Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.194456Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG OLED 4K 65 POUCES QE65S95FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.196840Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.197571Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.198239Z","level":"info","event":"--- Traitement Produit 6/1771 (Key: 7) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.198870Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.199499Z","level":"info","event":"   -> Mot-clé généré : 'JVC JVC LT-43FV140'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.199973Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC JVC LT-43FV140' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.589252Z","level":"info","event":"   -> 3 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:50.589845Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.710439Z","level":"info","event":"   -> (L) Chargement de 3 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.721617Z","level":"info","event":"   -> 2 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.722142Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.723370Z","level":"info","event":"   -> ✅ Données pour 'JVC JVC LT-43FV140' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.724849Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.725332Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.725725Z","level":"info","event":"--- Traitement Produit 7/1771 (Key: 8) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.726170Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.726570Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG QLED 4K 50 POUCES QE50Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:57.727046Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG QLED 4K 50 POUCES QE50Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:58.283635Z","level":"info","event":"   -> 21 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:10:58.284255Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.310207Z","level":"info","event":"   -> (L) Chargement de 21 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.409627Z","level":"info","event":"   -> 11 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.410609Z","level":"info","event":"   -> 10 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.411952Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG QLED 4K 50 POUCES QE50Q7F3AUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.414186Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.414923Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.415619Z","level":"info","event":"--- Traitement Produit 8/1771 (Key: 9) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.416198Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.417069Z","level":"info","event":"   -> Mot-clé généré : 'LG LG C5 OLED evo 4K 42 POUCES OLED42C54LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.417637Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG C5 OLED evo 4K 42 POUCES OLED42C54LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.912132Z","level":"info","event":"   -> 18 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:05.912743Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.935775Z","level":"info","event":"   -> (L) Chargement de 18 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.976845Z","level":"info","event":"   -> 3 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.977425Z","level":"info","event":"   -> 15 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.978639Z","level":"info","event":"   -> ✅ Données pour 'LG LG C5 OLED evo 4K 42 POUCES OLED42C54LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.980441Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.981177Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.981678Z","level":"info","event":"--- Traitement Produit 9/1771 (Key: 10) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.982208Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.982704Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG OLED 4K 77 POUCES QE77S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:12.983079Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG OLED 4K 77 POUCES QE77S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:14.072828Z","level":"info","event":"   -> 16 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:14.073352Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.098118Z","level":"info","event":"   -> (L) Chargement de 16 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.144411Z","level":"info","event":"   -> 3 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.145176Z","level":"info","event":"   -> 13 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.146632Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG OLED 4K 77 POUCES QE77S95FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.148731Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.149573Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.150267Z","level":"info","event":"--- Traitement Produit 10/1771 (Key: 11) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.150860Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.151691Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG CRYSTAL UHD 4K 43 POUCES UE43U8090FUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.152257Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG CRYSTAL UHD 4K 43 POUCES UE43U8090FUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.567151Z","level":"info","event":"   -> 17 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:21.567644Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.691973Z","level":"info","event":"   -> (L) Chargement de 17 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.740016Z","level":"info","event":"   -> 4 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.740785Z","level":"info","event":"   -> 13 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.742427Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG CRYSTAL UHD 4K 43 POUCES UE43U8090FUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.744375Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.744987Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.745554Z","level":"info","event":"--- Traitement Produit 11/1771 (Key: 12) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.746131Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.746659Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS LED FULL HD 40 POUCES 40PFS6000/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:28.747080Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS LED FULL HD 40 POUCES 40PFS6000/12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:29.109997Z","level":"info","event":"   -> 3 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:29.110634Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.139919Z","level":"info","event":"   -> (L) Chargement de 3 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.159976Z","level":"info","event":"   -> 3 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.160522Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.162298Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS LED FULL HD 40 POUCES 40PFS6000/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.164044Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.165657Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.166249Z","level":"info","event":"--- Traitement Produit 12/1771 (Key: 13) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.166742Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.167173Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS AMBILITGH OLED 4K 48 POUCES 48OLED810/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.167687Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS AMBILITGH OLED 4K 48 POUCES 48OLED810/12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.492781Z","level":"info","event":"   -> 3 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:36.494762Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.523414Z","level":"info","event":"   -> (L) Chargement de 3 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.527947Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.528508Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.529207Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS AMBILITGH OLED 4K 48 POUCES 48OLED810/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.530906Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.531470Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.531957Z","level":"info","event":"--- Traitement Produit 13/1771 (Key: 14) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.532489Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.532937Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG Neo QLED 4K 55 POUCES QE55QN77FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:43.533387Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG Neo QLED 4K 55 POUCES QE55QN77FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:44.089578Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:44.090176Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.126113Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.227769Z","level":"info","event":"   -> 5 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.228745Z","level":"info","event":"   -> 20 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.230781Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG Neo QLED 4K 55 POUCES QE55QN77FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.233131Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.234337Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.235093Z","level":"info","event":"--- Traitement Produit 14/1771 (Key: 15) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.236286Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.237022Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 55 POUCES 55PUS9050/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.237813Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 55 POUCES 55PUS9050/12' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.859267Z","level":"info","event":"   -> 19 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:51.859996Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:58.988246Z","level":"info","event":"   -> (L) Chargement de 19 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.025994Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.026649Z","level":"info","event":"   -> 18 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.028312Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS THE ONE AMBILIGHT QLED 4K 55 POUCES 55PUS9050/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.030408Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.031135Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.031581Z","level":"info","event":"--- Traitement Produit 15/1771 (Key: 16) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.032141Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.032828Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS LED FULL HD 32 POUCES 32PFS6000/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:11:59.033437Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS LED FULL HD 32 POUCES 32PFS6000/12' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:00.562109Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:00.562740Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.591742Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.643860Z","level":"info","event":"   -> 1 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.644694Z","level":"info","event":"   -> 24 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.646533Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS LED FULL HD 32 POUCES 32PFS6000/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.648644Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.649394Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.650052Z","level":"info","event":"--- Traitement Produit 16/1771 (Key: 17) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.650719Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.651449Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG OLED 4K 55 POUCES QE55S93FAEXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:07.652128Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG OLED 4K 55 POUCES QE55S93FAEXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:08.275853Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:08.276445Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.300424Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.330726Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.331306Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.331861Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG OLED 4K 55 POUCES QE55S93FAEXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.333257Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.333696Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.334145Z","level":"info","event":"--- Traitement Produit 17/1771 (Key: 18) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.334643Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.335074Z","level":"info","event":"   -> Mot-clé généré : 'LG LG LED UHD 4K 43 POUCES 43UT73006LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.335380Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG LED UHD 4K 43 POUCES 43UT73006LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.927735Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:15.928251Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.054739Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.123832Z","level":"info","event":"   -> 7 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.124640Z","level":"info","event":"   -> 18 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.126417Z","level":"info","event":"   -> ✅ Données pour 'LG LG LED UHD 4K 43 POUCES 43UT73006LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.128458Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.129161Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.129776Z","level":"info","event":"--- Traitement Produit 18/1771 (Key: 19) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.130299Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.130946Z","level":"info","event":"   -> Mot-clé généré : 'LG LG C5 OLED evo 4K 48 POUCES OLED48C56LB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.131333Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG C5 OLED evo 4K 48 POUCES OLED48C56LB' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.530765Z","level":"info","event":"   -> 16 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:23.531387Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.556628Z","level":"info","event":"   -> (L) Chargement de 16 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.577483Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.578095Z","level":"info","event":"   -> 16 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.578629Z","level":"info","event":"   -> ✅ Données pour 'LG LG C5 OLED evo 4K 48 POUCES OLED48C56LB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.579892Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.580422Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.580820Z","level":"info","event":"--- Traitement Produit 19/1771 (Key: 20) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.581242Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.581607Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS PHILIPS LED HD 24 POUCES 24PHS6000/12'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:30.582076Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS PHILIPS LED HD 24 POUCES 24PHS6000/12' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:31.683123Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:31.684163Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.732604Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.971151Z","level":"info","event":"   -> 22 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.971817Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.973719Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS PHILIPS LED HD 24 POUCES 24PHS6000/12' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.975816Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.976468Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.977096Z","level":"info","event":"--- Traitement Produit 20/1771 (Key: 21) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.977879Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.978614Z","level":"info","event":"   -> Mot-clé généré : 'LG LG LED FHD 32 POUCES 32LQ63006LA (2022) '","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:38.979296Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG LED FHD 32 POUCES 32LQ63006LA (2022) ' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:39.233034Z","level":"info","event":"   -> 0 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:39.233764Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.234921Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG LG LED FHD 32 POUCES 32LQ63006LA (2022) ' dans r/all.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.235464Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.235797Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.236104Z","level":"info","event":"--- Traitement Produit 21/1771 (Key: 22) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.236624Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.237058Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG OLED 4K 55 POUCES QE55S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.237507Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG OLED 4K 55 POUCES QE55S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.796588Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:46.797208Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.926463Z","level":"info","event":"   -> (L) Chargement de 25 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.969549Z","level":"info","event":"   -> 0 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.970278Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.971090Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG SAMSUNG OLED 4K 55 POUCES QE55S95FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.972866Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.973570Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.974041Z","level":"info","event":"--- Traitement Produit 22/1771 (Key: 23) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.974629Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.975329Z","level":"info","event":"   -> Mot-clé généré : 'LG LG QNED evo mini-LED 4K 55 POUCES 55QNED93A6A'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:53.975849Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG LG QNED evo mini-LED 4K 55 POUCES 55QNED93A6A' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:54.440035Z","level":"info","event":"   -> 21 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:54.440643Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:12:59.459038Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.475891Z","level":"info","event":"   -> (L) Chargement de 21 posts dans Staging_Reddit_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.565645Z","level":"info","event":"   -> 5 nouveaux posts insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.566286Z","level":"info","event":"   -> 16 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.567896Z","level":"info","event":"   -> ✅ Données pour 'LG LG QNED evo mini-LED 4K 55 POUCES 55QNED93A6A' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.569632Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.570319Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.570916Z","level":"info","event":"--- Traitement Produit 23/1771 (Key: 24) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.571420Z","level":"info","event":"    -> ⚠️ Erreur (generate_search_keyword): bad character range \\\\-+ at position 6. Retour du nom original.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.571967Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG SAMSUNG LED FULL HD 32 INCH UE32F6000F FHD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:01.572441Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG SAMSUNG LED FULL HD 32 INCH UE32F6000F FHD' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:02.937658Z","level":"info","event":"   -> 25 posts bruts trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:02.938179Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-30T13:13:04.494698Z","level":"error","event":"Task killed!","logger":"task"}
