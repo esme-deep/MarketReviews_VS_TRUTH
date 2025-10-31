@@ -1,0 +1,323 @@
+{"timestamp":"2025-10-31T13:29:15.654719","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T13:29:15.655740","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_sentiment_analysis_roberta.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T13:29:24.421698Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:24.422670Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:24.423306Z","level":"info","event":"Current task name:run_sentiment_analysis_roberta","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:24.423909Z","level":"info","event":"Dag name:sentiment_analysis_roberta_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:24.424518Z","level":"info","event":"--- DÉBUT : Pipeline d'Analyse de Sentiment (Étape 7 - RoBERTa) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:24.425263Z","level":"info","event":"--- Chargement du modèle RoBERTa (cardiffnlp)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.808072Z","level":"info","event":"--- Modèle chargé avec succès. ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.892678Z","level":"info","event":"   -> (E) Extraction des posts 'pending_sentiment' (filtrés)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.990520Z","level":"info","event":"   -> 76 posts (filtrés) trouvés à analyser.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.992950Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.994182Z","level":"info","event":"--- 76 posts à analyser. Lancement de la boucle... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.995209Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:26.996551Z","level":"info","event":"--- Traitement Post 1/76 (ID: 2657) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.218582Z","level":"info","event":"   -> Score: 0.7825 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.272880Z","level":"info","event":"   -> ✅ Post 2657 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.275610Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.276363Z","level":"info","event":"--- Traitement Post 2/76 (ID: 2658) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.488800Z","level":"info","event":"   -> Score: -0.2171 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.589896Z","level":"info","event":"   -> ✅ Post 2658 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.595321Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.598820Z","level":"info","event":"--- Traitement Post 3/76 (ID: 2659) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.906024Z","level":"info","event":"   -> Score: -0.2429 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.938748Z","level":"info","event":"   -> ✅ Post 2659 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.954533Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.955227Z","level":"info","event":"--- Traitement Post 4/76 (ID: 2660) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.961666Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (1983 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.962323Z","level":"info","event":"   -> ❌ ERREUR sur Post 2660: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.995637Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:27.996304Z","level":"info","event":"--- Traitement Post 5/76 (ID: 2661) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:28.869150Z","level":"info","event":"   -> Score: 0.5998 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:28.900177Z","level":"info","event":"   -> ✅ Post 2661 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:28.973673Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:28.974500Z","level":"info","event":"--- Traitement Post 6/76 (ID: 2662) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:29.401130Z","level":"info","event":"   -> Score: -0.4641 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:29.436625Z","level":"info","event":"   -> ✅ Post 2662 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:29.470244Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:29.470781Z","level":"info","event":"--- Traitement Post 7/76 (ID: 2663) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:30.184188Z","level":"info","event":"   -> Score: 0.8808 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:30.221270Z","level":"info","event":"   -> ✅ Post 2663 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:30.273011Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:30.273696Z","level":"info","event":"--- Traitement Post 8/76 (ID: 2664) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:30.959508Z","level":"info","event":"   -> Score: 0.7338 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:30.995464Z","level":"info","event":"   -> ✅ Post 2664 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:31.044297Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:31.045050Z","level":"info","event":"--- Traitement Post 9/76 (ID: 2665) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:31.375588Z","level":"info","event":"   -> Score: 0.7697 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:31.412152Z","level":"info","event":"   -> ✅ Post 2665 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:31.413886Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:31.414604Z","level":"info","event":"--- Traitement Post 10/76 (ID: 2666) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.063229Z","level":"info","event":"   -> Score: 0.6386 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.102718Z","level":"info","event":"   -> ✅ Post 2666 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.134998Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.135608Z","level":"info","event":"--- Traitement Post 11/76 (ID: 2667) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.290344Z","level":"info","event":"   -> Score: 0.9819 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.328653Z","level":"info","event":"   -> ✅ Post 2667 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.330408Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.331090Z","level":"info","event":"--- Traitement Post 12/76 (ID: 2668) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.333389Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (678 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.334117Z","level":"info","event":"   -> ❌ ERREUR sur Post 2668: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.365672Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.366431Z","level":"info","event":"--- Traitement Post 13/76 (ID: 2669) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.817686Z","level":"info","event":"   -> Score: 0.6827 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.850183Z","level":"info","event":"   -> ✅ Post 2669 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.874357Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:32.875083Z","level":"info","event":"--- Traitement Post 14/76 (ID: 2670) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:33.248203Z","level":"info","event":"   -> Score: -0.0957 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:33.283837Z","level":"info","event":"   -> ✅ Post 2670 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:33.298219Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:33.298916Z","level":"info","event":"--- Traitement Post 15/76 (ID: 2671) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.032990Z","level":"info","event":"   -> Score: 0.2742 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.066685Z","level":"info","event":"   -> ✅ Post 2671 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.057435Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.057952Z","level":"info","event":"--- Traitement Post 16/76 (ID: 2672) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.277076Z","level":"info","event":"   -> Score: 0.4499 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.308926Z","level":"info","event":"   -> ✅ Post 2672 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.310193Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.310646Z","level":"info","event":"--- Traitement Post 17/76 (ID: 2673) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.562699Z","level":"info","event":"   -> Score: 0.9291 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.598194Z","level":"info","event":"   -> ✅ Post 2673 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.599590Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.600082Z","level":"info","event":"--- Traitement Post 18/76 (ID: 2674) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.629504Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (15730 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.630284Z","level":"info","event":"   -> ❌ ERREUR sur Post 2674: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.679491Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.681437Z","level":"info","event":"--- Traitement Post 19/76 (ID: 2675) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.712635Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (12672 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.713448Z","level":"info","event":"   -> ❌ ERREUR sur Post 2675: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.745862Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.746591Z","level":"info","event":"--- Traitement Post 20/76 (ID: 2676) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.764614Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (5747 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.765300Z","level":"info","event":"   -> ❌ ERREUR sur Post 2676: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.795380Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.801593Z","level":"info","event":"--- Traitement Post 21/76 (ID: 2677) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.806694Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (2894 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.807494Z","level":"info","event":"   -> ❌ ERREUR sur Post 2677: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.838307Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:34.839016Z","level":"info","event":"--- Traitement Post 22/76 (ID: 2690) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.119883Z","level":"info","event":"   -> Score: 0.9551 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.151295Z","level":"info","event":"   -> ✅ Post 2690 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.153680Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.154460Z","level":"info","event":"--- Traitement Post 23/76 (ID: 2691) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.326227Z","level":"info","event":"   -> Score: 0.9877 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.367337Z","level":"info","event":"   -> ✅ Post 2691 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.369381Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.370112Z","level":"info","event":"--- Traitement Post 24/76 (ID: 2698) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.604584Z","level":"info","event":"   -> Score: 0.2205 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.637080Z","level":"info","event":"   -> ✅ Post 2698 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.638676Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.639308Z","level":"info","event":"--- Traitement Post 25/76 (ID: 2699) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.849581Z","level":"info","event":"   -> Score: 0.5432 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.882589Z","level":"info","event":"   -> ✅ Post 2699 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.884452Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:35.885256Z","level":"info","event":"--- Traitement Post 26/76 (ID: 2700) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.103919Z","level":"info","event":"   -> Score: -0.4965 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.139527Z","level":"info","event":"   -> ✅ Post 2700 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.141181Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.141798Z","level":"info","event":"--- Traitement Post 27/76 (ID: 2701) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.335198Z","level":"info","event":"   -> Score: 0.1118 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.363157Z","level":"info","event":"   -> ✅ Post 2701 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.364629Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.365122Z","level":"info","event":"--- Traitement Post 28/76 (ID: 2702) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.547623Z","level":"info","event":"   -> Score: 0.2775 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.581042Z","level":"info","event":"   -> ✅ Post 2702 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.582569Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.583059Z","level":"info","event":"--- Traitement Post 29/76 (ID: 2725) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.738737Z","level":"info","event":"   -> Score: 0.9421 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.766405Z","level":"info","event":"   -> ✅ Post 2725 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.767658Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.768256Z","level":"info","event":"--- Traitement Post 30/76 (ID: 2726) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.857785Z","level":"info","event":"   -> Score: 0.0245 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.894078Z","level":"info","event":"   -> ✅ Post 2726 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.895884Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:36.896524Z","level":"info","event":"--- Traitement Post 31/76 (ID: 2727) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:37.466912Z","level":"info","event":"   -> Score: 0.4773 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:37.540568Z","level":"info","event":"   -> ✅ Post 2727 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:37.583544Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:37.584212Z","level":"info","event":"--- Traitement Post 32/76 (ID: 2728) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.135584Z","level":"info","event":"   -> Score: -0.1591 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.164159Z","level":"info","event":"   -> ✅ Post 2728 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.199171Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.199842Z","level":"info","event":"--- Traitement Post 33/76 (ID: 2729) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.556589Z","level":"info","event":"   -> Score: 0.4353 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.589651Z","level":"info","event":"   -> ✅ Post 2729 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.604673Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.605248Z","level":"info","event":"--- Traitement Post 34/76 (ID: 2730) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.879582Z","level":"info","event":"   -> Score: 0.8715 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.911040Z","level":"info","event":"   -> ✅ Post 2730 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.918638Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:38.919160Z","level":"info","event":"--- Traitement Post 35/76 (ID: 2731) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.370727Z","level":"info","event":"   -> Score: -0.4427 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.415717Z","level":"info","event":"   -> ✅ Post 2731 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.417648Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.421744Z","level":"info","event":"--- Traitement Post 36/76 (ID: 2732) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.600396Z","level":"info","event":"   -> Score: 0.7321 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.656952Z","level":"info","event":"   -> ✅ Post 2732 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.658430Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:39.659006Z","level":"info","event":"--- Traitement Post 37/76 (ID: 2733) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.117173Z","level":"info","event":"   -> Score: 0.6236 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.154292Z","level":"info","event":"   -> ✅ Post 2733 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.156599Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.157458Z","level":"info","event":"--- Traitement Post 38/76 (ID: 2734) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.383350Z","level":"info","event":"   -> Score: 0.8612 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.447002Z","level":"info","event":"   -> ✅ Post 2734 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.449064Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.449872Z","level":"info","event":"--- Traitement Post 39/76 (ID: 2735) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.956558Z","level":"info","event":"   -> Score: 0.4773 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:40.984509Z","level":"info","event":"   -> ✅ Post 2735 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.015440Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.016075Z","level":"info","event":"--- Traitement Post 40/76 (ID: 2736) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.286617Z","level":"info","event":"   -> Score: 0.6409 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.316436Z","level":"info","event":"   -> ✅ Post 2736 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.325074Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.325841Z","level":"info","event":"--- Traitement Post 41/76 (ID: 2741) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.604334Z","level":"info","event":"   -> Score: 0.9338 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.635626Z","level":"info","event":"   -> ✅ Post 2741 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.642969Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.643653Z","level":"info","event":"--- Traitement Post 42/76 (ID: 2800) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.751377Z","level":"info","event":"   -> Score: 0.0923 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.782156Z","level":"info","event":"   -> ✅ Post 2800 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.783901Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.784632Z","level":"info","event":"--- Traitement Post 43/76 (ID: 2801) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.961989Z","level":"info","event":"   -> Score: -0.1457 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.992642Z","level":"info","event":"   -> ✅ Post 2801 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.994453Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:41.995035Z","level":"info","event":"--- Traitement Post 44/76 (ID: 2802) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.124054Z","level":"info","event":"   -> Score: -0.1673 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.155779Z","level":"info","event":"   -> ✅ Post 2802 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.157430Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.158105Z","level":"info","event":"--- Traitement Post 45/76 (ID: 2803) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.440104Z","level":"info","event":"   -> Score: 0.7350 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.472425Z","level":"info","event":"   -> ✅ Post 2803 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.499678Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.500352Z","level":"info","event":"--- Traitement Post 46/76 (ID: 2804) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.848809Z","level":"info","event":"   -> Score: 0.2749 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.882320Z","level":"info","event":"   -> ✅ Post 2804 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.904646Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:42.905221Z","level":"info","event":"--- Traitement Post 47/76 (ID: 2805) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.275986Z","level":"info","event":"   -> Score: 0.3114 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.317694Z","level":"info","event":"   -> ✅ Post 2805 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.338652Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.339454Z","level":"info","event":"--- Traitement Post 48/76 (ID: 2806) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.814946Z","level":"info","event":"   -> Score: 0.2936 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.850892Z","level":"info","event":"   -> ✅ Post 2806 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.878082Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:43.878734Z","level":"info","event":"--- Traitement Post 49/76 (ID: 2807) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.096343Z","level":"info","event":"   -> Score: 0.8123 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.125808Z","level":"info","event":"   -> ✅ Post 2807 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.127535Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.128301Z","level":"info","event":"--- Traitement Post 50/76 (ID: 2808) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.462399Z","level":"info","event":"   -> Score: -0.4176 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.500088Z","level":"info","event":"   -> ✅ Post 2808 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.515590Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.516354Z","level":"info","event":"--- Traitement Post 51/76 (ID: 2809) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.518532Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (650 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.519266Z","level":"info","event":"   -> ❌ ERREUR sur Post 2809: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.557007Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.557816Z","level":"info","event":"--- Traitement Post 52/76 (ID: 2810) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:44.993262Z","level":"info","event":"   -> Score: 0.9686 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.026893Z","level":"info","event":"   -> ✅ Post 2810 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.028798Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.029716Z","level":"info","event":"--- Traitement Post 53/76 (ID: 2811) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.710858Z","level":"info","event":"   -> Score: 0.5825 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.741908Z","level":"info","event":"   -> ✅ Post 2811 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.793168Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:45.793811Z","level":"info","event":"--- Traitement Post 54/76 (ID: 2812) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.562847Z","level":"info","event":"   -> Score: -0.1720 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.598714Z","level":"info","event":"   -> ✅ Post 2812 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.656658Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.657423Z","level":"info","event":"--- Traitement Post 55/76 (ID: 2813) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.894319Z","level":"info","event":"   -> Score: 0.0735 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.935574Z","level":"info","event":"   -> ✅ Post 2813 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.938136Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:46.939027Z","level":"info","event":"--- Traitement Post 56/76 (ID: 2814) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.465576Z","level":"info","event":"   -> Score: 0.7815 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.510283Z","level":"info","event":"   -> ✅ Post 2814 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.557121Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.561619Z","level":"info","event":"--- Traitement Post 57/76 (ID: 2815) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.867731Z","level":"info","event":"   -> Score: 0.2291 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.899652Z","level":"info","event":"   -> ✅ Post 2815 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.901158Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.901765Z","level":"info","event":"--- Traitement Post 58/76 (ID: 2816) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.903798Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (519 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.904307Z","level":"info","event":"   -> ❌ ERREUR sur Post 2816: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.933120Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.933879Z","level":"info","event":"--- Traitement Post 59/76 (ID: 2817) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.938305Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (1440 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.939054Z","level":"info","event":"   -> ❌ ERREUR sur Post 2817: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.968844Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:47.969741Z","level":"info","event":"--- Traitement Post 60/76 (ID: 2818) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.162452Z","level":"info","event":"   -> Score: 0.6945 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.194122Z","level":"info","event":"   -> ✅ Post 2818 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.195927Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.196642Z","level":"info","event":"--- Traitement Post 61/76 (ID: 2819) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.350156Z","level":"info","event":"   -> Score: -0.2060 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.376208Z","level":"info","event":"   -> ✅ Post 2819 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.377413Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.377921Z","level":"info","event":"--- Traitement Post 62/76 (ID: 2820) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.523913Z","level":"info","event":"   -> Score: -0.2137 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.553416Z","level":"info","event":"   -> ✅ Post 2820 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.555701Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.556494Z","level":"info","event":"--- Traitement Post 63/76 (ID: 2821) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.944462Z","level":"info","event":"   -> Score: 0.3809 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.972753Z","level":"info","event":"   -> ✅ Post 2821 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.994894Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:48.995392Z","level":"info","event":"--- Traitement Post 64/76 (ID: 2822) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.163212Z","level":"info","event":"   -> Score: 0.9662 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.196364Z","level":"info","event":"   -> ✅ Post 2822 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.198510Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.199210Z","level":"info","event":"--- Traitement Post 65/76 (ID: 2823) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.201289Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (857 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.201986Z","level":"info","event":"   -> ❌ ERREUR sur Post 2823: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.236547Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.241560Z","level":"info","event":"--- Traitement Post 66/76 (ID: 2824) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.640315Z","level":"info","event":"   -> Score: 0.3823 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.670247Z","level":"info","event":"   -> ✅ Post 2824 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.672100Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:49.672714Z","level":"info","event":"--- Traitement Post 67/76 (ID: 2825) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.012181Z","level":"info","event":"   -> Score: -0.3536 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.040133Z","level":"info","event":"   -> ✅ Post 2825 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.061158Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.061839Z","level":"info","event":"--- Traitement Post 68/76 (ID: 2826) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.246986Z","level":"info","event":"   -> Score: 0.0385 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.279144Z","level":"info","event":"   -> ✅ Post 2826 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.281043Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.281801Z","level":"info","event":"--- Traitement Post 69/76 (ID: 2827) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.528501Z","level":"info","event":"   -> Score: 0.9609 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.561564Z","level":"info","event":"   -> ✅ Post 2827 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.563493Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:50.564185Z","level":"info","event":"--- Traitement Post 70/76 (ID: 2828) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.182587Z","level":"info","event":"   -> Score: -0.0719 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.210178Z","level":"info","event":"   -> ✅ Post 2828 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.255148Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.255719Z","level":"info","event":"--- Traitement Post 71/76 (ID: 2829) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.490603Z","level":"info","event":"   -> Score: -0.1205 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.520066Z","level":"info","event":"   -> ✅ Post 2829 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.521407Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.521927Z","level":"info","event":"--- Traitement Post 72/76 (ID: 2830) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.820971Z","level":"info","event":"   -> Score: 0.7566 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.854147Z","level":"info","event":"   -> ✅ Post 2830 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.863143Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:51.863763Z","level":"info","event":"--- Traitement Post 73/76 (ID: 2831) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.479487Z","level":"info","event":"   -> Score: 0.3982 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.519084Z","level":"info","event":"   -> ✅ Post 2831 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.572744Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.573519Z","level":"info","event":"--- Traitement Post 74/76 (ID: 2832) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.924148Z","level":"info","event":"   -> Score: -0.2847 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.959581Z","level":"info","event":"   -> ✅ Post 2832 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.975447Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:52.976163Z","level":"info","event":"--- Traitement Post 75/76 (ID: 2833) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.168008Z","level":"info","event":"   -> Score: 0.1654 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.202330Z","level":"info","event":"   -> ✅ Post 2833 marqué comme 'processed'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.204454Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.205285Z","level":"info","event":"--- Traitement Post 76/76 (ID: 2834) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.208252Z","level":"info","event":"   -> AVERTISSEMENT: Texte trop long (786 tokens). Ignoré.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.208928Z","level":"info","event":"   -> ❌ ERREUR sur Post 2834: unsupported format string passed to NoneType.__format__.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.244081Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.244795Z","level":"info","event":"--- ✅ Boucle d'analyse de sentiment (RoBERTa) terminée. ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.297264","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-31T13:29:53.341146Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.341897Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:29:53.342328Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): run_sentiment_analysis_roberta>","chan":"stdout","logger":"task"}
