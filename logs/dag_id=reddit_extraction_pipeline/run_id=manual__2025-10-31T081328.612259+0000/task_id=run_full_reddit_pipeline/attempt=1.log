@@ -1,0 +1,65 @@
+{"timestamp":"2025-10-31T08:13:30.031033","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T08:13:30.031621","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T08:13:30.145244","level":"warning","event":"/opt/airflow/scripts/reddit_engine.py:154: SyntaxWarning: invalid escape sequence '\\+'\n  'BLUETOOTH', 'WIFI', 'WI-FI', 'ANC', 'DAB\\+', 'DAB', 'FM', 'SMART',\n","logger":"py.warnings"}
+{"timestamp":"2025-10-31T08:13:30.169517Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.170096Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.170661Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.171176Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.171695Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.222941Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.236144Z","level":"info","event":"--- ✅ SUCCÈS : 1738 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.237781Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.238327Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.238820Z","level":"info","event":"--- Lancement de la boucle de scraping pour 1738 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.239148Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.239453Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.239739Z","level":"info","event":"--- Traitement Produit 1/1738 (Key: 8) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.240770Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE50Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.241099Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE50Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:30.470483Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:37.472964Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SAMSUNG QE50Q7F3AUXXN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:37.473579Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SAMSUNG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:37.473968Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:37.949017Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:44.950852Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:44.984025Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SAMSUNG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.025210Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.025786Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.026414Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.027100Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG QE50Q7F3AUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.029217Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.029883Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.030536Z","level":"info","event":"--- Traitement Produit 2/1738 (Key: 9) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.031250Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED42C54LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.031838Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED42C54LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:45.342173Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.344820Z","level":"info","event":"   -> 1 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.372534Z","level":"info","event":"   -> (L) 1 posts reçus. Application du filtre de pertinence (Marque: 'LG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.374497Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.375267Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.375750Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.376396Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED42C54LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.378524Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.379052Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.379640Z","level":"info","event":"--- Traitement Produit 3/1738 (Key: 10) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.380287Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE77S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.380975Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE77S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:52.605224Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:59.765173Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SAMSUNG QE77S95FATXXN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:59.765712Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SAMSUNG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:13:59.766058Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:00.260311Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:05.277876Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.262367Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.284773Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SAMSUNG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.311916Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.312540Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.312947Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.313397Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG QE77S95FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.314586Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.315051Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.315541Z","level":"info","event":"--- Traitement Produit 4/1738 (Key: 13) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.315990Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILITGH 48OLED810'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.316415Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILITGH 48OLED810' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:07.584010Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T08:14:10.328322Z","level":"error","event":"Task killed!","logger":"task"}

@@ -1,0 +1,283 @@
+{"timestamp":"2025-10-31T11:21:02.100416","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T11:21:02.101137","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_sentiment_analysis_roberta.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T11:21:10.114611Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:10.115894Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:10.116384Z","level":"info","event":"Current task name:run_sentiment_analysis_roberta","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:10.116804Z","level":"info","event":"Dag name:sentiment_analysis_roberta_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:10.117195Z","level":"info","event":"--- DÉBUT : Pipeline d'Analyse de Sentiment (Étape 7 - RoBERTa) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:10.117629Z","level":"info","event":"--- Chargement du modèle RoBERTa (cardiffnlp)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.093015Z","level":"info","event":"--- Modèle chargé avec succès. ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.154587Z","level":"info","event":"   -> (E) Extraction des posts 'pending_sentiment' (filtrés)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.314968Z","level":"info","event":"   -> 1033 posts (filtrés) trouvés à analyser.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.317097Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.317773Z","level":"info","event":"--- 1033 posts à analyser. Lancement de la boucle... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.318516Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.319181Z","level":"info","event":"--- Traitement Post 1/1033 (ID: 1) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.319910Z","level":"error","event":"Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.557657Z","level":"info","event":"   -> Score: 0.6489 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.581483Z","level":"info","event":"   -> ❌ ERREUR sur Post 1: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.617112Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.617814Z","level":"info","event":"--- Traitement Post 2/1033 (ID: 2) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.816650Z","level":"info","event":"   -> Score: 0.3568 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.842828Z","level":"info","event":"   -> ❌ ERREUR sur Post 2: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.872396Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.873263Z","level":"info","event":"--- Traitement Post 3/1033 (ID: 3) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.967791Z","level":"info","event":"   -> Score: 0.1798 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:12.993851Z","level":"info","event":"   -> ❌ ERREUR sur Post 3: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.023398Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.024143Z","level":"info","event":"--- Traitement Post 4/1033 (ID: 4) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.192111Z","level":"info","event":"   -> Score: -0.5604 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.214924Z","level":"info","event":"   -> ❌ ERREUR sur Post 4: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.241314Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.247232Z","level":"info","event":"--- Traitement Post 5/1033 (ID: 5) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.536455Z","level":"info","event":"   -> Score: 0.0699 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.580009Z","level":"info","event":"   -> ❌ ERREUR sur Post 5: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.662741Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:13.663967Z","level":"info","event":"--- Traitement Post 6/1033 (ID: 6) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:14.299235Z","level":"info","event":"   -> Score: -0.0474 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:14.374886Z","level":"info","event":"   -> ❌ ERREUR sur Post 6: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:14.445581Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:14.449705Z","level":"info","event":"--- Traitement Post 7/1033 (ID: 7) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:15.150113Z","level":"info","event":"   -> Score: -0.2616 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:15.210308Z","level":"info","event":"   -> ❌ ERREUR sur Post 7: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:15.273180Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:15.274310Z","level":"info","event":"--- Traitement Post 8/1033 (ID: 8) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:15.961399Z","level":"info","event":"   -> Score: 0.8865 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.026260Z","level":"info","event":"   -> ❌ ERREUR sur Post 8: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.100908Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.102916Z","level":"info","event":"--- Traitement Post 9/1033 (ID: 9) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.853480Z","level":"info","event":"   -> Score: 0.3856 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.915139Z","level":"info","event":"   -> ❌ ERREUR sur Post 9: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.985783Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:16.986610Z","level":"info","event":"--- Traitement Post 10/1033 (ID: 10) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:17.821375Z","level":"info","event":"   -> Score: 0.1383 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:22.364375Z","level":"info","event":"   -> ❌ ERREUR sur Post 10: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:29.134304Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:29.135228Z","level":"info","event":"--- Traitement Post 11/1033 (ID: 11) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:30.012880Z","level":"info","event":"   -> Score: 0.0734 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:30.378942Z","level":"info","event":"   -> ❌ ERREUR sur Post 11: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:30.432148Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:30.434597Z","level":"info","event":"--- Traitement Post 12/1033 (ID: 12) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.096320Z","level":"info","event":"   -> Score: 0.2860 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.138843Z","level":"info","event":"   -> ❌ ERREUR sur Post 12: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.188528Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.189442Z","level":"info","event":"--- Traitement Post 13/1033 (ID: 13) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.779495Z","level":"info","event":"   -> Score: 0.0853 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.814369Z","level":"info","event":"   -> ❌ ERREUR sur Post 13: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.863743Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:31.864674Z","level":"info","event":"--- Traitement Post 14/1033 (ID: 14) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:32.943874Z","level":"info","event":"   -> Score: 0.2651 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.003444Z","level":"info","event":"   -> ❌ ERREUR sur Post 14: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.075315Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.077844Z","level":"info","event":"--- Traitement Post 15/1033 (ID: 15) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.820856Z","level":"info","event":"   -> Score: 0.6121 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.862329Z","level":"info","event":"   -> ❌ ERREUR sur Post 15: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.919032Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:33.920415Z","level":"info","event":"--- Traitement Post 16/1033 (ID: 16) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.158996Z","level":"info","event":"   -> Score: -0.0051 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.198637Z","level":"info","event":"   -> ❌ ERREUR sur Post 16: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.243622Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.244455Z","level":"info","event":"--- Traitement Post 17/1033 (ID: 17) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.711712Z","level":"info","event":"   -> Score: -0.6539 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.745954Z","level":"info","event":"   -> ❌ ERREUR sur Post 17: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.788119Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:34.788908Z","level":"info","event":"--- Traitement Post 18/1033 (ID: 18) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:35.241325Z","level":"info","event":"   -> Score: 0.9465 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:35.279400Z","level":"info","event":"   -> ❌ ERREUR sur Post 18: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:35.320153Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:35.321223Z","level":"info","event":"--- Traitement Post 19/1033 (ID: 19) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:35.947170Z","level":"info","event":"   -> Score: -0.1540 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:35.981610Z","level":"info","event":"   -> ❌ ERREUR sur Post 19: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.026071Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.026930Z","level":"info","event":"--- Traitement Post 20/1033 (ID: 20) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.376310Z","level":"info","event":"   -> Score: 0.0863 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.413045Z","level":"info","event":"   -> ❌ ERREUR sur Post 20: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.461460Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.462519Z","level":"info","event":"--- Traitement Post 21/1033 (ID: 21) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:36.966986Z","level":"info","event":"   -> Score: -0.2767 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.001674Z","level":"info","event":"   -> ❌ ERREUR sur Post 21: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.040750Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.044344Z","level":"info","event":"--- Traitement Post 22/1033 (ID: 22) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.253053Z","level":"info","event":"   -> Score: 0.3217 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.290301Z","level":"info","event":"   -> ❌ ERREUR sur Post 22: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.332239Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.336221Z","level":"info","event":"--- Traitement Post 23/1033 (ID: 23) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.747716Z","level":"info","event":"   -> Score: 0.0803 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.781481Z","level":"info","event":"   -> ❌ ERREUR sur Post 23: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.821394Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:37.822119Z","level":"info","event":"--- Traitement Post 24/1033 (ID: 24) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.039258Z","level":"info","event":"   -> Score: 0.0995 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.073085Z","level":"info","event":"   -> ❌ ERREUR sur Post 24: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.118145Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.118895Z","level":"info","event":"--- Traitement Post 25/1033 (ID: 25) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.457644Z","level":"info","event":"   -> Score: -0.7723 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.506504Z","level":"info","event":"   -> ❌ ERREUR sur Post 25: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.559742Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:38.560479Z","level":"info","event":"--- Traitement Post 26/1033 (ID: 26) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.124191Z","level":"info","event":"   -> Score: -0.1055 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.164728Z","level":"info","event":"   -> ❌ ERREUR sur Post 26: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.226442Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.227541Z","level":"info","event":"--- Traitement Post 27/1033 (ID: 27) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.907663Z","level":"info","event":"   -> Score: -0.1055 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.941389Z","level":"info","event":"   -> ❌ ERREUR sur Post 27: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.978267Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:39.979464Z","level":"info","event":"--- Traitement Post 28/1033 (ID: 52) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.373836Z","level":"info","event":"   -> Score: -0.1191 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.414054Z","level":"info","event":"   -> ❌ ERREUR sur Post 52: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.452708Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.453633Z","level":"info","event":"--- Traitement Post 29/1033 (ID: 53) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.749742Z","level":"info","event":"   -> Score: 0.9791 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.776646Z","level":"info","event":"   -> ❌ ERREUR sur Post 53: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.810340Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:40.811166Z","level":"info","event":"--- Traitement Post 30/1033 (ID: 54) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.101769Z","level":"info","event":"   -> Score: -0.1262 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.130264Z","level":"info","event":"   -> ❌ ERREUR sur Post 54: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.165939Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.166689Z","level":"info","event":"--- Traitement Post 31/1033 (ID: 55) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.371518Z","level":"info","event":"   -> Score: 0.0481 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.400961Z","level":"info","event":"   -> ❌ ERREUR sur Post 55: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.435756Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.436600Z","level":"info","event":"--- Traitement Post 32/1033 (ID: 56) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.838172Z","level":"info","event":"   -> Score: -0.0066 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.864619Z","level":"info","event":"   -> ❌ ERREUR sur Post 56: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.896173Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.896971Z","level":"info","event":"--- Traitement Post 33/1033 (ID: 57) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:41.984836Z","level":"info","event":"   -> Score: 0.0942 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.012109Z","level":"info","event":"   -> ❌ ERREUR sur Post 57: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.044287Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.045064Z","level":"info","event":"--- Traitement Post 34/1033 (ID: 58) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.636850Z","level":"info","event":"   -> Score: 0.0933 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.679508Z","level":"info","event":"   -> ❌ ERREUR sur Post 58: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.728124Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:42.728981Z","level":"info","event":"--- Traitement Post 35/1033 (ID: 59) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.004637Z","level":"info","event":"   -> Score: 0.8855 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.036727Z","level":"info","event":"   -> ❌ ERREUR sur Post 59: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.085466Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.086418Z","level":"info","event":"--- Traitement Post 36/1033 (ID: 60) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.372100Z","level":"info","event":"   -> Score: -0.0090 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.409383Z","level":"info","event":"   -> ❌ ERREUR sur Post 60: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.483571Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.484341Z","level":"info","event":"--- Traitement Post 37/1033 (ID: 61) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.836208Z","level":"info","event":"   -> Score: 0.9909 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.866415Z","level":"info","event":"   -> ❌ ERREUR sur Post 61: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.898938Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:43.899867Z","level":"info","event":"--- Traitement Post 38/1033 (ID: 62) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.052065Z","level":"info","event":"   -> Score: -0.0880 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.078365Z","level":"info","event":"   -> ❌ ERREUR sur Post 62: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.113047Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.113727Z","level":"info","event":"--- Traitement Post 39/1033 (ID: 63) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.258818Z","level":"info","event":"   -> Score: 0.0545 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.292591Z","level":"info","event":"   -> ❌ ERREUR sur Post 63: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.330043Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.330773Z","level":"info","event":"--- Traitement Post 40/1033 (ID: 64) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.637372Z","level":"info","event":"   -> Score: 0.3275 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.667729Z","level":"info","event":"   -> ❌ ERREUR sur Post 64: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.703355Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:44.704352Z","level":"info","event":"--- Traitement Post 41/1033 (ID: 65) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.088696Z","level":"info","event":"   -> Score: -0.0132 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.120388Z","level":"info","event":"   -> ❌ ERREUR sur Post 65: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.165888Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.166732Z","level":"info","event":"--- Traitement Post 42/1033 (ID: 66) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.493431Z","level":"info","event":"   -> Score: -0.7120 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.524929Z","level":"info","event":"   -> ❌ ERREUR sur Post 66: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.564433Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.565614Z","level":"info","event":"--- Traitement Post 43/1033 (ID: 67) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.760661Z","level":"info","event":"   -> Score: 0.8369 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.788491Z","level":"info","event":"   -> ❌ ERREUR sur Post 67: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.825561Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:45.826338Z","level":"info","event":"--- Traitement Post 44/1033 (ID: 68) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.002598Z","level":"info","event":"   -> Score: 0.5396 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.030233Z","level":"info","event":"   -> ❌ ERREUR sur Post 68: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.065496Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.066165Z","level":"info","event":"--- Traitement Post 45/1033 (ID: 69) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.186107Z","level":"info","event":"   -> Score: -0.3853 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.214810Z","level":"info","event":"   -> ❌ ERREUR sur Post 69: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.250152Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.256181Z","level":"info","event":"--- Traitement Post 46/1033 (ID: 70) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.419255Z","level":"info","event":"   -> Score: 0.0485 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.446657Z","level":"info","event":"   -> ❌ ERREUR sur Post 70: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.475543Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.476303Z","level":"info","event":"--- Traitement Post 47/1033 (ID: 71) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.564668Z","level":"info","event":"   -> Score: 0.1545 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.602176Z","level":"info","event":"   -> ❌ ERREUR sur Post 71: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.667993Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:46.671803Z","level":"info","event":"--- Traitement Post 48/1033 (ID: 72) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.003888Z","level":"info","event":"   -> Score: -0.5782 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.031288Z","level":"info","event":"   -> ❌ ERREUR sur Post 72: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.067749Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.068926Z","level":"info","event":"--- Traitement Post 49/1033 (ID: 73) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.286610Z","level":"info","event":"   -> Score: 0.9137 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.315864Z","level":"info","event":"   -> ❌ ERREUR sur Post 73: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.354929Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.355851Z","level":"info","event":"--- Traitement Post 50/1033 (ID: 74) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.532235Z","level":"info","event":"   -> Score: 0.4622 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.562600Z","level":"info","event":"   -> ❌ ERREUR sur Post 74: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.605257Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.606218Z","level":"info","event":"--- Traitement Post 51/1033 (ID: 75) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.773873Z","level":"info","event":"   -> Score: 0.3769 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.818212Z","level":"info","event":"   -> ❌ ERREUR sur Post 75: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.859861Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:47.860999Z","level":"info","event":"--- Traitement Post 52/1033 (ID: 76) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.039141Z","level":"info","event":"   -> Score: 0.1836 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.100044Z","level":"info","event":"   -> ❌ ERREUR sur Post 76: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.142664Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.143439Z","level":"info","event":"--- Traitement Post 53/1033 (ID: 77) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.431194Z","level":"info","event":"   -> Score: -0.3095 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.464856Z","level":"info","event":"   -> ❌ ERREUR sur Post 77: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.500559Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.501813Z","level":"info","event":"--- Traitement Post 54/1033 (ID: 78) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.946111Z","level":"info","event":"   -> Score: -0.5237 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:48.972506Z","level":"info","event":"   -> ❌ ERREUR sur Post 78: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.002052Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.008203Z","level":"info","event":"--- Traitement Post 55/1033 (ID: 79) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.215130Z","level":"info","event":"   -> Score: 0.0146 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.241132Z","level":"info","event":"   -> ❌ ERREUR sur Post 79: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.273078Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.274025Z","level":"info","event":"--- Traitement Post 56/1033 (ID: 80) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.443295Z","level":"info","event":"   -> Score: 0.3874 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.472369Z","level":"info","event":"   -> ❌ ERREUR sur Post 80: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.503686Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.504531Z","level":"info","event":"--- Traitement Post 57/1033 (ID: 81) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.800393Z","level":"info","event":"   -> Score: -0.2923 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.834991Z","level":"info","event":"   -> ❌ ERREUR sur Post 81: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.872142Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:49.873022Z","level":"info","event":"--- Traitement Post 58/1033 (ID: 82) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.168092Z","level":"info","event":"   -> Score: -0.4004 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.200620Z","level":"info","event":"   -> ❌ ERREUR sur Post 82: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.235178Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.235872Z","level":"info","event":"--- Traitement Post 59/1033 (ID: 83) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.495854Z","level":"info","event":"   -> Score: 0.8817 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.520843Z","level":"info","event":"   -> ❌ ERREUR sur Post 83: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.553198Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.553974Z","level":"info","event":"--- Traitement Post 60/1033 (ID: 84) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.861433Z","level":"info","event":"   -> Score: 0.0319 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.893601Z","level":"info","event":"   -> ❌ ERREUR sur Post 84: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.929389Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:50.930294Z","level":"info","event":"--- Traitement Post 61/1033 (ID: 85) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.069994Z","level":"info","event":"   -> Score: -0.2850 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.097169Z","level":"info","event":"   -> ❌ ERREUR sur Post 85: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.133790Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.134921Z","level":"info","event":"--- Traitement Post 62/1033 (ID: 86) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.341282Z","level":"info","event":"   -> Score: 0.0205 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.371820Z","level":"info","event":"   -> ❌ ERREUR sur Post 86: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.409709Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.412178Z","level":"info","event":"--- Traitement Post 63/1033 (ID: 87) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.605935Z","level":"info","event":"   -> Score: 0.6176 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.639812Z","level":"info","event":"   -> ❌ ERREUR sur Post 87: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.679715Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.680635Z","level":"info","event":"--- Traitement Post 64/1033 (ID: 88) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.963251Z","level":"info","event":"   -> Score: -0.8007 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:51.994036Z","level":"info","event":"   -> ❌ ERREUR sur Post 88: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.033733Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.034771Z","level":"info","event":"--- Traitement Post 65/1033 (ID: 89) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.381231Z","level":"info","event":"   -> Score: 0.8360 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.413636Z","level":"info","event":"   -> ❌ ERREUR sur Post 89: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.452824Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.453876Z","level":"info","event":"--- Traitement Post 66/1033 (ID: 90) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.868103Z","level":"info","event":"   -> Score: -0.6933 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.899862Z","level":"info","event":"   -> ❌ ERREUR sur Post 90: save_sentiment_to_staging() takes 3 positional arguments but 4 were given.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.936429Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:52.937285Z","level":"info","event":"--- Traitement Post 67/1033 (ID: 91) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:53.292102Z","level":"info","event":"   -> Score: 0.3610 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:21:53.323130Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-31T11:21:58.335709Z","level":"error","event":"Task killed!","logger":"task"}

@@ -1,0 +1,4 @@
+{"timestamp":"2025-10-31T11:18:15.944705","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T11:18:15.945501","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_sentiment_analysis_roberta.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T11:18:23.696371","level":"error","event":"DAG not found during start up","dag_id":"sentiment_analysis_roberta_pipeline","bundle":"BundleInfo(name='dags-folder', version=None)","path":"dag_sentiment_analysis_roberta.py","logger":"task"}
+{"timestamp":"2025-10-31T11:18:23.856597Z","level":"warning","event":"Process exited abnormally","exit_code":1,"logger":"task"}

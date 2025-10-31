@@ -163,6 +163,8 @@ services:
 
   airflow-worker:
     <<: *airflow-common
+    build: .
+    mem_limit: 8g
     command: celery worker
     healthcheck:
       # yamllint disable rule:line-length

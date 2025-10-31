@@ -1,0 +1,200 @@
+{"timestamp":"2025-10-31T12:26:03.971891","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T12:26:03.972830","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T12:26:04.090510Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.094226Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.095258Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.096284Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.097345Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.215928Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.258642Z","level":"info","event":"--- ✅ SUCCÈS : 1128 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.261398Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.262291Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.264594Z","level":"info","event":"--- Lancement de la boucle de scraping pour 1128 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.265546Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.266181Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.266864Z","level":"info","event":"--- Traitement Produit 1/1128 (Key: 645) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.267579Z","level":"info","event":"   -> Mot-clé généré : 'LG DSG10TY'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.267957Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG DSG10TY' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:04.507207Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.508431Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LG DSG10TY'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.511533Z","level":"info","event":"   -> Mot-clé trop générique, annulation de la Passe 2.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.512536Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.513446Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG DSG10TY' dans r/hometheater.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.514151Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.514936Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.515610Z","level":"info","event":"--- Traitement Produit 2/1128 (Key: 646) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.516439Z","level":"info","event":"   -> Mot-clé généré : 'BOSE BASS MODULE 500'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:11.517113Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BOSE BASS MODULE 500' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:12.061422Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:18.967293Z","level":"info","event":"   -> 15 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.021945Z","level":"info","event":"   -> (L) 15 posts reçus. Application du filtre de pertinence (Marque: 'BOSE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.084076Z","level":"info","event":"   -> 7 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.084722Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.085201Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.085873Z","level":"info","event":"   -> ✅ Données pour 'BOSE BASS MODULE 500' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.087346Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.087870Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.088378Z","level":"info","event":"--- Traitement Produit 3/1128 (Key: 647) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.088946Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG HW C450 XN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.089459Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG HW C450 XN' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:19.327398Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:26.328216Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SAMSUNG HW C450 XN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:26.328867Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SAMSUNG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:26.329357Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:27.039402Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.040419Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.072950Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SAMSUNG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.119259Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.120080Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.120837Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.121824Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG HW C450 XN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.123524Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.124211Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.124842Z","level":"info","event":"--- Traitement Produit 4/1128 (Key: 648) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.125579Z","level":"info","event":"   -> Mot-clé généré : 'SONOS ARC'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.126266Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONOS ARC' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:34.790721Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.791865Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.829562Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SONOS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.892083Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.892760Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.893537Z","level":"info","event":"   -> 22 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.894343Z","level":"info","event":"   -> ✅ Données pour 'SONOS ARC' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.895885Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.896562Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.897183Z","level":"info","event":"--- Traitement Produit 5/1128 (Key: 649) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.897928Z","level":"info","event":"   -> Mot-clé généré : 'LG DS80TR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:41.898488Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG DS80TR' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:42.139011Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.043319Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LG DS80TR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.044014Z","level":"info","event":"   -> Mot-clé trop générique, annulation de la Passe 2.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.044517Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.045020Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG DS80TR' dans r/hometheater.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.045478Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.046223Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.046787Z","level":"info","event":"--- Traitement Produit 6/1128 (Key: 650) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.047266Z","level":"info","event":"   -> Mot-clé généré : 'LG DS90TR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.047738Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG DS90TR' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:49.276363Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.277601Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LG DS90TR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.278183Z","level":"info","event":"   -> Mot-clé trop générique, annulation de la Passe 2.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.278627Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.279012Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG DS90TR' dans r/hometheater.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.279459Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.279826Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.280225Z","level":"info","event":"--- Traitement Produit 7/1128 (Key: 651) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.280684Z","level":"info","event":"   -> Mot-clé généré : 'SONOS RAY'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.281045Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONOS RAY' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:26:56.870127Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.870793Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.898405Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SONOS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.941162Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.941873Z","level":"info","event":"   -> 1 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.942370Z","level":"info","event":"   -> 24 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.942947Z","level":"info","event":"   -> ✅ Données pour 'SONOS RAY' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.944014Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.944494Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.944947Z","level":"info","event":"--- Traitement Produit 8/1128 (Key: 652) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.945515Z","level":"info","event":"   -> Mot-clé généré : 'LG DS60TR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:03.945966Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG DS60TR' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:04.175946Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.176941Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LG DS60TR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.177619Z","level":"info","event":"   -> Mot-clé trop générique, annulation de la Passe 2.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.178108Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.178579Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG DS60TR' dans r/hometheater.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.179051Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.179465Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.180025Z","level":"info","event":"--- Traitement Produit 9/1128 (Key: 653) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.180684Z","level":"info","event":"   -> Mot-clé généré : 'SONOS SUB G4'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:11.181205Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONOS SUB G4' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:12.024324Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:18.929202Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:18.955554Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SONOS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.029827Z","level":"info","event":"   -> 4 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.030459Z","level":"info","event":"   -> 11 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.031155Z","level":"info","event":"   -> 10 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.032090Z","level":"info","event":"   -> ✅ Données pour 'SONOS SUB G4' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.034321Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.035130Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.035630Z","level":"info","event":"--- Traitement Produit 10/1128 (Key: 654) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.036173Z","level":"info","event":"   -> Mot-clé généré : 'JBL BAR 500'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.036545Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL BAR 500' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:19.689730Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.691216Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.721636Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.821290Z","level":"info","event":"   -> 7 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.821981Z","level":"info","event":"   -> 7 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.822409Z","level":"info","event":"   -> 11 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.823531Z","level":"info","event":"   -> ✅ Données pour 'JBL BAR 500' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.826079Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.828466Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.829213Z","level":"info","event":"--- Traitement Produit 11/1128 (Key: 655) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.829876Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG HW S800D XN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:26.830431Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG HW S800D XN' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:27.418486Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:34.421257Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SAMSUNG HW S800D XN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:34.422141Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SAMSUNG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:34.422978Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:35.061643Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.062274Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.083444Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SAMSUNG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.110666Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.111213Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.111568Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.112047Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG HW S800D XN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.112957Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.113375Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.113783Z","level":"info","event":"--- Traitement Produit 12/1128 (Key: 656) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.114269Z","level":"info","event":"   -> Mot-clé généré : 'LG DS70TY'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.114604Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG DS70TY' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:42.287640Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.192839Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LG DS70TY'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.193496Z","level":"info","event":"   -> Mot-clé trop générique, annulation de la Passe 2.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.193945Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.194396Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LG DS70TY' dans r/hometheater.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.194894Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.195396Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.196123Z","level":"info","event":"--- Traitement Produit 13/1128 (Key: 657) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.196847Z","level":"info","event":"   -> Mot-clé généré : 'BOSE BASS MODULE 700'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.197370Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BOSE BASS MODULE 700' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:49.647820Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.648801Z","level":"info","event":"   -> 14 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.671301Z","level":"info","event":"   -> (L) 14 posts reçus. Application du filtre de pertinence (Marque: 'BOSE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.689828Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.690394Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.690899Z","level":"info","event":"   -> 11 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.691401Z","level":"info","event":"   -> ✅ Données pour 'BOSE BASS MODULE 700' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.692562Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.693071Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.693505Z","level":"info","event":"--- Traitement Produit 14/1128 (Key: 658) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.693982Z","level":"info","event":"   -> Mot-clé généré : 'SONOS SUB GEN3'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:56.694455Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONOS SUB GEN3' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:27:57.189521Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.190201Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.223415Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SONOS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.279801Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.280534Z","level":"info","event":"   -> 4 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.281229Z","level":"info","event":"   -> 21 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.282207Z","level":"info","event":"   -> ✅ Données pour 'SONOS SUB GEN3' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.284121Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.284892Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.285576Z","level":"info","event":"--- Traitement Produit 15/1128 (Key: 659) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.286696Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 1680 SBT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.288081Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 1680 SBT' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:04.509594Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:11.510249Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 1680 SBT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:11.510955Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:11.511559Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:11.925246Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.838985Z","level":"info","event":"   -> 9 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.869356Z","level":"info","event":"   -> (L) 9 posts reçus. Application du filtre de pertinence (Marque: 'MUSE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.884539Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.885140Z","level":"info","event":"   -> 5 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.885595Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.886252Z","level":"info","event":"   -> ✅ Données pour 'MUSE M 1680 SBT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.887658Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.888217Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.888702Z","level":"info","event":"--- Traitement Produit 16/1128 (Key: 660) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.889287Z","level":"info","event":"   -> Mot-clé généré : 'SONY BRAVIA Theatre Bar'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:18.889779Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY BRAVIA Theatre Bar' dans r/hometheater","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T12:28:19.560226Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}

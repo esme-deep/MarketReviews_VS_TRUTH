@@ -1,0 +1,92 @@
+{"timestamp":"2025-10-31T07:54:20.354057","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T07:54:20.354711","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T07:54:20.446198Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.446953Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.447483Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.447841Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.448227Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.496727Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.509560Z","level":"info","event":"--- ✅ SUCCÈS : 1737 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.511181Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.511714Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.512274Z","level":"info","event":"--- Lancement de la boucle de scraping pour 1737 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.512667Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.513005Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.513389Z","level":"info","event":"--- Traitement Produit 1/1737 (Key: 8) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.514054Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE50Q7F3AUXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.514474Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE50Q7F3AUXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:20.759507Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:27.761696Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SAMSUNG QE50Q7F3AUXXN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:27.762199Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SAMSUNG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:27.762864Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:28.267407Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.269504Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.301236Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SAMSUNG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.333737Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.334293Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.334696Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.335197Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG QE50Q7F3AUXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.336836Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.337607Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.338168Z","level":"info","event":"--- Traitement Produit 2/1737 (Key: 9) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.338684Z","level":"info","event":"   -> Mot-clé généré : 'LG C5 evo OLED42C54LA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.339227Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LG C5 evo OLED42C54LA' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:35.606361Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.608943Z","level":"info","event":"   -> 1 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.635406Z","level":"info","event":"   -> (L) 1 posts reçus. Application du filtre de pertinence (Marque: 'LG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.637417Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.638175Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.638881Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.639586Z","level":"info","event":"   -> ✅ Données pour 'LG C5 evo OLED42C54LA' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.641376Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.642049Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.642687Z","level":"info","event":"--- Traitement Produit 3/1737 (Key: 10) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.643378Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE77S95FATXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.643903Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE77S95FATXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:42.860121Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:50.070162Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SAMSUNG QE77S95FATXXN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:50.070819Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SAMSUNG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:50.071215Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:50.582199Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.585252Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.620577Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SAMSUNG')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.670591Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.671250Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.671826Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.672439Z","level":"info","event":"   -> ✅ Données pour 'SAMSUNG QE77S95FATXXN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.674752Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.675540Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.676143Z","level":"info","event":"--- Traitement Produit 4/1737 (Key: 13) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.676721Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS AMBILITGH 48OLED810'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.677424Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS AMBILITGH 48OLED810' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:54:57.906999Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:04.911165Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS AMBILITGH 48OLED810'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:04.912355Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:04.913195Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:05.252494Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.255224Z","level":"info","event":"   -> 15 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.284563Z","level":"info","event":"   -> (L) 15 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.309912Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.310490Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.311023Z","level":"info","event":"   -> 15 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.311508Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS AMBILITGH 48OLED810' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.313180Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.313874Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.314416Z","level":"info","event":"--- Traitement Produit 5/1737 (Key: 15) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.314908Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS THE ONE AMBILIGHT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.315414Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS THE ONE AMBILIGHT' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:12.614781Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:17.808606Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.793677Z","level":"info","event":"   -> 1 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.818593Z","level":"info","event":"   -> (L) 1 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.820164Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.820739Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.821154Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.821656Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS THE ONE AMBILIGHT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.823100Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.823608Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.824007Z","level":"info","event":"--- Traitement Produit 6/1737 (Key: 17) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.824483Z","level":"info","event":"   -> Mot-clé généré : 'SAMSUNG QE55S93FAEXXN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:19.825017Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SAMSUNG QE55S93FAEXXN' dans r/Televisions","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:20.073118Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T07:55:22.873136Z","level":"error","event":"Task killed!","logger":"task"}

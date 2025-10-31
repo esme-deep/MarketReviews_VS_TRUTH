@@ -73,8 +73,8 @@ def get_products_to_search(dwh_cursor):
         WHERE NOT EXISTS (
             SELECT 1 
             FROM Projet_Market_Staging.dbo.Staging_Reddit_Posts AS r
-            WHERE r.ProductKey_Ref = p.ProductKey
-        )
+            WHERE r.ProductKey_Ref = p.ProductKey 
+        ) 
         ORDER BY
             p.ProductKey;
     """
@@ -117,7 +117,7 @@ def get_products_to_search_v1(dwh_cursor):
             SELECT 1 
             FROM Projet_Market_Staging.dbo.Staging_Reddit_Posts AS r
             WHERE r.ProductKey_Ref = p.ProductKey
-        )
+        ) 
         ORDER BY
             p.ProductKey;
     """

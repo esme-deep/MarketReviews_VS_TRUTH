@@ -1,0 +1,406 @@
+{"timestamp":"2025-10-31T11:55:59.547266","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T11:55:59.548099","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_sentiment_analysis_roberta.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T11:56:07.699069Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:07.699851Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:07.700358Z","level":"info","event":"Current task name:run_sentiment_analysis_roberta","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:07.700775Z","level":"info","event":"Dag name:sentiment_analysis_roberta_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:07.701142Z","level":"info","event":"--- DÉBUT : Pipeline d'Analyse de Sentiment (Étape 7 - RoBERTa) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:07.703577Z","level":"info","event":"--- Chargement du modèle RoBERTa (cardiffnlp)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.513570Z","level":"info","event":"--- Modèle chargé avec succès. ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.597199Z","level":"info","event":"   -> (E) Extraction des posts 'pending_sentiment' (filtrés)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.758986Z","level":"info","event":"   -> 967 posts (filtrés) trouvés à analyser.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.760962Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.761556Z","level":"info","event":"--- 967 posts à analyser. Lancement de la boucle... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.761997Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.762424Z","level":"info","event":"--- Traitement Post 1/967 (ID: 91) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.762905Z","level":"error","event":"Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.970997Z","level":"info","event":"   -> Score: 0.3610 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:09.996808Z","level":"info","event":"   -> ❌ ERREUR sur Post 91: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.024304Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.024945Z","level":"info","event":"--- Traitement Post 2/967 (ID: 92) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.333322Z","level":"info","event":"   -> Score: 0.4376 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.363386Z","level":"info","event":"   -> ❌ ERREUR sur Post 92: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.417627Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.418255Z","level":"info","event":"--- Traitement Post 3/967 (ID: 93) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.680227Z","level":"info","event":"   -> Score: 0.5824 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.703893Z","level":"info","event":"   -> ❌ ERREUR sur Post 93: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.748771Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.749367Z","level":"info","event":"--- Traitement Post 4/967 (ID: 94) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.892853Z","level":"info","event":"   -> Score: -0.8360 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.918954Z","level":"info","event":"   -> ❌ ERREUR sur Post 94: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.957427Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:10.958088Z","level":"info","event":"--- Traitement Post 5/967 (ID: 95) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.245199Z","level":"info","event":"   -> Score: -0.1474 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.269806Z","level":"info","event":"   -> ❌ ERREUR sur Post 95: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.318131Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.318859Z","level":"info","event":"--- Traitement Post 6/967 (ID: 96) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.651954Z","level":"info","event":"   -> Score: 0.6767 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.678494Z","level":"info","event":"   -> ❌ ERREUR sur Post 96: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.732292Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:11.732946Z","level":"info","event":"--- Traitement Post 7/967 (ID: 97) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.058728Z","level":"info","event":"   -> Score: 0.9142 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.085499Z","level":"info","event":"   -> ❌ ERREUR sur Post 97: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.137035Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.137808Z","level":"info","event":"--- Traitement Post 8/967 (ID: 98) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.530238Z","level":"info","event":"   -> Score: 0.3349 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.563455Z","level":"info","event":"   -> ❌ ERREUR sur Post 98: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.632349Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:12.636285Z","level":"info","event":"--- Traitement Post 9/967 (ID: 99) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.083760Z","level":"info","event":"   -> Score: -0.2529 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.119823Z","level":"info","event":"   -> ❌ ERREUR sur Post 99: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.183225Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.184082Z","level":"info","event":"--- Traitement Post 10/967 (ID: 100) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.720691Z","level":"info","event":"   -> Score: 0.1847 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.749462Z","level":"info","event":"   -> ❌ ERREUR sur Post 100: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.782473Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.783196Z","level":"info","event":"--- Traitement Post 11/967 (ID: 101) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:13.997988Z","level":"info","event":"   -> Score: 0.0217 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.025207Z","level":"info","event":"   -> ❌ ERREUR sur Post 101: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.060819Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.061687Z","level":"info","event":"--- Traitement Post 12/967 (ID: 102) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.317495Z","level":"info","event":"   -> Score: 0.0496 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.345744Z","level":"info","event":"   -> ❌ ERREUR sur Post 102: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.386193Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.386976Z","level":"info","event":"--- Traitement Post 13/967 (ID: 103) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.707357Z","level":"info","event":"   -> Score: 0.0811 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.736058Z","level":"info","event":"   -> ❌ ERREUR sur Post 103: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.786175Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:14.786774Z","level":"info","event":"--- Traitement Post 14/967 (ID: 135) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.026644Z","level":"info","event":"   -> Score: 0.9559 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.052635Z","level":"info","event":"   -> ❌ ERREUR sur Post 135: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.100326Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.101048Z","level":"info","event":"--- Traitement Post 15/967 (ID: 136) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.410502Z","level":"info","event":"   -> Score: -0.5580 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.440859Z","level":"info","event":"   -> ❌ ERREUR sur Post 136: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.501747Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.502453Z","level":"info","event":"--- Traitement Post 16/967 (ID: 137) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.678368Z","level":"info","event":"   -> Score: 0.1353 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.703372Z","level":"info","event":"   -> ❌ ERREUR sur Post 137: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.733339Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.734132Z","level":"info","event":"--- Traitement Post 17/967 (ID: 138) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:15.988748Z","level":"info","event":"   -> Score: -0.6866 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.017514Z","level":"info","event":"   -> ❌ ERREUR sur Post 138: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.050780Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.051601Z","level":"info","event":"--- Traitement Post 18/967 (ID: 139) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.272135Z","level":"info","event":"   -> Score: 0.2276 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.302077Z","level":"info","event":"   -> ❌ ERREUR sur Post 139: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.345897Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.346539Z","level":"info","event":"--- Traitement Post 19/967 (ID: 140) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.355759Z","level":"info","event":"   -> ❌ ERREUR sur Post 140: The expanded size of the tensor (546) must match the existing size (514) at non-singleton dimension 1.  Target sizes: [1, 546].  Tensor sizes: [1, 514].","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.388164Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.388999Z","level":"info","event":"--- Traitement Post 20/967 (ID: 141) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.644206Z","level":"info","event":"   -> Score: -0.5136 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.672174Z","level":"info","event":"   -> ❌ ERREUR sur Post 141: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.714643Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:16.715335Z","level":"info","event":"--- Traitement Post 21/967 (ID: 142) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.211210Z","level":"info","event":"   -> Score: -0.0151 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.246090Z","level":"info","event":"   -> ❌ ERREUR sur Post 142: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.312176Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.313088Z","level":"info","event":"--- Traitement Post 22/967 (ID: 143) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.706506Z","level":"info","event":"   -> Score: 0.2624 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.741499Z","level":"info","event":"   -> ❌ ERREUR sur Post 143: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.777236Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:17.778126Z","level":"info","event":"--- Traitement Post 23/967 (ID: 144) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.218789Z","level":"info","event":"   -> Score: 0.0385 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.255651Z","level":"info","event":"   -> ❌ ERREUR sur Post 144: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.303283Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.304118Z","level":"info","event":"--- Traitement Post 24/967 (ID: 145) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.671185Z","level":"info","event":"   -> Score: 0.1892 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.696226Z","level":"info","event":"   -> ❌ ERREUR sur Post 145: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.724917Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.729639Z","level":"info","event":"--- Traitement Post 25/967 (ID: 146) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:18.997090Z","level":"info","event":"   -> Score: 0.2025 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.022522Z","level":"info","event":"   -> ❌ ERREUR sur Post 146: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.063068Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.063703Z","level":"info","event":"--- Traitement Post 26/967 (ID: 147) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.170775Z","level":"info","event":"   -> Score: 0.5586 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.197571Z","level":"info","event":"   -> ❌ ERREUR sur Post 147: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.228125Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.228867Z","level":"info","event":"--- Traitement Post 27/967 (ID: 148) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.331906Z","level":"info","event":"   -> Score: 0.1852 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.361785Z","level":"info","event":"   -> ❌ ERREUR sur Post 148: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.393619Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.394386Z","level":"info","event":"--- Traitement Post 28/967 (ID: 149) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.562627Z","level":"info","event":"   -> Score: 0.6837 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.589781Z","level":"info","event":"   -> ❌ ERREUR sur Post 149: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.621100Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.625635Z","level":"info","event":"--- Traitement Post 29/967 (ID: 150) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.800688Z","level":"info","event":"   -> Score: -0.0619 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.824593Z","level":"info","event":"   -> ❌ ERREUR sur Post 150: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.852217Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.852933Z","level":"info","event":"--- Traitement Post 30/967 (ID: 151) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.952913Z","level":"info","event":"   -> Score: 0.9602 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:19.978283Z","level":"info","event":"   -> ❌ ERREUR sur Post 151: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.006009Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.006869Z","level":"info","event":"--- Traitement Post 31/967 (ID: 152) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.099350Z","level":"info","event":"   -> Score: 0.2212 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.125087Z","level":"info","event":"   -> ❌ ERREUR sur Post 152: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.152880Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.153642Z","level":"info","event":"--- Traitement Post 32/967 (ID: 153) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.261539Z","level":"info","event":"   -> Score: 0.4937 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.285187Z","level":"info","event":"   -> ❌ ERREUR sur Post 153: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.312814Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.313536Z","level":"info","event":"--- Traitement Post 33/967 (ID: 154) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.589174Z","level":"info","event":"   -> Score: -0.1771 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.613134Z","level":"info","event":"   -> ❌ ERREUR sur Post 154: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.650371Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.651134Z","level":"info","event":"--- Traitement Post 34/967 (ID: 155) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.786721Z","level":"info","event":"   -> Score: 0.2329 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.818253Z","level":"info","event":"   -> ❌ ERREUR sur Post 155: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.848688Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:20.849388Z","level":"info","event":"--- Traitement Post 35/967 (ID: 156) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.120990Z","level":"info","event":"   -> Score: 0.9695 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.148004Z","level":"info","event":"   -> ❌ ERREUR sur Post 156: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.187374Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.188256Z","level":"info","event":"--- Traitement Post 36/967 (ID: 157) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.289427Z","level":"info","event":"   -> Score: 0.5089 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.318696Z","level":"info","event":"   -> ❌ ERREUR sur Post 157: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.350326Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.351181Z","level":"info","event":"--- Traitement Post 37/967 (ID: 158) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.490438Z","level":"info","event":"   -> Score: 0.7977 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.521940Z","level":"info","event":"   -> ❌ ERREUR sur Post 158: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.556668Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.557436Z","level":"info","event":"--- Traitement Post 38/967 (ID: 159) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.693595Z","level":"info","event":"   -> Score: 0.1613 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.725269Z","level":"info","event":"   -> ❌ ERREUR sur Post 159: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.763883Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.764985Z","level":"info","event":"--- Traitement Post 39/967 (ID: 160) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.901914Z","level":"info","event":"   -> Score: 0.8103 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.929594Z","level":"info","event":"   -> ❌ ERREUR sur Post 160: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.966064Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:21.966973Z","level":"info","event":"--- Traitement Post 40/967 (ID: 161) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:22.307036Z","level":"info","event":"   -> Score: 0.7575 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:22.335538Z","level":"info","event":"   -> ❌ ERREUR sur Post 161: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:22.370349Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:22.371444Z","level":"info","event":"--- Traitement Post 41/967 (ID: 162) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:22.938137Z","level":"info","event":"   -> Score: -0.4964 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:22.975866Z","level":"info","event":"   -> ❌ ERREUR sur Post 162: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.027155Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.027987Z","level":"info","event":"--- Traitement Post 42/967 (ID: 163) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.407826Z","level":"info","event":"   -> Score: -0.2010 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.436503Z","level":"info","event":"   -> ❌ ERREUR sur Post 163: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.469602Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.470667Z","level":"info","event":"--- Traitement Post 43/967 (ID: 164) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.590134Z","level":"info","event":"   -> Score: 0.6839 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.617463Z","level":"info","event":"   -> ❌ ERREUR sur Post 164: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.648725Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.649710Z","level":"info","event":"--- Traitement Post 44/967 (ID: 165) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.744078Z","level":"info","event":"   -> Score: 0.2903 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.771552Z","level":"info","event":"   -> ❌ ERREUR sur Post 165: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.803468Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:23.804429Z","level":"info","event":"--- Traitement Post 45/967 (ID: 166) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.046969Z","level":"info","event":"   -> Score: 0.0279 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.080449Z","level":"info","event":"   -> ❌ ERREUR sur Post 166: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.109967Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.111197Z","level":"info","event":"--- Traitement Post 46/967 (ID: 167) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.376372Z","level":"info","event":"   -> Score: 0.9789 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.413739Z","level":"info","event":"   -> ❌ ERREUR sur Post 167: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.453808Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.454947Z","level":"info","event":"--- Traitement Post 47/967 (ID: 168) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.642056Z","level":"info","event":"   -> Score: 0.7783 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.670154Z","level":"info","event":"   -> ❌ ERREUR sur Post 168: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.702324Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.703134Z","level":"info","event":"--- Traitement Post 48/967 (ID: 169) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.918538Z","level":"info","event":"   -> Score: 0.8483 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.951616Z","level":"info","event":"   -> ❌ ERREUR sur Post 169: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.984459Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:24.985244Z","level":"info","event":"--- Traitement Post 49/967 (ID: 226) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.295044Z","level":"info","event":"   -> Score: 0.5762 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.332254Z","level":"info","event":"   -> ❌ ERREUR sur Post 226: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.367854Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.368798Z","level":"info","event":"--- Traitement Post 50/967 (ID: 227) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.709913Z","level":"info","event":"   -> Score: -0.2650 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.736721Z","level":"info","event":"   -> ❌ ERREUR sur Post 227: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.764690Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.765430Z","level":"info","event":"--- Traitement Post 51/967 (ID: 228) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.879177Z","level":"info","event":"   -> Score: 0.6985 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.910974Z","level":"info","event":"   -> ❌ ERREUR sur Post 228: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.949073Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:25.953713Z","level":"info","event":"--- Traitement Post 52/967 (ID: 229) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.133204Z","level":"info","event":"   -> Score: 0.5152 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.163279Z","level":"info","event":"   -> ❌ ERREUR sur Post 229: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.198847Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.199816Z","level":"info","event":"--- Traitement Post 53/967 (ID: 230) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.443928Z","level":"info","event":"   -> Score: 0.6548 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.474464Z","level":"info","event":"   -> ❌ ERREUR sur Post 230: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.515040Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.515973Z","level":"info","event":"--- Traitement Post 54/967 (ID: 231) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.811444Z","level":"info","event":"   -> Score: 0.8256 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.845420Z","level":"info","event":"   -> ❌ ERREUR sur Post 231: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.879986Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:26.880915Z","level":"info","event":"--- Traitement Post 55/967 (ID: 232) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.174506Z","level":"info","event":"   -> Score: -0.3102 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.201980Z","level":"info","event":"   -> ❌ ERREUR sur Post 232: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.240603Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.241187Z","level":"info","event":"--- Traitement Post 56/967 (ID: 233) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.408261Z","level":"info","event":"   -> Score: -0.4484 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.437226Z","level":"info","event":"   -> ❌ ERREUR sur Post 233: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.472502Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.473409Z","level":"info","event":"--- Traitement Post 57/967 (ID: 234) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.733273Z","level":"info","event":"   -> Score: 0.5735 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.762947Z","level":"info","event":"   -> ❌ ERREUR sur Post 234: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.794118Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.794963Z","level":"info","event":"--- Traitement Post 58/967 (ID: 235) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.923926Z","level":"info","event":"   -> Score: 0.4066 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.950799Z","level":"info","event":"   -> ❌ ERREUR sur Post 235: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.983138Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:27.983953Z","level":"info","event":"--- Traitement Post 59/967 (ID: 236) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.085062Z","level":"info","event":"   -> Score: 0.1081 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.111476Z","level":"info","event":"   -> ❌ ERREUR sur Post 236: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.141007Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.142189Z","level":"info","event":"--- Traitement Post 60/967 (ID: 237) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.288976Z","level":"info","event":"   -> Score: -0.2737 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.316765Z","level":"info","event":"   -> ❌ ERREUR sur Post 237: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.346007Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.346927Z","level":"info","event":"--- Traitement Post 61/967 (ID: 238) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.452383Z","level":"info","event":"   -> Score: 0.0356 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.482356Z","level":"info","event":"   -> ❌ ERREUR sur Post 238: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.518707Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.519450Z","level":"info","event":"--- Traitement Post 62/967 (ID: 239) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.647824Z","level":"info","event":"   -> Score: 0.9878 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.675282Z","level":"info","event":"   -> ❌ ERREUR sur Post 239: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.708964Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.709805Z","level":"info","event":"--- Traitement Post 63/967 (ID: 240) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.826476Z","level":"info","event":"   -> Score: 0.9836 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.853407Z","level":"info","event":"   -> ❌ ERREUR sur Post 240: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.887858Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:28.888667Z","level":"info","event":"--- Traitement Post 64/967 (ID: 241) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.214072Z","level":"info","event":"   -> Score: -0.4918 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.247229Z","level":"info","event":"   -> ❌ ERREUR sur Post 241: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.278433Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.279462Z","level":"info","event":"--- Traitement Post 65/967 (ID: 242) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.532633Z","level":"info","event":"   -> Score: 0.5112 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.561007Z","level":"info","event":"   -> ❌ ERREUR sur Post 242: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.603754Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.604672Z","level":"info","event":"--- Traitement Post 66/967 (ID: 243) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.761939Z","level":"info","event":"   -> Score: -0.4286 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.789882Z","level":"info","event":"   -> ❌ ERREUR sur Post 243: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.826009Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.826733Z","level":"info","event":"--- Traitement Post 67/967 (ID: 244) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:29.969484Z","level":"info","event":"   -> Score: -0.1747 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.002121Z","level":"info","event":"   -> ❌ ERREUR sur Post 244: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.036630Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.037437Z","level":"info","event":"--- Traitement Post 68/967 (ID: 245) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.195177Z","level":"info","event":"   -> Score: 0.2511 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.228910Z","level":"info","event":"   -> ❌ ERREUR sur Post 245: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.260711Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.261782Z","level":"info","event":"--- Traitement Post 69/967 (ID: 246) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.429447Z","level":"info","event":"   -> Score: -0.3415 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.457808Z","level":"info","event":"   -> ❌ ERREUR sur Post 246: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.494748Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.495467Z","level":"info","event":"--- Traitement Post 70/967 (ID: 247) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.585100Z","level":"info","event":"   -> Score: 0.0225 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.612435Z","level":"info","event":"   -> ❌ ERREUR sur Post 247: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.643239Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.644064Z","level":"info","event":"--- Traitement Post 71/967 (ID: 248) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.750945Z","level":"info","event":"   -> Score: 0.0289 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.776830Z","level":"info","event":"   -> ❌ ERREUR sur Post 248: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.806177Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.807088Z","level":"info","event":"--- Traitement Post 72/967 (ID: 249) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:30.991065Z","level":"info","event":"   -> Score: 0.5029 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.016943Z","level":"info","event":"   -> ❌ ERREUR sur Post 249: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.047366Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.048192Z","level":"info","event":"--- Traitement Post 73/967 (ID: 250) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.212018Z","level":"info","event":"   -> Score: 0.9173 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.240008Z","level":"info","event":"   -> ❌ ERREUR sur Post 250: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.271220Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.272124Z","level":"info","event":"--- Traitement Post 74/967 (ID: 251) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.585735Z","level":"info","event":"   -> Score: 0.9891 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.620987Z","level":"info","event":"   -> ❌ ERREUR sur Post 251: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.652354Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.653018Z","level":"info","event":"--- Traitement Post 75/967 (ID: 252) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.872888Z","level":"info","event":"   -> Score: 0.9660 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.899798Z","level":"info","event":"   -> ❌ ERREUR sur Post 252: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.932467Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:31.933253Z","level":"info","event":"--- Traitement Post 76/967 (ID: 253) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.166291Z","level":"info","event":"   -> Score: -0.2666 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.203616Z","level":"info","event":"   -> ❌ ERREUR sur Post 253: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.235826Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.236765Z","level":"info","event":"--- Traitement Post 77/967 (ID: 254) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.742257Z","level":"info","event":"   -> Score: 0.8895 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.799828Z","level":"info","event":"   -> ❌ ERREUR sur Post 254: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.865599Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:32.868021Z","level":"info","event":"--- Traitement Post 78/967 (ID: 255) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.231088Z","level":"info","event":"   -> Score: -0.8245 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.286437Z","level":"info","event":"   -> ❌ ERREUR sur Post 255: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.333957Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.336062Z","level":"info","event":"--- Traitement Post 79/967 (ID: 256) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.769732Z","level":"info","event":"   -> Score: 0.5626 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.809455Z","level":"info","event":"   -> ❌ ERREUR sur Post 256: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.843430Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:33.844451Z","level":"info","event":"--- Traitement Post 80/967 (ID: 257) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.176820Z","level":"info","event":"   -> Score: -0.6681 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.204762Z","level":"info","event":"   -> ❌ ERREUR sur Post 257: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.238335Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.239118Z","level":"info","event":"--- Traitement Post 81/967 (ID: 258) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.608327Z","level":"info","event":"   -> Score: -0.4903 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.634382Z","level":"info","event":"   -> ❌ ERREUR sur Post 258: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.677687Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.678637Z","level":"info","event":"--- Traitement Post 82/967 (ID: 259) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.923202Z","level":"info","event":"   -> Score: 0.0321 (Neutre)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.949379Z","level":"info","event":"   -> ❌ ERREUR sur Post 259: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.979828Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:34.980640Z","level":"info","event":"--- Traitement Post 83/967 (ID: 260) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.264547Z","level":"info","event":"   -> Score: -0.4918 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.291831Z","level":"info","event":"   -> ❌ ERREUR sur Post 260: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.336423Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.337232Z","level":"info","event":"--- Traitement Post 84/967 (ID: 261) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.653082Z","level":"info","event":"   -> Score: -0.2585 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.688838Z","level":"info","event":"   -> ❌ ERREUR sur Post 261: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.719191Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:35.719978Z","level":"info","event":"--- Traitement Post 85/967 (ID: 262) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.073675Z","level":"info","event":"   -> Score: 0.1314 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.112909Z","level":"info","event":"   -> ❌ ERREUR sur Post 262: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.142462Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.143286Z","level":"info","event":"--- Traitement Post 86/967 (ID: 263) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.418063Z","level":"info","event":"   -> Score: 0.3934 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.443141Z","level":"info","event":"   -> ❌ ERREUR sur Post 263: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.470453Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.471324Z","level":"info","event":"--- Traitement Post 87/967 (ID: 264) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.713079Z","level":"info","event":"   -> Score: 0.2798 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.735198Z","level":"info","event":"   -> ❌ ERREUR sur Post 264: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.761038Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:36.761734Z","level":"info","event":"--- Traitement Post 88/967 (ID: 265) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.098336Z","level":"info","event":"   -> Score: 0.1571 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.126935Z","level":"info","event":"   -> ❌ ERREUR sur Post 265: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.154678Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.155444Z","level":"info","event":"--- Traitement Post 89/967 (ID: 266) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.437424Z","level":"info","event":"   -> Score: -0.3482 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.463473Z","level":"info","event":"   -> ❌ ERREUR sur Post 266: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.497022Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.497785Z","level":"info","event":"--- Traitement Post 90/967 (ID: 267) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.654483Z","level":"info","event":"   -> Score: 0.1894 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.679497Z","level":"info","event":"   -> ❌ ERREUR sur Post 267: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.708660Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.713515Z","level":"info","event":"--- Traitement Post 91/967 (ID: 268) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.866333Z","level":"info","event":"   -> Score: -0.5427 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.888512Z","level":"info","event":"   -> ❌ ERREUR sur Post 268: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.914307Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:37.914983Z","level":"info","event":"--- Traitement Post 92/967 (ID: 269) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.136198Z","level":"info","event":"   -> Score: -0.2806 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.159114Z","level":"info","event":"   -> ❌ ERREUR sur Post 269: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.195727Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.196421Z","level":"info","event":"--- Traitement Post 93/967 (ID: 293) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.412062Z","level":"info","event":"   -> Score: 0.8920 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.433655Z","level":"info","event":"   -> ❌ ERREUR sur Post 293: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.468204Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.468809Z","level":"info","event":"--- Traitement Post 94/967 (ID: 310) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.766722Z","level":"info","event":"   -> Score: 0.6330 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.803136Z","level":"info","event":"   -> ❌ ERREUR sur Post 310: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.829517Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:38.830499Z","level":"info","event":"--- Traitement Post 95/967 (ID: 311) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.081139Z","level":"info","event":"   -> Score: 0.2184 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.103640Z","level":"info","event":"   -> ❌ ERREUR sur Post 311: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.142435Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.143006Z","level":"info","event":"--- Traitement Post 96/967 (ID: 312) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.406278Z","level":"info","event":"   -> Score: -0.5011 (Négatif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.441192Z","level":"info","event":"   -> ❌ ERREUR sur Post 312: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.467621Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.473561Z","level":"info","event":"--- Traitement Post 97/967 (ID: 313) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.796504Z","level":"info","event":"   -> Score: 0.1365 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.820724Z","level":"info","event":"   -> ❌ ERREUR sur Post 313: ('Invalid parameter type.  param-index=4 param-type=numpy.float32', 'HY105').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.846858Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:39.849533Z","level":"info","event":"--- Traitement Post 98/967 (ID: 314) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:40.164458Z","level":"info","event":"   -> Score: 0.3168 (Positif)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T11:56:40.181774Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-10-31T11:56:45.187776Z","level":"error","event":"Task killed!","logger":"task"}
