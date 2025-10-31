@@ -1,0 +1,846 @@
+{"timestamp":"2025-10-31T13:13:41.958873","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-31T13:13:41.959738","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-31T13:13:42.049656Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.050549Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.050944Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.051303Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.051668Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.129271Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.151607Z","level":"info","event":"--- ✅ SUCCÈS : 994 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.153509Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.154197Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.154883Z","level":"info","event":"--- Lancement de la boucle de scraping pour 994 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.155367Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.155840Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.156239Z","level":"info","event":"--- Traitement Produit 1/994 (Key: 737) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.156827Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 172 DBT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.157290Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 172 DBT' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:42.598116Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:49.599031Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 172 DBT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:49.599793Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:49.600460Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:49.862446Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.863010Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.863600Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 172 DBT' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.864074Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.864415Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.864825Z","level":"info","event":"--- Traitement Produit 2/994 (Key: 738) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.865473Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 189 CDB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:56.865886Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 189 CDB' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:13:57.097593Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:04.098564Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 189 CDB'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:04.099371Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:04.099984Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:04.448835Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.396328Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.396911Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 189 CDB' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.397342Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.397664Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.398094Z","level":"info","event":"--- Traitement Produit 3/994 (Key: 739) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.398649Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAV2000DB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.399069Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAV2000DB' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:11.617978Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:18.618976Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAV2000DB'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:18.619712Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:18.620459Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:19.719978Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.721216Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.818808Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.860688Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.861324Z","level":"info","event":"   -> 18 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.861905Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.862494Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS TAV2000DB' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.863609Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.864249Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.864927Z","level":"info","event":"--- Traitement Produit 4/994 (Key: 740) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.866008Z","level":"info","event":"   -> ⚠️ Mot-clé rejeté car trop court après nettoyage (Nom nettoyé: 'M').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.866522Z","level":"info","event":"   -> Mot-clé généré : 'None'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.866984Z","level":"info","event":"   -> ⚠️ Mot-clé vide, impossible de chercher. On ignore.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.867407Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.867959Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.868559Z","level":"info","event":"--- Traitement Produit 5/994 (Key: 741) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.869143Z","level":"info","event":"   -> Mot-clé généré : 'DENVER TDB 212GR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:26.869633Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'DENVER TDB 212GR' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:27.255716Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:34.256801Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'DENVER TDB 212GR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:34.257662Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'DENVER'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:34.258467Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'DENVER' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:34.526356Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.467243Z","level":"info","event":"   -> 3 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.492292Z","level":"info","event":"   -> (L) 3 posts reçus. Application du filtre de pertinence (Marque: 'DENVER')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.496280Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.496720Z","level":"info","event":"   -> 1 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.497109Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.497568Z","level":"info","event":"   -> ✅ Données pour 'DENVER TDB 212GR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.498967Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.499458Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.499922Z","level":"info","event":"--- Traitement Produit 6/994 (Key: 742) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.500398Z","level":"info","event":"   -> Mot-clé généré : 'DENVER 48GR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.500738Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'DENVER 48GR' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:41.727565Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:48.728593Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'DENVER 48GR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:48.729357Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'DENVER'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:48.729967Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'DENVER' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:49.679660Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.680544Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.714087Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'DENVER')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.844801Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.845493Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.846049Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.846766Z","level":"info","event":"   -> ✅ Données pour 'DENVER 48GR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.848579Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.849346Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.850031Z","level":"info","event":"--- Traitement Produit 7/994 (Key: 743) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.850809Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M CW'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:56.851381Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M CW' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:14:57.130465Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.131809Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.162475Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'MUSE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.166608Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.167293Z","level":"info","event":"   -> 2 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.167963Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.168670Z","level":"info","event":"   -> ✅ Données pour 'MUSE M CW' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.170785Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.171447Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.172320Z","level":"info","event":"--- Traitement Produit 8/994 (Key: 744) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.173065Z","level":"info","event":"   -> Mot-clé généré : 'NEWONE CRD160'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.173580Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'NEWONE CRD160' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:04.397751Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:11.344621Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'NEWONE CRD160'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:11.345239Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'NEWONE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:11.345757Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'NEWONE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:11.608306Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.609190Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.609759Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'NEWONE CRD160' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.610177Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.610634Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.611310Z","level":"info","event":"--- Traitement Produit 9/994 (Key: 745) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.611982Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAR4406'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:18.612574Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAR4406' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:20.142735Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:27.143356Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAR4406'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:27.144186Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:27.144828Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:27.946356Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.947763Z","level":"info","event":"   -> 5 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.973662Z","level":"info","event":"   -> (L) 5 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.982749Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.983392Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.983872Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.984441Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS TAR4406' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.986071Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.986701Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.987324Z","level":"info","event":"--- Traitement Produit 10/994 (Key: 746) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.987911Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAR5100'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:34.988496Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAR5100' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:35.428509Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:42.373774Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAR5100'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:42.374407Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:42.374825Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:43.796554Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.797101Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.820824Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.850175Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.850713Z","level":"info","event":"   -> 18 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.851065Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.851492Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS TAR5100' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.852553Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.852931Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.853428Z","level":"info","event":"--- Traitement Produit 11/994 (Key: 747) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.853960Z","level":"info","event":"   -> Mot-clé généré : 'BIGBEN RKIDSCAT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:50.854380Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN RKIDSCAT' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:52.421180Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:59.421901Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'BIGBEN RKIDSCAT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:59.422703Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'BIGBEN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:15:59.423378Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:00.513810Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.435636Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.436337Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'BIGBEN RKIDSCAT' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.436897Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.437454Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.437864Z","level":"info","event":"--- Traitement Produit 12/994 (Key: 748) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.438248Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M KB'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:07.438647Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M KB' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:08.394191Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:15.394851Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M KB'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:15.395768Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:15.396630Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:15.674981Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.675585Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.676259Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M KB' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.676864Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.677281Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.677704Z","level":"info","event":"--- Traitement Produit 13/994 (Key: 749) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.678221Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 109 DBW'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:22.678670Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 109 DBW' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:23.017517Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:30.018464Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 109 DBW'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:30.019022Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:30.019455Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:31.770202Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.719543Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.720307Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 109 DBW' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.720880Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.721283Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.721841Z","level":"info","event":"--- Traitement Produit 14/994 (Key: 750) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.722561Z","level":"info","event":"   -> Mot-clé généré : 'KENWOOD CR ST40DAB B'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.723068Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'KENWOOD CR ST40DAB B' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:38.957281Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:45.957945Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'KENWOOD CR ST40DAB B'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:45.958689Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'KENWOOD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:45.959308Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'KENWOOD' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:47.416144Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.416829Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.441931Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'KENWOOD')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.445050Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.445487Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.445910Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.446370Z","level":"info","event":"   -> ✅ Données pour 'KENWOOD CR ST40DAB B' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.447850Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.448305Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.449019Z","level":"info","event":"--- Traitement Produit 15/994 (Key: 751) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.449547Z","level":"info","event":"   -> Mot-clé généré : 'LENCO MCR 113BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:54.449973Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO MCR 113BK' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:16:55.039423Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:02.040282Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO MCR 113BK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:02.041029Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:02.041473Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:02.637054Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.607810Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.608426Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LENCO MCR 113BK' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.609168Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.609862Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.610473Z","level":"info","event":"--- Traitement Produit 16/994 (Key: 752) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.611172Z","level":"info","event":"   -> Mot-clé généré : 'MARATHON LAS VEGAS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:09.611683Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MARATHON LAS VEGAS' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:10.533885Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.534678Z","level":"info","event":"   -> 4 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.562829Z","level":"info","event":"   -> (L) 4 posts reçus. Application du filtre de pertinence (Marque: 'MARATHON')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.572431Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.573188Z","level":"info","event":"   -> 4 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.573768Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.574316Z","level":"info","event":"   -> ✅ Données pour 'MARATHON LAS VEGAS' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.575909Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.576631Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.577170Z","level":"info","event":"--- Traitement Produit 17/994 (Key: 753) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.577836Z","level":"info","event":"   -> Mot-clé généré : 'LENCO SCD 860BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.578424Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO SCD 860BK' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:17.827793Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:24.828592Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO SCD 860BK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:24.829425Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:24.830070Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:25.045023Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.045769Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.046392Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LENCO SCD 860BK' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.046784Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.047176Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.047619Z","level":"info","event":"--- Traitement Produit 18/994 (Key: 754) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.048064Z","level":"info","event":"   -> Mot-clé généré : 'BIGBEN RKIDSDOG'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.048428Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN RKIDSDOG' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:32.300317Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:39.254960Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'BIGBEN RKIDSDOG'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:39.255668Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'BIGBEN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:39.256189Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:39.457582Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.459271Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.460655Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'BIGBEN RKIDSDOG' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.461568Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.462871Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.463844Z","level":"info","event":"--- Traitement Produit 19/994 (Key: 755) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.465410Z","level":"info","event":"   -> Mot-clé généré : 'LENCO DIR 70BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:46.467112Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO DIR 70BK' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:47.980291Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:54.980773Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO DIR 70BK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:54.981410Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:54.981842Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:17:56.284736Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.285569Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.313493Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'LENCO')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.520197Z","level":"info","event":"   -> 22 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.520864Z","level":"info","event":"   -> 2 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.521365Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.522687Z","level":"info","event":"   -> ✅ Données pour 'LENCO DIR 70BK' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.524709Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.525464Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.526125Z","level":"info","event":"--- Traitement Produit 20/994 (Key: 756) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.526695Z","level":"info","event":"   -> Mot-clé généré : 'PANASONIC RF D30BTEG W'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.527223Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PANASONIC RF D30BTEG W' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:03.778634Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:10.722502Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PANASONIC RF D30BTEG W'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:10.723406Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PANASONIC'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:10.724082Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PANASONIC' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:11.119689Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.120557Z","level":"info","event":"   -> 7 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.149433Z","level":"info","event":"   -> (L) 7 posts reçus. Application du filtre de pertinence (Marque: 'PANASONIC')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.161652Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.162267Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.162726Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.163321Z","level":"info","event":"   -> ✅ Données pour 'PANASONIC RF D30BTEG W' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.165274Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.165928Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.166468Z","level":"info","event":"--- Traitement Produit 21/994 (Key: 757) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.167095Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 135 DBT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.167627Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 135 DBT' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.393975Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=MUSE+M+135+DBT&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:18.394762Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:25.396509Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 135 DBT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:25.397573Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:25.398082Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:25.591918Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=MUSE&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:25.592499Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.592981Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.593907Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 135 DBT' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.594548Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.595539Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.596369Z","level":"info","event":"--- Traitement Produit 22/994 (Key: 758) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.597182Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAV3000B'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.597767Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAV3000B' dans r/vinyl","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.854328Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/vinyl/search.json?q=PHILIPS+TAV3000B&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:32.854967Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:39.798410Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAV3000B'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:39.799123Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:39.799669Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/vinyl","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:40.020069Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/vinyl/search.json?q=PHILIPS&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:40.020695Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.020794Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.021416Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'PHILIPS TAV3000B' dans r/vinyl.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.021917Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.022303Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.022764Z","level":"info","event":"--- Traitement Produit 23/994 (Key: 759) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.023278Z","level":"info","event":"   -> ⚠️ Mot-clé rejeté car trop court après nettoyage (Nom nettoyé: '').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.023702Z","level":"info","event":"   -> Mot-clé généré : 'None'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.024057Z","level":"info","event":"   -> ⚠️ Mot-clé vide, impossible de chercher. On ignore.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.024369Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.024692Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.025066Z","level":"info","event":"--- Traitement Produit 24/994 (Key: 760) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.025575Z","level":"info","event":"   -> Mot-clé généré : 'KENWOOD CR ST40DAB M'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.026150Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'KENWOOD CR ST40DAB M' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.978755Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=KENWOOD+CR+ST40DAB+M&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:47.979325Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:54.979775Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'KENWOOD CR ST40DAB M'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:54.980413Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'KENWOOD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:54.980869Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'KENWOOD' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:55.371175Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=KENWOOD&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:18:55.371759Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.372176Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.372715Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'KENWOOD CR ST40DAB M' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.373299Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.373829Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.374649Z","level":"info","event":"--- Traitement Produit 25/994 (Key: 761) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.375576Z","level":"info","event":"   -> ⚠️ Mot-clé rejeté car trop court après nettoyage (Nom nettoyé: '').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.376175Z","level":"info","event":"   -> Mot-clé généré : 'None'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.376667Z","level":"info","event":"   -> ⚠️ Mot-clé vide, impossible de chercher. On ignore.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.377234Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.377836Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.378490Z","level":"info","event":"--- Traitement Produit 26/994 (Key: 762) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.379044Z","level":"info","event":"   -> Mot-clé généré : 'BIGBEN R16SAFARI'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.379509Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN R16SAFARI' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.582571Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=BIGBEN+R16SAFARI&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:02.583199Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:09.524322Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'BIGBEN R16SAFARI'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:09.525057Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'BIGBEN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:09.525660Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:09.704571Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=BIGBEN&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:09.705283Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.707286Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.709234Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'BIGBEN R16SAFARI' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.714124Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.717834Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.718895Z","level":"info","event":"--- Traitement Produit 27/994 (Key: 763) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.720306Z","level":"info","event":"   -> Mot-clé généré : 'BIGBEN RKIDSKOALA'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.721244Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN RKIDSKOALA' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.911415Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=BIGBEN+RKIDSKOALA&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:16.912215Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:23.912091Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'BIGBEN RKIDSKOALA'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:23.912703Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'BIGBEN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:23.913496Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:25.130276Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=BIGBEN&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:25.130844Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.131176Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.131855Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'BIGBEN RKIDSKOALA' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.132283Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.132655Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.133240Z","level":"info","event":"--- Traitement Produit 28/994 (Key: 764) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.133730Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 196 DBT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.134112Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 196 DBT' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.286896Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=MUSE+M+196+DBT&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:32.287372Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:39.226373Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 196 DBT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:39.226939Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:39.227247Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:39.605727Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=MUSE&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:39.606327Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.606685Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.608451Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 196 DBT' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.609168Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.609993Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.611411Z","level":"info","event":"--- Traitement Produit 29/994 (Key: 765) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.613148Z","level":"info","event":"   -> Mot-clé généré : 'IMPERIAL DABMAN i200'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.614056Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'IMPERIAL DABMAN i200' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.767481Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/all/search.json?q=IMPERIAL+DABMAN+i200&sort=relevance&restrict_sr=false&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:46.768333Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:53.768542Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'IMPERIAL DABMAN i200'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:53.769295Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'IMPERIAL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:53.769778Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'IMPERIAL' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:54.108075Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/all/search.json?q=IMPERIAL&sort=relevance&restrict_sr=false&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:19:54.110697Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.108710Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.109314Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'IMPERIAL DABMAN i200' dans r/all.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.109779Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.110270Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.110722Z","level":"info","event":"--- Traitement Produit 30/994 (Key: 766) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.111539Z","level":"info","event":"   -> Mot-clé généré : 'PURE MOMENT COTTON'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:01.112042Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE MOMENT COTTON' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:02.373788Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:09.313933Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PURE MOMENT COTTON'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:09.315413Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PURE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:09.316025Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:09.608615Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.609776Z","level":"info","event":"   -> 4 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.652300Z","level":"info","event":"   -> (L) 4 posts reçus. Application du filtre de pertinence (Marque: 'PURE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.675374Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.676823Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.678386Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.679679Z","level":"info","event":"   -> ✅ Données pour 'PURE MOMENT COTTON' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.685187Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.686250Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.688808Z","level":"info","event":"--- Traitement Produit 31/994 (Key: 767) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.690001Z","level":"info","event":"   -> ⚠️ Mot-clé rejeté car trop court après nettoyage (Nom nettoyé: 'MD').","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.691328Z","level":"info","event":"   -> Mot-clé généré : 'None'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.693118Z","level":"info","event":"   -> ⚠️ Mot-clé vide, impossible de chercher. On ignore.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.694791Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.697330Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.698301Z","level":"info","event":"--- Traitement Produit 32/994 (Key: 768) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.699451Z","level":"info","event":"   -> Mot-clé généré : 'TECHNISAT DIGITRADIO 370 IR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.701325Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT DIGITRADIO 370 IR' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:16.952698Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:23.950622Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'TECHNISAT DIGITRADIO 370 IR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:23.951493Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'TECHNISAT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:23.952167Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:24.669541Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.670301Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.698431Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'TECHNISAT')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.735631Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.736355Z","level":"info","event":"   -> 8 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.736902Z","level":"info","event":"   -> 17 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.737459Z","level":"info","event":"   -> ✅ Données pour 'TECHNISAT DIGITRADIO 370 IR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.738960Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.739747Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.740382Z","level":"info","event":"--- Traitement Produit 33/994 (Key: 769) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.741256Z","level":"info","event":"   -> Mot-clé généré : 'PANASONIC RF D15EG K'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:31.741963Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PANASONIC RF D15EG K' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:32.027380Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:38.969255Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PANASONIC RF D15EG K'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:38.969951Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PANASONIC'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:38.970699Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PANASONIC' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:39.379057Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.379933Z","level":"info","event":"   -> 7 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.406886Z","level":"info","event":"   -> (L) 7 posts reçus. Application du filtre de pertinence (Marque: 'PANASONIC')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.417722Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.418329Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.418844Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.419385Z","level":"info","event":"   -> ✅ Données pour 'PANASONIC RF D15EG K' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.420881Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.421624Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.422320Z","level":"info","event":"--- Traitement Produit 34/994 (Key: 770) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.422891Z","level":"info","event":"   -> Mot-clé généré : 'BIGBEN R16FOOT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.423399Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN R16FOOT' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:46.764018Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:53.764606Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'BIGBEN R16FOOT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:53.765262Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'BIGBEN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:53.765777Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BIGBEN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:20:53.970641Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.971339Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.971970Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'BIGBEN R16FOOT' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.972507Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.973032Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.973527Z","level":"info","event":"--- Traitement Produit 35/994 (Key: 771) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.973982Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAR5600'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:00.974497Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAR5600' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:01.202395Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:08.102711Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAR5600'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:08.103323Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:08.103704Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:08.923708Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.924518Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.953728Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.989007Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.989656Z","level":"info","event":"   -> 18 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.990370Z","level":"info","event":"   -> 7 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.991141Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS TAR5600' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.992242Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.992819Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.993398Z","level":"info","event":"--- Traitement Produit 36/994 (Key: 773) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.994122Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 29KP'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:15.994600Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 29KP' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:16.295557Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:23.296483Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 29KP'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:23.297162Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:23.297784Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:23.567043Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.568417Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.569102Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 29KP' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.569492Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.569850Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.570340Z","level":"info","event":"--- Traitement Produit 37/994 (Key: 774) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.571050Z","level":"info","event":"   -> Mot-clé généré : 'TREVI DYNAMO RA 7F30'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.576809Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TREVI DYNAMO RA 7F30' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:30.796551Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:37.741644Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'TREVI DYNAMO RA 7F30'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:37.742501Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'TREVI'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:37.743161Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TREVI' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:38.027448Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.028166Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.028883Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'TREVI DYNAMO RA 7F30' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.029440Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.030016Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.030571Z","level":"info","event":"--- Traitement Produit 38/994 (Key: 778) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.031152Z","level":"info","event":"   -> Mot-clé généré : 'LENCO PDR 040WH'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.031658Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO PDR 040WH' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:45.913090Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:52.913851Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO PDR 040WH'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:52.914881Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:52.915510Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:21:53.111999Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.112889Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.113518Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LENCO PDR 040WH' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.113940Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.114662Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.115194Z","level":"info","event":"--- Traitement Produit 39/994 (Key: 779) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.115686Z","level":"info","event":"   -> Mot-clé généré : 'SHARP DR P420'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.116098Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SHARP DR P420' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:00.347839Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:07.285665Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SHARP DR P420'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:07.287434Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SHARP'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:07.288303Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SHARP' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:07.558732Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.559425Z","level":"info","event":"   -> 1 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.586186Z","level":"info","event":"   -> (L) 1 posts reçus. Application du filtre de pertinence (Marque: 'SHARP')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.588011Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.588604Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.589084Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.589614Z","level":"info","event":"   -> ✅ Données pour 'SHARP DR P420' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.591795Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.592426Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.593173Z","level":"info","event":"--- Traitement Produit 40/994 (Key: 780) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.593966Z","level":"info","event":"   -> Mot-clé généré : 'MUSE M 168 WI'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.594660Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE M 168 WI' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:14.888988Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:21.889648Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'MUSE M 168 WI'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:21.892755Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'MUSE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:21.893393Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'MUSE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:22.114925Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.115958Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.117046Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'MUSE M 168 WI' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.117880Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.118739Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.119635Z","level":"info","event":"--- Traitement Produit 41/994 (Key: 781) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.120542Z","level":"info","event":"   -> Mot-clé généré : 'LENCO CR 620GRY'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.121512Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO CR 620GRY' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:29.449670Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:36.394997Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO CR 620GRY'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:36.395661Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:36.396176Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:36.602576Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.603277Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.603846Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LENCO CR 620GRY' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.604291Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.604651Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.605036Z","level":"info","event":"--- Traitement Produit 42/994 (Key: 782) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.605610Z","level":"info","event":"   -> Mot-clé généré : 'KENWOOD CR M30DAB B'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.606040Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'KENWOOD CR M30DAB B' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:43.847635Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:50.848212Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'KENWOOD CR M30DAB B'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:50.848833Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'KENWOOD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:50.849375Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'KENWOOD' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:51.296949Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.297753Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.322182Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'KENWOOD')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.324758Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.325167Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.325591Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.326006Z","level":"info","event":"   -> ✅ Données pour 'KENWOOD CR M30DAB B' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.327166Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.327644Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.328192Z","level":"info","event":"--- Traitement Produit 43/994 (Key: 784) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.328746Z","level":"info","event":"   -> Mot-clé généré : 'LENCO SCD 6900BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.329122Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO SCD 6900BK' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:22:58.554363Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:05.495460Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO SCD 6900BK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:05.496009Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:05.496306Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:06.240777Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.241411Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.241987Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LENCO SCD 6900BK' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.242427Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.242786Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.243113Z","level":"info","event":"--- Traitement Produit 44/994 (Key: 786) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.243565Z","level":"info","event":"   -> Mot-clé généré : 'PURE EVOKE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:13.243960Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE EVOKE' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:14.394365Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.394922Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.416368Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'PURE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.443983Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.444482Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.444882Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.445282Z","level":"info","event":"   -> ✅ Données pour 'PURE EVOKE' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.446465Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.446908Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.447291Z","level":"info","event":"--- Traitement Produit 45/994 (Key: 787) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.447729Z","level":"info","event":"   -> Mot-clé généré : 'JBL TUNER XL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:21.448107Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL TUNER XL' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:22.796232Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:29.797144Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JBL TUNER XL'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:29.797848Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JBL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:29.798241Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:30.040466Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.980122Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.980929Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'JBL TUNER XL' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.981741Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.985944Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.986746Z","level":"info","event":"--- Traitement Produit 46/994 (Key: 789) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.987421Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAR4500'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:36.988118Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAR4500' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:37.247384Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:44.248132Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAR4500'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:44.248841Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:44.249305Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:44.560696Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.561446Z","level":"info","event":"   -> 5 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.585145Z","level":"info","event":"   -> (L) 5 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.596789Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.597521Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.598367Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.599102Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS TAR4500' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.600521Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.601187Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.601714Z","level":"info","event":"--- Traitement Produit 47/994 (Key: 792) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.602364Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS TAR4600'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.603245Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS TAR4600' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:51.832347Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:58.833140Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS TAR4600'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:58.833739Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:58.834285Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:23:59.097426Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.031751Z","level":"info","event":"   -> 5 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.055333Z","level":"info","event":"   -> (L) 5 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.061674Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.062313Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.062795Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.063285Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS TAR4600' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.064719Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.065158Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.065676Z","level":"info","event":"--- Traitement Produit 48/994 (Key: 793) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.066186Z","level":"info","event":"   -> Mot-clé généré : 'TECHNISAT DIGITRADIO 550IR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.066639Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT DIGITRADIO 550IR' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:06.376623Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.377228Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.399421Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'TECHNISAT')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.402300Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.403156Z","level":"info","event":"   -> 2 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.403828Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.404509Z","level":"info","event":"   -> ✅ Données pour 'TECHNISAT DIGITRADIO 550IR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.405993Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.406535Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.407167Z","level":"info","event":"--- Traitement Produit 49/994 (Key: 794) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.407871Z","level":"info","event":"   -> Mot-clé généré : 'PURE MOMENT COFFEE BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.408484Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE MOMENT COFFEE BK' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:13.661550Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:20.664248Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PURE MOMENT COFFEE BK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:20.664957Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PURE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:20.665550Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:20.934318Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.935034Z","level":"info","event":"   -> 4 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.957951Z","level":"info","event":"   -> (L) 4 posts reçus. Application du filtre de pertinence (Marque: 'PURE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.962998Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.963521Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.963924Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.964358Z","level":"info","event":"   -> ✅ Données pour 'PURE MOMENT COFFEE BK' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.965780Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.966246Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.966635Z","level":"info","event":"--- Traitement Produit 50/994 (Key: 797) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.967092Z","level":"info","event":"   -> Mot-clé généré : 'SONORO RELAX X'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:27.967485Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONORO RELAX X' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:29.931956Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.877527Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.917993Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SONORO')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.983488Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.984442Z","level":"info","event":"   -> 25 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.985708Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.987567Z","level":"info","event":"   -> ✅ Données pour 'SONORO RELAX X' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.989102Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.990436Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.991311Z","level":"info","event":"--- Traitement Produit 51/994 (Key: 800) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.992174Z","level":"info","event":"   -> Mot-clé généré : 'ARTSOUND R8 RADIO BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:36.993151Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'ARTSOUND R8 RADIO BK' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:37.426716Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.427320Z","level":"info","event":"   -> 3 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.449631Z","level":"info","event":"   -> (L) 3 posts reçus. Application du filtre de pertinence (Marque: 'ARTSOUND')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.456258Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.456886Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.457361Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.457865Z","level":"info","event":"   -> ✅ Données pour 'ARTSOUND R8 RADIO BK' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.459065Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.459593Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.460062Z","level":"info","event":"--- Traitement Produit 52/994 (Key: 801) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.460598Z","level":"info","event":"   -> Mot-clé généré : 'TECHNISAT DIGITRADIO 380CD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.461070Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT DIGITRADIO 380CD' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:44.814328Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.815113Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.841239Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'TECHNISAT')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.844524Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.845123Z","level":"info","event":"   -> 2 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.845725Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.846267Z","level":"info","event":"   -> ✅ Données pour 'TECHNISAT DIGITRADIO 380CD' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.847965Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.848554Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.849095Z","level":"info","event":"--- Traitement Produit 53/994 (Key: 803) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.849886Z","level":"info","event":"   -> Mot-clé généré : 'PURE CLASSIC H4 COTTON'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:51.850568Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE CLASSIC H4 COTTON' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:52.097684Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:59.098810Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PURE CLASSIC H4 COTTON'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:59.099857Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PURE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:59.100405Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PURE' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:24:59.351866Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.292338Z","level":"info","event":"   -> 4 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.313605Z","level":"info","event":"   -> (L) 4 posts reçus. Application du filtre de pertinence (Marque: 'PURE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.318349Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.318832Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.319227Z","level":"info","event":"   -> 4 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.319694Z","level":"info","event":"   -> ✅ Données pour 'PURE CLASSIC H4 COTTON' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.320851Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.321288Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.321775Z","level":"info","event":"--- Traitement Produit 54/994 (Key: 806) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.322359Z","level":"info","event":"   -> Mot-clé généré : 'IMPERIAL DABMAN i200 CD'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.322752Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'IMPERIAL DABMAN i200 CD' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:06.716465Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.717235Z","level":"info","event":"   -> 3 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.747283Z","level":"info","event":"   -> (L) 3 posts reçus. Application du filtre de pertinence (Marque: 'IMPERIAL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.752807Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.754471Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.754985Z","level":"info","event":"   -> 3 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.755537Z","level":"info","event":"   -> ✅ Données pour 'IMPERIAL DABMAN i200 CD' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.756289Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.756745Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.757236Z","level":"info","event":"--- Traitement Produit 55/994 (Key: 807) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.757687Z","level":"info","event":"   -> Mot-clé généré : 'TECHNISAT DIGITRADIO 143V'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:13.758075Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT DIGITRADIO 143V' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:14.071370Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.072235Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.093126Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'TECHNISAT')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.095897Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.096493Z","level":"info","event":"   -> 2 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.097006Z","level":"info","event":"   -> 0 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.097489Z","level":"info","event":"   -> ✅ Données pour 'TECHNISAT DIGITRADIO 143V' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.098557Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.098970Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.099454Z","level":"info","event":"--- Traitement Produit 56/994 (Key: 808) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.100034Z","level":"info","event":"   -> Mot-clé généré : 'DENVER MIR 270DW DARK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.100557Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'DENVER MIR 270DW DARK' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:21.559801Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:28.560385Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'DENVER MIR 270DW DARK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:28.560974Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'DENVER'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:28.561422Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'DENVER' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:29.729379Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.669611Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.695960Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'DENVER')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.741860Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.742489Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.743080Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.743919Z","level":"info","event":"   -> ✅ Données pour 'DENVER MIR 270DW DARK' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.745805Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.746659Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.747344Z","level":"info","event":"--- Traitement Produit 57/994 (Key: 810) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.748319Z","level":"info","event":"   -> Mot-clé généré : 'PHILIPS HF3521'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:36.748881Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS HF3521' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:37.004439Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:44.005193Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'PHILIPS HF3521'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:44.005828Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'PHILIPS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:44.006191Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'PHILIPS' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:44.539071Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.539612Z","level":"info","event":"   -> 5 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.562562Z","level":"info","event":"   -> (L) 5 posts reçus. Application du filtre de pertinence (Marque: 'PHILIPS')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.568154Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.568642Z","level":"info","event":"   -> 3 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.569088Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.569604Z","level":"info","event":"   -> ✅ Données pour 'PHILIPS HF3521' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.570610Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.571140Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.571641Z","level":"info","event":"--- Traitement Produit 58/994 (Key: 811) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.572096Z","level":"info","event":"   -> Mot-clé généré : 'JBL HORIZON'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.572478Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL HORIZON' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:51.804330Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:58.805156Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JBL HORIZON'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:58.805740Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JBL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:58.806119Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:25:59.073254Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.012659Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.013306Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'JBL HORIZON' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.013639Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.014153Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.014480Z","level":"info","event":"--- Traitement Produit 59/994 (Key: 813) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.014822Z","level":"info","event":"   -> Mot-clé généré : 'LANAFORM WL 100C'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.015110Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LANAFORM WL 100C' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:06.528107Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:13.528708Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LANAFORM WL 100C'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:13.529364Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LANAFORM'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:13.529887Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LANAFORM' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:13.766324Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.767034Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.767595Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LANAFORM WL 100C' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.768010Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.768768Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.769306Z","level":"info","event":"--- Traitement Produit 60/994 (Key: 814) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.769842Z","level":"info","event":"   -> Mot-clé généré : 'TECHNISAT TECHNIRADIO SOLAR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.770210Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT TECHNIRADIO SOLAR' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.936433Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=TECHNISAT+TECHNIRADIO+SOLAR&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:20.936992Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:27.937296Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'TECHNISAT TECHNIRADIO SOLAR'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:27.937960Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'TECHNISAT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:27.938363Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:28.134317Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=TECHNISAT&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:28.134962Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.074238Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.074895Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'TECHNISAT TECHNIRADIO SOLAR' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.075333Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.075818Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.076419Z","level":"info","event":"--- Traitement Produit 61/994 (Key: 815) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.076981Z","level":"info","event":"   -> Mot-clé généré : 'TECHNISAT DIGITRADIO 574'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.077377Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT DIGITRADIO 574' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.229709Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/all/search.json?q=TECHNISAT+DIGITRADIO+574&sort=relevance&restrict_sr=false&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:35.230285Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:42.230602Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'TECHNISAT DIGITRADIO 574'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:42.231329Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'TECHNISAT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:42.231839Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'TECHNISAT' dans r/all","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:42.392843Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/all/search.json?q=TECHNISAT&sort=relevance&restrict_sr=false&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:42.394211Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.394005Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.394850Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'TECHNISAT DIGITRADIO 574' dans r/all.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.395477Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.396143Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.396606Z","level":"info","event":"--- Traitement Produit 62/994 (Key: 816) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.397228Z","level":"info","event":"   -> Mot-clé généré : 'LENCO PDR 040BK'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.397650Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO PDR 040BK' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.563208Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=LENCO+PDR+040BK&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:49.563948Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:56.564076Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'LENCO PDR 040BK'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:56.564874Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'LENCO'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:56.565443Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'LENCO' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:56.731519Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=LENCO&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:26:56.732249Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.732453Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.733082Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'LENCO PDR 040BK' dans r/radio.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.733653Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.734292Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.734809Z","level":"info","event":"--- Traitement Produit 63/994 (Key: 818) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.735488Z","level":"info","event":"   -> Mot-clé généré : 'SANGEAN MMR OCEAN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.736014Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SANGEAN MMR OCEAN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.888958Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=SANGEAN+MMR+OCEAN&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:03.889525Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:10.827745Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SANGEAN MMR OCEAN'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:10.828340Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SANGEAN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:10.828696Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SANGEAN' dans r/radio","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:10.978919Z","level":"info","event":"   -> ❌ ERREUR (_execute_reddit_search) : 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/radio/search.json?q=SANGEAN&sort=relevance&restrict_sr=true&t=year&limit=25","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:10.979486Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-10-31T13:27:16.002744Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"success"}},"logger":"task"}
+{"timestamp":"2025-10-31T13:27:16.042782Z","level":"error","event":"Task killed!","logger":"task"}

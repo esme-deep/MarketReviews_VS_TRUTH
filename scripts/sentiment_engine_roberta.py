@@ -25,7 +25,6 @@ def load_roberta_model():
     """
     print("--- Chargement du modèle RoBERTa (cardiffnlp)... ---")
     MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment"
-    # S'assure qu'il télécharge dans un dossier accessible par le worker
     cache_dir = "/tmp/huggingface_cache" 
     
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, cache_dir=cache_dir)
@@ -46,22 +45,16 @@ def get_pending_posts(staging_cursor):
         FROM
             [Projet_Market_Staging].[dbo].[Staging_Reddit_Posts] AS r
         WHERE
-            -- 1. Le post n'a pas encore été analysé
             r.Status = 'pending_sentiment'
-            
-            -- 2. ET il existe une entrée correspondante dans le DWH
-            --    qui a suffisamment d'avis
             AND EXISTS (
                 SELECT 1
-                FROM
-                    [Projet_Market_DWH].[dbo].[Dim_Product] AS p
-                JOIN
-                    [Projet_Market_DWH].[dbo].[Fact_Marketplace_Snapshot] AS f
+                FROM [Projet_Market_DWH].[dbo].[Dim_Product] AS p
+                JOIN [Projet_Market_DWH].[dbo].[Fact_Marketplace_Snapshot] AS f
                     ON p.ProductKey = f.ProductKey
                 WHERE
-                    p.ProductKey = r.ProductKey_Ref -- Le lien
+                    p.ProductKey = r.ProductKey_Ref
                     AND f.Average_Rating IS NOT NULL
-                    AND f.Review_Count >= 3 -- NOTRE SEUIL
+                    AND f.Review_Count >= 3
             );
     """
     
@@ -73,20 +66,30 @@ def get_pending_posts(staging_cursor):
 
 def analyze_sentiment_roberta(text, tokenizer, model):
     """
-    Analyse le texte avec RoBERTa et retourne le score (-1 à +1) et le nom.
+    Analyse le texte avec RoBERTa.
+    Retourne (score, nom) ou (None, 'Skipped_Too_Long') si le texte dépasse 512 tokens.
     """
     if not text or text.strip() == "":
         return 0.0, 'Neutre'
         
-    text_short = text[:512] 
+    # <-- CORRIGÉ : On vérifie la longueur SANS couper (truncation=False)
+    # On ne garde que les 'input_ids' pour vérifier la longueur
+    encoded_check = tokenizer(text, truncation=False, return_tensors=None)
     
-    # <-- CORRIGÉ 1 : Ajout de max_length=512 pour supprimer le warning 'Asking to truncate'
-    encoded_input = tokenizer(text_short, return_tensors='pt', truncation=True, max_length=512)
+    token_count = len(encoded_check['input_ids'])
+    
+    # <-- NOUVELLE LOGIQUE : Ignorer si trop long
+    if token_count > 512:
+        print(f"   -> AVERTISSEMENT: Texte trop long ({token_count} tokens). Ignoré.")
+        return None, 'Skipped_Too_Long'
+        
+    # Si le texte est OK (<= 512), on l'encode pour le modèle
+    encoded_input = tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
+    
     output = model(**encoded_input)
     scores = output[0][0].detach().numpy()
     scores = softmax(scores)
     
-    # score[0]=Négatif, score[1]=Neutre, score[2]=Positif
     compound_score = scores[2] - scores[0] 
     
     if compound_score > 0.1:
@@ -96,9 +99,6 @@ def analyze_sentiment_roberta(text, tokenizer, model):
     else:
         sentiment_name = 'Neutre'
         
-    # <-- CORRIGÉ 2 (LE PLUS IMPORTANT) :
-    # On convertit le numpy.float32 en float Python standard
-    # que pyodbc peut comprendre.
     return float(compound_score), sentiment_name
 
 def save_sentiment_to_staging(staging_cursor, task_data, sentiment_score):
@@ -117,7 +117,7 @@ def save_sentiment_to_staging(staging_cursor, task_data, sentiment_score):
             task_data['ProductKey_Ref'],
             task_data['AuthorName'],
             task_data['PostDate'],
-            sentiment_score # <-- Ce sera maintenant un 'float' standard
+            sentiment_score
         )
     )
 

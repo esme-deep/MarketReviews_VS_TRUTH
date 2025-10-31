@@ -49,7 +49,7 @@ def run_full_reddit_pipeline_task():
                 SELECT 1 
                 FROM Projet_Market_Staging.dbo.Staging_Reddit_Posts AS r
                 WHERE r.ProductKey_Ref = p.ProductKey
-            ) AND p.ProductKey > 644
+            ) AND p.ProductKey > 944
             ORDER BY p.ProductKey;
         """
         cursor_dwh.execute(query)
