@@ -45,17 +45,8 @@ def get_pending_posts(staging_cursor):
         FROM
             [Projet_Market_Staging].[dbo].[Staging_Reddit_Posts] AS r
         WHERE
-            r.Status = 'pending_sentiment'
-            AND EXISTS (
-                SELECT 1
-                FROM [Projet_Market_DWH].[dbo].[Dim_Product] AS p
-                JOIN [Projet_Market_DWH].[dbo].[Fact_Marketplace_Snapshot] AS f
-                    ON p.ProductKey = f.ProductKey
-                WHERE
-                    p.ProductKey = r.ProductKey_Ref
-                    AND f.Average_Rating IS NOT NULL
-                    AND f.Review_Count >= 3
-            );
+            -- 1. On prend tous les posts qui n'ont pas encore été analysés
+            r.Status = 'pending_sentiment';
     """
     
     staging_cursor.execute(query)

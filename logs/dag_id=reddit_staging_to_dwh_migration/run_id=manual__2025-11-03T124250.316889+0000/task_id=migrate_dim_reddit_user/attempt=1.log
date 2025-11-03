@@ -1,0 +1,67 @@
+{"timestamp":"2025-11-03T12:42:51.500461","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-11-03T12:42:51.501227","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_to_dwh.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-03T12:42:51.586006Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.587604Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.588093Z","level":"info","event":"Current task name:migrate_dim_reddit_user","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.588472Z","level":"info","event":"Dag name:reddit_staging_to_dwh_migration","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.588889Z","level":"info","event":"--- DÉBUT : Tâche 8a - Migration Dim_Reddit_User ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.660938Z","level":"info","event":"   -> (E) Lecture des auteurs 'Processed' depuis Staging_Posts...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.678559Z","level":"info","event":"   -> 50 auteurs uniques (enrichis) trouvés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.735975Z","level":"info","event":"   -> (L) Lecture des utilisateurs existants dans Dim_Reddit_User...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.741260Z","level":"info","event":"   -> 0 utilisateurs déjà présents dans le DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.741745Z","level":"info","event":"   -> Lancement de l'UPSERT pour 50 auteurs...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.742073Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 12ma89","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.747102Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 12xbsg","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.750567Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 13bygn","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.754093Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 14eqhc","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.757618Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 15jtenif","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.761175Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 17z7esxe","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.764065Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 18xflrdh","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.767631Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1akcq127nx","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.771192Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1ext6w3g97","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.774562Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1geocgkiz3","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.777912Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1gflg969","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.780761Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1jbv6qjvy9","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.784387Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1ki587asm3","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.787848Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 1lqz66m5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.791395Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 3vb900op","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.794729Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 3vpx4","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.798291Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 3yb7t8or","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.802458Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 5yp0aas8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.804060Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 5zs1e5uk","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.805595Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 6313jq0c","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.807120Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 6bgxu8sv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.808459Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 6crcqtoq","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.809844Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 6ngjzrpn","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.811286Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 6uv7c","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.813893Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 77ldgyx4i","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.817837Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 7thorrpw","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.821230Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 7wwch","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.824929Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 8p6vyw7p","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.826410Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 94sqbgdb","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.827796Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : 9m7q453k","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.831904Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : akocnm1jk","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.835484Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : bb4pwajh","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.837044Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : d6gg1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.840663Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : fqjp39v1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.844514Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : h50pyddu","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.846115Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : h5ucy","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.849415Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : hsy9n","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.853247Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : i7ut6y9u5","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.857110Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : jwdlc","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.858754Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : ndh14lkqy","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.862363Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : pg0zi2z1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.863845Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : q5aqejfi","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.865249Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : q6mh7f681","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.868267Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : r4ecozqx","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.869764Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : rg47h71gw","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.873137Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : sa3nruhk","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.876099Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : sd2cq","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.880126Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : vaqo4leei","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.881570Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : w4x41","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.884705Z","level":"info","event":"   -> (T/L) INSERT Utilisateur : xmxg2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.887994Z","level":"info","event":"   -> ✅ Migration Dim_Reddit_User terminée avec succès.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.891037","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-11-03T12:42:51.914996Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.915514Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:42:51.916028Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): migrate_dim_reddit_user>","chan":"stdout","logger":"task"}

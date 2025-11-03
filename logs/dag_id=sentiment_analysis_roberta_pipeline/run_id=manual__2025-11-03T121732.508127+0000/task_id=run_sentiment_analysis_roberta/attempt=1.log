@@ -1,0 +1,17 @@
+{"timestamp":"2025-11-03T12:17:34.249748","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-11-03T12:17:34.250615","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_sentiment_analysis_roberta.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-03T12:17:45.153857Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:17:45.154746Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:17:45.155424Z","level":"info","event":"Current task name:run_sentiment_analysis_roberta","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:17:45.155830Z","level":"info","event":"Dag name:sentiment_analysis_roberta_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:17:45.156230Z","level":"info","event":"--- DÉBUT : Pipeline d'Analyse de Sentiment (Étape 7 - RoBERTa) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:17:45.158828Z","level":"info","event":"--- Chargement du modèle RoBERTa (cardiffnlp)... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.222436Z","level":"info","event":"--- Modèle chargé avec succès. ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.345982Z","level":"info","event":"   -> (E) Extraction des posts 'pending_sentiment' (filtrés)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.419284Z","level":"info","event":"   -> 0 posts (filtrés) trouvés à analyser.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.425505Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.426085Z","level":"info","event":"--- ✅ Fin : Aucun post (filtré) à analyser. Tâche terminée. ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.432409","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-11-03T12:18:14.485084Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.485643Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T12:18:14.486034Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): run_sentiment_analysis_roberta>","chan":"stdout","logger":"task"}
