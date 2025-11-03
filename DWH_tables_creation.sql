@@ -80,3 +80,54 @@ CREATE TABLE Fact_Marketplace_Snapshot (
     CONSTRAINT FK_Fact_Snapshot_Dim_Product FOREIGN KEY (ProductKey) REFERENCES Dim_Product(ProductKey)
 );
 GO
+
+
+-- Modléisation de la partie Truth 
+USE Projet_Market_DWH;
+GO
+
+CREATE TABLE dbo.Dim_Reddit_User (
+    [UserKey] INT IDENTITY(1,1) NOT NULL,
+    [RedditorID] NVARCHAR(20) NOT NULL,
+    [AuthorName] NVARCHAR(255) NULL,
+    [AccountCreationDate] DATETIME NULL,
+    [CommentKarma] INT NULL,
+    [PostKarma] INT NULL,
+    [HasVerifiedEmail] BIT NULL,
+    [FirstSeenAt] DATETIME DEFAULT GETDATE(),
+    [LastUpdatedAt] DATETIME DEFAULT GETDATE(),
+    
+    CONSTRAINT PK_Dim_Reddit_User PRIMARY KEY CLUSTERED ([UserKey] ASC)
+);
+GO
+
+-- Cet index est CRUCIAL. Il garantit qu'on n'a pas de doublons
+-- et il accélère les recherches (SCD Type 1)
+CREATE UNIQUE NONCLUSTERED INDEX IX_Dim_Reddit_User_RedditorID
+ON dbo.Dim_Reddit_User ([RedditorID]);
+GO
+
+
+USE Projet_Market_DWH;
+GO
+
+CREATE TABLE dbo.Fact_Public_Sentiment (
+    [SentimentFactKey] BIGINT IDENTITY(1,1) NOT NULL,
+    [ProductKey] BIGINT NOT NULL,
+    [UserKey] INT NOT NULL,
+    [DateKey] INT NOT NULL,
+    [Sentiment_Score] FLOAT NULL,
+    [StagingPostID_Ref] BIGINT NULL, -- Pour la traçabilité
+    
+    CONSTRAINT PK_Fact_Public_Sentiment PRIMARY KEY CLUSTERED ([SentimentFactKey] ASC),
+    
+    CONSTRAINT FK_Fact_Sentiment_Dim_Product 
+        FOREIGN KEY ([ProductKey]) REFERENCES dbo.Dim_Product([ProductKey]),
+        
+    CONSTRAINT FK_Fact_Sentiment_Dim_Reddit_User
+        FOREIGN KEY ([UserKey]) REFERENCES dbo.Dim_Reddit_User([UserKey]),
+        
+    CONSTRAINT FK_Fact_Sentiment_Dim_Date
+        FOREIGN KEY ([DateKey]) REFERENCES dbo.Dim_Date([DateKey])
+);
+GO
