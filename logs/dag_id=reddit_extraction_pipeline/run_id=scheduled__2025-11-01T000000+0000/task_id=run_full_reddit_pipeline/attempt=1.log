@@ -1,0 +1,272 @@
+{"timestamp":"2025-11-03T10:10:57.919958","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-11-03T10:10:57.921198","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_reddit_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-03T10:10:58.365112Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:10:58.369273Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:10:58.375932Z","level":"info","event":"Current task name:run_full_reddit_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:10:58.379129Z","level":"info","event":"Dag name:reddit_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:10:58.390313Z","level":"info","event":"--- Lancement de l'Extraction (Étape 6a) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:10:58.744044Z","level":"info","event":"   -> ✅ Connecté au DWH.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.355235Z","level":"info","event":"--- ✅ SUCCÈS : 511 produits à rechercher extraits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.377881Z","level":"info","event":"Connexion DWH fermée (phase 1).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.378734Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.381024Z","level":"info","event":"--- Lancement de la boucle de scraping pour 511 produits ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.381848Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.382383Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.382896Z","level":"info","event":"--- Traitement Produit 1/511 (Key: 1262) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.383596Z","level":"info","event":"   -> Mot-clé généré : 'JLAB JBUDS SPORT GRAPHIT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.384306Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JLAB JBUDS SPORT GRAPHIT' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:02.648644Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.432503Z","level":"info","event":"   -> 1 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.520292Z","level":"info","event":"   -> (L) 1 posts reçus. Application du filtre de pertinence (Marque: 'JLAB')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.532145Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.532873Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.533548Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.534482Z","level":"info","event":"   -> ✅ Données pour 'JLAB JBUDS SPORT GRAPHIT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.536715Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.539238Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.540059Z","level":"info","event":"--- Traitement Produit 2/511 (Key: 1263) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.541010Z","level":"info","event":"   -> Mot-clé généré : 'JBL LIVE BUDS'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:11.541925Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL LIVE BUDS' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:12.394068Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.395360Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.417119Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.445556Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.446030Z","level":"info","event":"   -> 6 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.446391Z","level":"info","event":"   -> 19 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.446755Z","level":"info","event":"   -> ✅ Données pour 'JBL LIVE BUDS' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.447939Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.448449Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.448839Z","level":"info","event":"--- Traitement Produit 3/511 (Key: 1264) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.449319Z","level":"info","event":"   -> Mot-clé généré : 'APPLE AirPods avec botier'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.449657Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'APPLE AirPods avec botier' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:19.678003Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:26.678874Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'APPLE AirPods avec botier'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:26.679506Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'APPLE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:26.680166Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'APPLE' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:27.223063Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.400174Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.427438Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'APPLE')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.465008Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.465589Z","level":"info","event":"   -> 1 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.466134Z","level":"info","event":"   -> 24 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.466633Z","level":"info","event":"   -> ✅ Données pour 'APPLE AirPods avec botier' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.467673Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.468307Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.468812Z","level":"info","event":"--- Traitement Produit 4/511 (Key: 1265) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.469714Z","level":"info","event":"   -> Mot-clé généré : 'SONY MDR EX15LP'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:35.470115Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY MDR EX15LP' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:36.662330Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.662892Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.685372Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'SONY')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.721709Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.722235Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.722702Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.723282Z","level":"info","event":"   -> ✅ Données pour 'SONY MDR EX15LP' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.724570Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.725024Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.725446Z","level":"info","event":"--- Traitement Produit 5/511 (Key: 1266) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.725937Z","level":"info","event":"   -> Mot-clé généré : 'JBL T205 CHROME'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.726381Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL T205 CHROME' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:43.880334Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:50.880862Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JBL T205 CHROME'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:50.881426Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JBL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:50.881890Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:51.437535Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.438328Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.471745Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.506599Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.507216Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.507778Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.508482Z","level":"info","event":"   -> ✅ Données pour 'JBL T205 CHROME' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.509914Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.510508Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.510944Z","level":"info","event":"--- Traitement Produit 6/511 (Key: 1267) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.511495Z","level":"info","event":"   -> Mot-clé généré : 'JBL T205 CHAMPAGNE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.512277Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL T205 CHAMPAGNE' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:11:58.691242Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:07.993041Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JBL T205 CHAMPAGNE'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:07.993631Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JBL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:07.993996Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:08.501875Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.502917Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.525364Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.555361Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.555834Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.556262Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.556780Z","level":"info","event":"   -> ✅ Données pour 'JBL T205 CHAMPAGNE' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.557998Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.558590Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.559230Z","level":"info","event":"--- Traitement Produit 7/511 (Key: 1268) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.560043Z","level":"info","event":"   -> Mot-clé généré : 'JBL SENSE OPEN EAR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:15.560413Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL SENSE OPEN EAR' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:16.501664Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.502151Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.526626Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.559114Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.559734Z","level":"info","event":"   -> 20 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.560289Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.560838Z","level":"info","event":"   -> ✅ Données pour 'JBL SENSE OPEN EAR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.561980Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.562462Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.563047Z","level":"info","event":"--- Traitement Produit 8/511 (Key: 1269) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.563604Z","level":"info","event":"   -> Mot-clé généré : 'JBL REFLECT AERO MINT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.564111Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL REFLECT AERO MINT' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:23.765302Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:30.765859Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JBL REFLECT AERO MINT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:30.766463Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JBL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:30.766864Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:31.240062Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.332729Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.372858Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.447406Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.448362Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.449681Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.450375Z","level":"info","event":"   -> ✅ Données pour 'JBL REFLECT AERO MINT' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.452516Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.453330Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.454114Z","level":"info","event":"--- Traitement Produit 9/511 (Key: 1270) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.454765Z","level":"info","event":"   -> Mot-clé généré : 'JBL SENSE OPEN EAR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:38.455403Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL SENSE OPEN EAR' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:39.228498Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.229106Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.253916Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.284567Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.285108Z","level":"info","event":"   -> 20 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.285473Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.285876Z","level":"info","event":"   -> ✅ Données pour 'JBL SENSE OPEN EAR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.287275Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.287827Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.288406Z","level":"info","event":"--- Traitement Produit 10/511 (Key: 1271) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.289044Z","level":"info","event":"   -> Mot-clé généré : 'JBL SENSE OPEN EAR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:46.289533Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL SENSE OPEN EAR' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:47.070107Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.070794Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.096282Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.129830Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.130326Z","level":"info","event":"   -> 20 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.130699Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.131117Z","level":"info","event":"   -> ✅ Données pour 'JBL SENSE OPEN EAR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.132551Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.133017Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.133462Z","level":"info","event":"--- Traitement Produit 11/511 (Key: 1272) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.133892Z","level":"info","event":"   -> Mot-clé généré : 'SWINGSON URBAN SPORT'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.134205Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SWINGSON URBAN SPORT' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:12:54.361219Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:01.362267Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'SWINGSON URBAN SPORT'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:01.363011Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'SWINGSON'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:01.363501Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SWINGSON' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:01.591498Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.178317Z","level":"info","event":"   -> 0 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.178845Z","level":"info","event":"   -> ⚠️ Aucun post trouvé pour 'SWINGSON URBAN SPORT' dans r/headphones.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.179279Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.179669Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.180039Z","level":"info","event":"--- Traitement Produit 12/511 (Key: 1273) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.180390Z","level":"info","event":"   -> Mot-clé généré : 'JBL TUNE FLEX GHOST'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.180710Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL TUNE FLEX GHOST' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:09.463037Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.463753Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.488590Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.494732Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.495347Z","level":"info","event":"   -> 1 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.495966Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.496601Z","level":"info","event":"   -> ✅ Données pour 'JBL TUNE FLEX GHOST' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.498123Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.498774Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.499393Z","level":"info","event":"--- Traitement Produit 13/511 (Key: 1274) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.499995Z","level":"info","event":"   -> Mot-clé généré : 'JBL T110'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.500500Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL T110' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:16.721983Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:23.722520Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JBL T110'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:23.723254Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JBL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:23.723944Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:24.239810Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.240456Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.269803Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.311693Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.312364Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.312977Z","level":"info","event":"   -> 25 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.313684Z","level":"info","event":"   -> ✅ Données pour 'JBL T110' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.315752Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.316392Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.317058Z","level":"info","event":"--- Traitement Produit 14/511 (Key: 1275) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.318067Z","level":"info","event":"   -> Mot-clé généré : 'JBL SENSE OPEN EAR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:31.318761Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL SENSE OPEN EAR' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:32.046524Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.576621Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.600217Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.639123Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.639749Z","level":"info","event":"   -> 20 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.640329Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.640880Z","level":"info","event":"   -> ✅ Données pour 'JBL SENSE OPEN EAR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.642097Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.642590Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.643010Z","level":"info","event":"--- Traitement Produit 15/511 (Key: 1276) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.643746Z","level":"info","event":"   -> Mot-clé généré : 'JBL SENSE OPEN EAR'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:39.644317Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JBL SENSE OPEN EAR' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:40.508475Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.509005Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.538945Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JBL')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.579449Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.580095Z","level":"info","event":"   -> 20 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.580587Z","level":"info","event":"   -> 5 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.581149Z","level":"info","event":"   -> ✅ Données pour 'JBL SENSE OPEN EAR' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.583148Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.583893Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.584608Z","level":"info","event":"--- Traitement Produit 16/511 (Key: 1277) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.585235Z","level":"info","event":"   -> Mot-clé généré : 'BEYERDYNAMIC VERIO 200 OPEN'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:47.585755Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BEYERDYNAMIC VERIO 200 OPEN' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:48.116186Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.116647Z","level":"info","event":"   -> 10 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.139622Z","level":"info","event":"   -> (L) 10 posts reçus. Application du filtre de pertinence (Marque: 'BEYERDYNAMIC')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.210687Z","level":"info","event":"   -> 7 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.211219Z","level":"info","event":"   -> 1 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.211583Z","level":"info","event":"   -> 2 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.212556Z","level":"info","event":"   -> ✅ Données pour 'BEYERDYNAMIC VERIO 200 OPEN' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.214143Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.214826Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.215268Z","level":"info","event":"--- Traitement Produit 17/511 (Key: 1278) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.215840Z","level":"info","event":"   -> Mot-clé généré : 'BEYERDYNAMIC AMIRON 100 TRUE'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.216458Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'BEYERDYNAMIC AMIRON 100 TRUE' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:13:55.660166Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.660804Z","level":"info","event":"   -> 5 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.683237Z","level":"info","event":"   -> (L) 5 posts reçus. Application du filtre de pertinence (Marque: 'BEYERDYNAMIC')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.701012Z","level":"info","event":"   -> 2 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.701567Z","level":"info","event":"   -> 2 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.702031Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.702779Z","level":"info","event":"   -> ✅ Données pour 'BEYERDYNAMIC AMIRON 100 TRUE' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.704325Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.704873Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.705401Z","level":"info","event":"--- Traitement Produit 18/511 (Key: 1279) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.706380Z","level":"info","event":"   -> Mot-clé généré : 'JLAB GO SPORT TEAL'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.706889Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JLAB GO SPORT TEAL' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:02.971586Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.619176Z","level":"info","event":"   -> 2 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.653442Z","level":"info","event":"   -> (L) 2 posts reçus. Application du filtre de pertinence (Marque: 'JLAB')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.673584Z","level":"info","event":"   -> 1 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.674296Z","level":"info","event":"   -> 0 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.674980Z","level":"info","event":"   -> 1 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.676111Z","level":"info","event":"   -> ✅ Données pour 'JLAB GO SPORT TEAL' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.678287Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.679038Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.680008Z","level":"info","event":"--- Traitement Produit 19/511 (Key: 1280) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.680673Z","level":"info","event":"   -> Mot-clé généré : 'JVC HA A4T BU'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.681377Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC HA A4T BU' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:10.916393Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:17.916877Z","level":"info","event":"   -> ⚠️ Passe 1 (spécifique) n'a rien donné pour 'JVC HA A4T BU'.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:17.917353Z","level":"info","event":"   -> Lancement Passe 2 (large) avec juste la marque: 'JVC'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:17.917681Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'JVC' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:18.674884Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.675436Z","level":"info","event":"   -> 25 posts bruts trouvés au total.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.699184Z","level":"info","event":"   -> (L) 25 posts reçus. Application du filtre de pertinence (Marque: 'JVC')...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.730773Z","level":"info","event":"   -> 0 nouveaux posts (pertinents) insérés.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.731308Z","level":"info","event":"   -> 6 posts filtrés (hors sujet).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.731640Z","level":"info","event":"   -> 19 posts ignorés (doublons).","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.732034Z","level":"info","event":"   -> ✅ Données pour 'JVC HA A4T BU' sauvegardées.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.733050Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.733500Z","level":"info","event":"-------------------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.733949Z","level":"info","event":"--- Traitement Produit 20/511 (Key: 1281) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.734518Z","level":"info","event":"   -> Mot-clé généré : 'SONY MDR E9LP'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:25.734957Z","level":"info","event":"   -> (E) Appel API Reddit pour : 'SONY MDR E9LP' dans r/headphones","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:26.976496Z","level":"info","event":"   -> Pause de 7 secondes (respect des limites API)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:14:31.993962Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"success"}},"logger":"task"}
+{"timestamp":"2025-11-03T10:14:32.040234Z","level":"error","event":"Task killed!","logger":"task"}

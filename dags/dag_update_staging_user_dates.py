@@ -40,7 +40,7 @@ def get_reddit_api():
             # ⚠️⚠️⚠️ MODIFIE CES LIGNES ⚠️⚠️⚠️
             client_id="",
             client_secret="",
-            user_agent="Airflow:MarketReviewsVSTruth:v1.0 (by /u/VOTRE_NOM_REDDIT)",
+            user_agent="Airflow:MarketReviewsVSTruth:v1.0 (by /u/)",
             # ⚠️⚠️⚠️ FIN DE LA ZONE À MODIFIER ⚠️⚠️⚠️
             read_only=True
         )
@@ -69,37 +69,65 @@ def get_pending_authors(cursor):
     print(f"   -> {len(authors)} auteurs uniques à vérifier.")
     return authors
 
-def get_user_creation_date(reddit_api, author_name):
-    """(T) Appelle PRAW pour trouver la date de création d'un utilisateur."""
+def get_user_details(reddit_api, author_name):
+    """(T) Appelle PRAW pour trouver les détails d'un utilisateur."""
     try:
         redditor = reddit_api.redditor(author_name)
-        # .created_utc est le timestamp (float) de la création
-        utc_timestamp = redditor.created_utc 
-        return datetime.utcfromtimestamp(utc_timestamp)
+        
+        # Récupère toutes les infos en une fois
+        details = {
+            "creation_date": datetime.utcfromtimestamp(redditor.created_utc),
+            "redditor_id": redditor.id,
+            "comment_karma": int(redditor.comment_karma),
+            "post_karma": int(redditor.link_karma),
+            "has_verified_email": bool(redditor.has_verified_email)
+        }
+        return details
+        
     except Exception as e:
         # Gère les utilisateurs suspendus, supprimés ou invalides
         print(f"   -> ⚠️ Erreur API pour '{author_name}' (ex: suspendu/supprimé): {e}")
-        return None # On enregistrera 'None' (NULL) pour ne pas le revérifier
+        # Retourne un dictionnaire "vide" pour marquer comme "Failed"
+        return {
+            "creation_date": None,
+            "redditor_id": None,
+            "comment_karma": None,
+            "post_karma": None,
+            "has_verified_email": None
+        }
 
-def update_staging_posts_for_author(cursor, author_name, creation_date):
+
+def update_staging_posts_for_author(cursor, author_name, details):
     """
     (L) Met à jour TOUS les posts de cet auteur dans la table staging
-    avec la date de création et le nouveau statut.
+    avec les détails et le nouveau statut.
     """
-    status = 'Processed' if creation_date else 'Failed_API (Suspended/Deleted)'
+    # Si creation_date est None, c'est que l'API a échoué (ex: compte banni)
+    status = 'Processed' if details["creation_date"] else 'Failed_API (Suspended/Deleted)'
     
     print(f"   -> (L) MàJ de '{author_name}' -> Status: {status}")
     
     sql = """
-    UPDATE Staging_Reddit_Posts 
+    UPDATE Staging_Reddit_Posts  
     SET 
         AuthorCreationDate = ?, 
-        AuthorCheckStatus = ?
+        AuthorCheckStatus = ?,
+        RedditorID = ?,
+        CommentKarma = ?,
+        PostKarma = ?,
+        HasVerifiedEmail = ?
     WHERE 
         AuthorName = ?
     """
-    cursor.execute(sql, (creation_date, status, author_name))
-
+    cursor.execute(sql, (
+        details["creation_date"],
+        status,
+        details["redditor_id"],
+        details["comment_karma"],
+        details["post_karma"],
+        details["has_verified_email"],
+        author_name
+    ))
 
 # -------------------------------------------------------------------
 # --- DÉFINITION DE LA TÂCHE AIRFLOW ---
@@ -109,9 +137,7 @@ def update_staging_posts_for_author(cursor, author_name, creation_date):
 def task_run_user_date_update():
     """
     Tâche ELT qui enrichit la table Staging_Reddit_Posts.
-    E: Lit les auteurs uniques avec AuthorCheckStatus IS NULL.
-    T: Appelle PRAW pour obtenir la date de création du compte.
-    L: UPDATE les lignes correspondantes dans Staging_Reddit_Posts.
+    ...
     """
     print("--- DÉBUT : Pipeline d'enrichissement (Date Création Auteur) ---")
     
@@ -120,16 +146,15 @@ def task_run_user_date_update():
     
     # --- E (Lecture) ---
     try:
-        # Appelle les fonctions définies ci-dessus
         conn = get_staging_connection() 
         cursor = conn.cursor()
         authors_to_process = get_pending_authors(cursor)
     except Exception as e_init:
         print(f"--- ❌ ERREUR MAJEURE lors de la lecture BDD : {e_init} ---")
-        if conn: conn.rollback() # Annule au cas où
+        if conn: conn.rollback()
         raise
     finally:
-        # On ne ferme PAS la connexion ici, on la garde pour la boucle d'écriture
+        # On garde la connexion ouverte pour la boucle
         pass 
         
     if not authors_to_process:
@@ -142,29 +167,36 @@ def task_run_user_date_update():
     
     # --- T & L (Boucle de Traitement) ---
     try:
-        # Initialise l'API Reddit (UNE SEULE FOIS)
         reddit = get_reddit_api()
 
         for i, author in enumerate(authors_to_process):
             print(f"\n--- Traitement {i+1}/{len(authors_to_process)} (Auteur: {author}) ---")
             
             # (T) Appel API
-            creation_date = get_user_creation_date(reddit, author)
+            user_details = get_user_details(reddit, author)
             
             # (L) Écriture DWH
-            update_staging_posts_for_author(cursor, author, creation_date)
+            update_staging_posts_for_author(cursor, author, user_details)
             
-            # !! IMPORTANT : Limiteur de débit !!
-            # Respecte l'API Reddit pour ne pas être banni.
-            time.sleep(2) # 1 appel toutes les 2 secondes = 30 appels/minute
+            # -------------------------------------------------
+            # --- CORRECTION : COMMIT PAR LOTS (BATCH) ---
+            # -------------------------------------------------
+            # On sauvegarde la progression tous les 50 auteurs
+            if (i + 1) % 50 == 0:
+                print(f"   -> 💾 Commit du lot de 50 auteurs ({i+1}/{len(authors_to_process)})...")
+                conn.commit()
+            # -------------------------------------------------
+            
+            # Limiteur de débit
+            time.sleep(7) 
 
         # Si tout s'est bien passé, on commit TOUT à la fin
-        print("   -> Commit final de la transaction.")
+        print("   -> ✅ Commit final de la transaction (pour les auteurs restants).")
         conn.commit()
 
     except Exception as e_loop:
         print(f"   -> ❌ ERREUR durant la boucle de traitement : {e_loop}.")
-        print("   -> ROLLBACK : Annulation de toutes les modifications de ce run.")
+        print("   -> ROLLBACK : Annulation du lot en cours.")
         if conn: conn.rollback()
         raise
     finally:
@@ -172,7 +204,6 @@ def task_run_user_date_update():
         if conn: conn.close()
 
     print("\n--- ✅ Fin : Enrichissement des auteurs terminé. ---")
-
 
 # -------------------------------------------------------------------
 # --- DÉFINITION DU DAG AIRFLOW ---
@@ -183,7 +214,7 @@ def task_run_user_date_update():
     start_date=datetime(2025, 10, 29),
     schedule=None, # Manuel pour l'instant
     catchup=False,
-    tags=['staging', 'enrichment', 'reddit', 'util']
+    tags=['staging_user_reddit_search']
 )
 def update_staging_user_dates_dag():
     """

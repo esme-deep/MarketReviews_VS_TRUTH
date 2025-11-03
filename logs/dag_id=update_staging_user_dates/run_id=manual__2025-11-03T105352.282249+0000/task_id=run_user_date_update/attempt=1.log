@@ -1,0 +1,87 @@
+{"timestamp":"2025-11-03T10:54:24.850000","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-11-03T10:54:24.850942","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_update_staging_user_dates.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-03T10:54:25.714763Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.715670Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.716181Z","level":"info","event":"Current task name:run_user_date_update","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.716571Z","level":"info","event":"Dag name:update_staging_user_dates","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.716957Z","level":"info","event":"--- DÉBUT : Pipeline d'enrichissement (Date Création Auteur) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.717304Z","level":"info","event":"   -> (E) Lecture des auteurs à vérifier (AuthorCheckStatus IS NULL)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.717656Z","level":"info","event":"   -> 3792 auteurs uniques à vérifier.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.717985Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.718484Z","level":"info","event":"--- 3792 nouveaux auteurs à traiter. Lancement de la boucle... ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.718825Z","level":"info","event":"   -> Initialisation de l'API PRAW (Reddit)...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.719177Z","level":"info","event":"   -> Connexion PRAW réussie.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.719550Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.719909Z","level":"info","event":"--- Traitement 1/3792 (Auteur: _Badlands_) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:25.742985Z","level":"info","event":"   -> (L) MàJ de '_Badlands_' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:32.756060Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:32.756625Z","level":"info","event":"--- Traitement 2/3792 (Auteur: _birdbake) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:32.912591Z","level":"info","event":"   -> (L) MàJ de '_birdbake' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:39.922891Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:39.923444Z","level":"info","event":"--- Traitement 3/3792 (Auteur: _Danyx781_) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:40.091294Z","level":"info","event":"   -> (L) MàJ de '_Danyx781_' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:48.582595Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:48.583237Z","level":"info","event":"--- Traitement 4/3792 (Auteur: _ENDR_) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:48.733796Z","level":"info","event":"   -> (L) MàJ de '_ENDR_' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:55.748873Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:55.749481Z","level":"info","event":"--- Traitement 5/3792 (Auteur: _father_time) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:54:55.906557Z","level":"info","event":"   -> (L) MàJ de '_father_time' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:02.919799Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:02.920274Z","level":"info","event":"--- Traitement 6/3792 (Auteur: _Gabba-Gandalf_) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:03.096680Z","level":"info","event":"   -> (L) MàJ de '_Gabba-Gandalf_' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:10.105434Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:10.107224Z","level":"info","event":"--- Traitement 7/3792 (Auteur: _husskeyy) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:10.264540Z","level":"info","event":"   -> (L) MàJ de '_husskeyy' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:17.289534Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:17.290293Z","level":"info","event":"--- Traitement 8/3792 (Auteur: _immortal_paradox_) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:17.462767Z","level":"info","event":"   -> (L) MàJ de '_immortal_paradox_' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:24.471831Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:24.472351Z","level":"info","event":"--- Traitement 9/3792 (Auteur: _Manuilay_) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:24.648183Z","level":"info","event":"   -> (L) MàJ de '_Manuilay_' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:31.657719Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:31.658298Z","level":"info","event":"--- Traitement 10/3792 (Auteur: _nouna) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:31.823340Z","level":"info","event":"   -> (L) MàJ de '_nouna' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:38.829219Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:38.829820Z","level":"info","event":"--- Traitement 11/3792 (Auteur: _pavankumars) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:38.993585Z","level":"info","event":"   -> (L) MàJ de '_pavankumars' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:46.020564Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:46.021209Z","level":"info","event":"--- Traitement 12/3792 (Auteur: _philipus) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:46.196129Z","level":"info","event":"   -> (L) MàJ de '_philipus' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:53.208926Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:53.209430Z","level":"info","event":"--- Traitement 13/3792 (Auteur: _sideffect) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:55:53.379818Z","level":"info","event":"   -> (L) MàJ de '_sideffect' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:00.390242Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:00.390926Z","level":"info","event":"--- Traitement 14/3792 (Auteur: -_SLicK_RicK_-) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:00.572333Z","level":"info","event":"   -> (L) MàJ de '-_SLicK_RicK_-' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:07.586405Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:07.586938Z","level":"info","event":"--- Traitement 15/3792 (Auteur: 00chill00chill00) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:07.746982Z","level":"info","event":"   -> (L) MàJ de '00chill00chill00' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:14.776000Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:14.776640Z","level":"info","event":"--- Traitement 16/3792 (Auteur: 0liver2785) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:14.951230Z","level":"info","event":"   -> (L) MàJ de '0liver2785' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:21.957346Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:21.957915Z","level":"info","event":"--- Traitement 17/3792 (Auteur: 0nly0bjective) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:22.117690Z","level":"info","event":"   -> (L) MàJ de '0nly0bjective' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:29.130258Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:29.130909Z","level":"info","event":"--- Traitement 18/3792 (Auteur: 0PlusUltra0) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:29.299631Z","level":"info","event":"   -> (L) MàJ de '0PlusUltra0' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:36.311082Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:36.311645Z","level":"info","event":"--- Traitement 19/3792 (Auteur: 0tenshi) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:36.479063Z","level":"info","event":"   -> (L) MàJ de '0tenshi' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:43.502329Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:43.502907Z","level":"info","event":"--- Traitement 20/3792 (Auteur: 0xHELOWRLD) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:43.675340Z","level":"info","event":"   -> (L) MàJ de '0xHELOWRLD' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:50.685634Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:50.686251Z","level":"info","event":"--- Traitement 21/3792 (Auteur: 1010010111101) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:50.862314Z","level":"info","event":"   -> (L) MàJ de '1010010111101' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:57.869503Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:57.870111Z","level":"info","event":"--- Traitement 22/3792 (Auteur: 10minuteads) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:56:58.041847Z","level":"info","event":"   -> (L) MàJ de '10minuteads' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:05.055967Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:05.057716Z","level":"info","event":"--- Traitement 23/3792 (Auteur: 13hoot) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:05.205643Z","level":"info","event":"   -> (L) MàJ de '13hoot' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:12.218057Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:12.218614Z","level":"info","event":"--- Traitement 24/3792 (Auteur: 1454kb) ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:12.399150Z","level":"info","event":"   -> (L) MàJ de '1454kb' -> Status: Processed","chan":"stdout","logger":"task"}
+{"timestamp":"2025-11-03T10:57:17.442493Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"success"}},"logger":"task"}
+{"timestamp":"2025-11-03T10:57:22.449909Z","level":"error","event":"Task killed!","logger":"task"}

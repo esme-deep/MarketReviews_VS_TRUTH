@@ -24,4 +24,5 @@ RUN pip install --no-cache-dir \
     beautifulsoup4 \
     torch \
     transformers \
-    scipy
+    scipy \
+    praw
